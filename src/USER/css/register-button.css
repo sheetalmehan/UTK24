@@ -1,0 +1,32 @@
+.button-49 {
+  margin-top: 5%;
+  width: 30%;
+  height: 10vh;
+  margin-left: 35%;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+.button-49:hover {
+  background-color: aquamarine;
+  /* font-size: 25px; */
+  /* font-weight: 700; */
+  transform: scale(1.1); /* Zoom effect */
+}
+
+
+@media (max-width: 947px) {
+  .button-49 {
+    /* margin-top: 5%; */
+    width: 60%;
+    height: 10vh;
+    margin-top: 5%;
+    margin-left: 20%;
+   
+  }
+
+
+}

@@ -1,0 +1,27 @@
+body {
+    min-height: 100vh;
+    /* background: url("qqq.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    color: white;
+    /* background-color: rgb(24, 3, 4); */
+    background-position: fixed;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.homepage {
+    position: relative;
+    /* background */
+}
+
+.background-video {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
