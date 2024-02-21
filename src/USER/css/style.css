@@ -28,7 +28,10 @@ body {
   font-family: poppins, serif;
   border: 2px solid white;
 }
+.form-label{
 
+  color: black;
+}
 
 .register:hover{
     border-color: teal !important;
