@@ -21,7 +21,7 @@ const CreateEvent = () => {
     club: initialEventData?.club,
     createdBy: initialEventData?.createdBy,
     description: initialEventData?.description,
-    venue: initialEventData?.title,
+    venue: initialEventData?.venue,
     time: initialEventData?.time,
     date: initialEventData?.date,
     minparticipant: initialEventData?.minparticipant,
