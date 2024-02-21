@@ -12,7 +12,7 @@ import '../css/div_comming_css.css'
 const Drama = () => {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('step-one');
-   
+
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d396a5858e4145844229',
@@ -67,7 +67,7 @@ const Drama = () => {
                 maxParticipants: 5
             });
         }
-      
+
 
     };
     const handleClick = () => {
@@ -161,7 +161,7 @@ const Drama = () => {
                                             MIME
                                         </a>
                                     </li> */}
-{/* 
+                                    {/* 
                                     <li className="nav-item"
                                     // style={{ paddingTop: '10px' }}
                                     >
@@ -243,8 +243,8 @@ const Drama = () => {
                                                                 • Originality of Script – 20%<br />
                                                                 • Interaction or Audience Engagement - 20%<br />
                                                                 • Minimum Use of Props – 5%<br /><br />
-                                                                <span style={{ color: 'white' }}><b>Prize Pool: INR 23,000/-</b></span><br /><br />
-                                                                <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March</span><br />
+                                                                <span style={{ color: 'white' }}><b>Prize Pool: INR 20,000/-</b></span><br /><br />
+                                                                <span style={{ color: 'white' }}>Date: 8<sup>th</sup> March</span><br />
                                                                 <span style={{ color: 'white' }}>Reach 1 day prior to your event.</span><br /><br />
                                                                 <span style={{ color: 'white' }}>Entry Fee: 1500/- per team(for external participant)<br />
                                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/-
@@ -276,23 +276,23 @@ const Drama = () => {
 
                                                         {/* Single Schedule Info */}
                                                         <div className="single-schedule-info">
-                                                            <h3>Rangmanch – Stage Play</h3>
+                                                            <h3>Rangmanch - Stage Play</h3>
                                                             <p>
                                                                 Life is a theater set in which there are but few practicable entrances.A stage play is a form of live theater performance where actors and actresses perform in front of a live audience on a stage. It's not only about acting, script, dialogues, and lights rather, it's about living that character on stage that brings life to the audience.<br /><br />
                                                             </p>
                                                             <h6 style={{ color: 'white' }}>Rules:</h6>
                                                             <p>
                                                                 1. Participants will have to submit a pdf file containing the following things in advance: name of college, list of participants, Script.<br />
-                                                                2. Time limit for the play would be 60 minutes with a 2% penalty for every extra minute. The minimum time duration for the play is 20 minutes. The time duration includes performance time and stage setting time. The given time duration is from the empty stage to the empty stage.<br />
+                                                                2. Time limit for the play would be 55 minutes with a 2% penalty for every extra minute. The minimum time duration for the play is 20 minutes. The time duration includes performance time and stage setting time. The given time duration is from the empty stage to the empty stage.<br />
                                                                 3. Play could be in English, Hindi or Bi-lingual, or a Musical Drama.<br />
                                                                 4. Use of flammable substances such as candles, matches or cigarettes or any alcoholic product during performance on stage is not allowed and will result in disqualification.<br />
-                                                                5. One team can have a maximum of 15 Actors and a minimum of 4 actors.<br />
+                                                                5. One team can have a maximum of 20 Actors and a minimum of 4 actors.<br />
                                                                 6. A team can have four backstage/props managers, one light in charge, one sound in-charge and a round-up artist (if any they have to be registered).<br />
                                                                 7. Also provide the name of the Director, (who may or may not be an actor in the play itself), since there is an award for the "Best Director".<br />
                                                                 8. The performance can be an original or an adaptation. There are no constraints regarding that. Inappropriate content, religious blasphemy and vulgarity/obscenity will NOT be tolerated.<br />
                                                                 9. Play should be restricted to the Stage area only (If done so, penalty can be imposed). <br />
                                                                 10. Microphones and backstage mikes for narration, lights, and a laptop to play sounds will be provided.<br />
-                                                                11. Recorded vocals are not allowed, only instrumental music is allowed. 12. The teams are expected to bring their own music on CD or pen drive for the play.<br />
+                                                                11. Recorded vocals are not allowed, only instrumental music is allowed.<br /> 12. The teams are expected to bring their own music on CD or pen drive for the play.<br />
                                                                 13. No team is allowed to spoil the stage (will lead to a penalty ranging from 10% to 40% to be decided by the judges).<br />
                                                                 14. All clothes and props are to be arranged by the team. The organizing committee is responsible for the infrastructural facilities only and shall not be responsible for the security of items left behind in green rooms or on stage.<br />
                                                                 15. The participating teams are requested to ensure that their presentation is in keeping with the dignity of the fest.<br />
@@ -303,9 +303,9 @@ const Drama = () => {
                                                                 • Direction - 20% <br />
                                                                 • Miscellaneous Effects - 10%<br /><br />
                                                             </p>
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: INR 21,000/-</b></span><br /><br />
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: INR 20,000/-</b></span><br /><br />
                                                             <p style={{ color: 'white' }}>
-                                                                Date: 25<sup>th</sup> March<br />
+                                                                Date: 10<sup>th</sup> March<br />
                                                                 <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                                 </span><br /><br />
                                                                 <span style={{ color: 'white' }}>
@@ -371,10 +371,18 @@ const Drama = () => {
                                                                 ● Script and Content<br />
                                                                 ● Dialogue delivery<br />
                                                                 ● Voice Modulation<br /><br />
+                                                                <span style={{ color: 'white' }}><b>Prize Pool: INR 8,000/-</b></span><br /><br />
+
                                                                 <p style={{ color: 'white' }}>
-                                                                    Date: 24<sup>th</sup> March<br />
+                                                                    Date: 9<sup>th</sup> March<br />
                                                                     <span style={{ color: 'white' }}>Reach 1 day prior to your event.
-                                                                    </span><br /><br />
+                                                                    </span> <span style={{ color: 'white' }}>
+
+                                                                        Entry Fee: 200/- per person(for external participant)<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                        0/- per student(for NITJ student)<br />
+                                                                    </span>
+
                                                                 </p><br /><br />
                                                             </p>
                                                         </div>
@@ -513,41 +521,38 @@ const Drama = () => {
 
                                                             {/* Single Schedule Info */}
                                                             <div className="single-schedule-info">
-                                                                <h3>IMPROVy</h3>
-                                                                <p>
-                                                                    Life is a theater set in which there are but few practicable entrances.A stage play is a form of live theater performance where actors and actresses perform in front of a live audience on a stage. It's not only about acting, script, dialogues, and lights rather, it's about living that character on stage that brings life to the audience.<br /><br />
-                                                                </p>
+                                                                <h3>IMPROV</h3>
                                                                 <h6 style={{ color: 'white' }}>Rules:</h6>
                                                                 <p>
-                                                                    1. Participants will have to submit a pdf file containing the following things in advance: name of college, list of participants, Script.<br />
-                                                                    2. Time limit for the play would be 60 minutes with a 2% penalty for every extra minute. The minimum time duration for the play is 20 minutes. The time duration includes performance time and stage setting time. The given time duration is from the empty stage to the empty stage.<br />
-                                                                    3. Play could be in English, Hindi or Bi-lingual, or a Musical Drama.<br />
-                                                                    4. Use of flammable substances such as candles, matches or cigarettes or any alcoholic product during performance on stage is not allowed and will result in disqualification.<br />
-                                                                    5. One team can have a maximum of 15 Actors and a minimum of 4 actors.<br />
-                                                                    6. A team can have four backstage/props managers, one light in charge, one sound in-charge and a round-up artist (if any they have to be registered).<br />
-                                                                    7. Also provide the name of the Director, (who may or may not be an actor in the play itself), since there is an award for the "Best Director".<br />
-                                                                    8. The performance can be an original or an adaptation. There are no constraints regarding that. Inappropriate content, religious blasphemy and vulgarity/obscenity will NOT be tolerated.<br />
-                                                                    9. Play should be restricted to the Stage area only (If done so, penalty can be imposed). <br />
-                                                                    10. Microphones and backstage mikes for narration, lights, and a laptop to play sounds will be provided.<br />
-                                                                    11. Recorded vocals are not allowed, only instrumental music is allowed. 12. The teams are expected to bring their own music on CD or pen drive for the play.<br />
-                                                                    13. No team is allowed to spoil the stage (will lead to a penalty ranging from 10% to 40% to be decided by the judges).<br />
-                                                                    14. All clothes and props are to be arranged by the team. The organizing committee is responsible for the infrastructural facilities only and shall not be responsible for the security of items left behind in green rooms or on stage.<br />
-                                                                    15. The participating teams are requested to ensure that their presentation is in keeping with the dignity of the fest.<br />
-                                                                    16. In any case, the judge's decision will be final.<br /><br />
-                                                                    <b style={{ color: 'white' }}>Judging Criteria:</b><br />
-                                                                    • Content - 40% <br />
-                                                                    • Acting/Expression- 30% <br />
-                                                                    • Direction - 20% <br />
-                                                                    • Miscellaneous Effects - 10%<br /><br />
+                                                                    <li>Time limit for the performance would be 8 minutes with
+                                                                        a 2% penalty for every extra minute.</li>
+                                                                    <li>The time duration
+                                                                        includes performance time and stage setting time.</li>
+                                                                    <li>Play could be in English, Hindi or Bi-lingual (Hinglish).</li>
+                                                                    <li>No vulgar language is allowed during the
+                                                                        performances.</li><li>Direct names of politicians and celebrities
+                                                                            cannot be used in the improv.</li><li> Avoid making
+                                                                                community, religious, caste, or racist remarks.</li>
+                                                                    <li>Each team must consist of 2 to 5 members.</li>
+                                                                    <li>Play should be restricted to the Stage area only (If done
+                                                                        so, penalty can be imposed).</li>
+                                                                    <li>The organizing committee is responsible for the
+                                                                        infrastructural facilities only and shall not be responsible
+                                                                        for the security of items of participants.</li>
+                                                                    <li>The participating teams are requested to ensure that their
+                                                                        presentation is in keeping with the dignity of the fest.</li>
+                                                                    <li>In any case the judge's decision will be final.</li>
+                                                                    <li> Single performance per team is only allowed.</li><br /><br />
+
                                                                 </p>
-                                                                <span style={{ color: 'white' }}><b>Prize Pool: INR 21,000/-</b></span><br /><br />
+                                                                <span style={{ color: 'white' }}><b>Prize Pool: INR 6,000/-</b></span><br /><br />
                                                                 <p style={{ color: 'white' }}>
-                                                                    Date: 25<sup>th</sup> March<br />
+                                                                    Date: 8<sup>th</sup> March<br />
                                                                     <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                                     </span><br /><br />
                                                                     <span style={{ color: 'white' }}>
 
-                                                                        Entry Fee: 1500/- per team(for external participant)<br />
+                                                                        Entry Fee: 100/- per team(for external participant)<br />
                                                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                         0/- per student(for NITJ student)<br />
                                                                     </span>

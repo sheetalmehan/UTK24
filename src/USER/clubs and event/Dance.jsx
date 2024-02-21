@@ -148,18 +148,17 @@ const Dance = () => {
                                                                     6. Obscenity of any kind is not allowed and will lead to immediate disqualification.<br />
                                                                     7. The decision of the judges and the organizing team shall be final and binding.<br /><br />
 
-                                                                    {/* Judging Criteria:
-                    1) Participants shall be penalized for not adhering to the time
-                    limits.<br />
-                    2) Variety in the moves shown.<br />
-                    3) Clarity, Perfection, Difficulty level and Entertainment Quotient
-                    of the moves shown.<br />
-                    */}
                                                                     <br />
+                                                                    
+                                                                    <span style={{ color: 'white' }}><b>Prize Pool: INR 7,000/-</b></span><br /><br />
+
                                                                     <span style={{ color: 'white' }}>
-                                                                        Date: 25<sup>th</sup> March<br />
+                                                                        Date: 9<sup>th</sup> March<br />
                                                                         Note: Reach 1 day prior to the venue.<br />
                                                                         Registration date: On spot registration. <br />
+                                                                        Entry Fee: 200/- per person(for external participant)<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/- per student(for NITJ student)<br />
+                                                                        Note: Reach 1 day prior to the venue.<br /><br />
                                                                     </span>
 
                                                                     <br />
@@ -235,10 +234,16 @@ const Dance = () => {
                                                                     • Making their performance unconventional. (e.g., boys doing belly dance)<br /><br />
                                                                 </p>
 
-                                                                <p style={{ color: 'white' }}>
-                                                                    Date: 26<sup>th</sup> March<br />
+                                                                <span style={{ color: 'white' }}><b>Prize Pool: INR 7,000/-</b></span><br /><br />
+
+                                                                <span style={{ color: 'white' }}>
+                                                                    Date: 10<sup>th</sup> March<br />
                                                                     Note: Reach 1 day prior to the venue.<br />
-                                                                </p>
+                                                                    Registration date: On spot registration. <br />
+                                                                    Entry Fee: 200/- per person(for external participant)<br />
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/- per student(for NITJ student)<br />
+                                                                    Note: Reach 1 day prior to the venue.<br /><br />
+                                                                </span>
                                                                 <br />
                                                                 <p><br />On Spot Registration!</p>
                                                             </div>
@@ -309,7 +314,7 @@ const Dance = () => {
                                                                 </p>
                                                                 <span style={{ color: 'white' }}><b>Prize Pool: INR 18,000/-</b></span><br /><br />
                                                                 Date: 24<sup>th</sup> March<br />
-                                                                Entry Fee: 1500/- per team(for external participant)<br />
+                                                                Entry Fee: 120/- per person(for external participant)<br />
                                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/- per student(for NITJ student)<br />
                                                                 Note: Reach 1 day prior to the venue.<br /><br />
                                                             </div>
@@ -332,23 +337,6 @@ const Dance = () => {
             <div className="d-flex justify-content-around mb-3">
                 {/* Contact information */}
             </div>
-
-            {/* Include other scripts as needed */}
-            {/* <script src="../js/jquery.min.js"></script>
-            <script src="../js/bootstrap.min.js"></script>
-            <script src="../js/confer.bundle.js"></script>
-            <script src="../js/active.js"></script>
-            <script src="../js/jquery-2.1.1.js"></script>
-            <script src="../js/velocity.min.js"></script>
-            <script src="../js/main.js"></script>
-            <script type='text/javascript' src='../js/jquery.js'></script>
-            <script type='text/javascript' src='../js/masonry.pkgd.min.js'></script>
-            <script type='text/javascript' src='../js/jquery.collapsible.min.js'></script>
-            <script type='text/javascript' src='../js/swiper.min.js'></script>
-            <script type='text/javascript' src='../js/jquery.countdown.min.js'></script>
-            <script type='text/javascript' src='../js/circle-progress.min.js'></script>
-            <script type='text/javascript' src='../js/jquery.countTo.min.js'></script>
-            <script type='text/javascript' src='../js/custom.js'></script> */}
         </div>
 
 

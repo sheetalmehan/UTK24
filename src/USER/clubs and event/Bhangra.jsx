@@ -12,10 +12,10 @@ import { useNavigate } from 'react-router-dom';
 
 const BhangraClub = () => {
     const navigate = useNavigate();
-    
+
 
     const [activeTab, setActiveTab] = useState('step-one');
-   
+
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d754a5858e4145844248',
@@ -35,7 +35,7 @@ const BhangraClub = () => {
                 maxParticipants: 100
             });
         }
-       
+
 
     };
     const handleClick = () => {
@@ -45,18 +45,18 @@ const BhangraClub = () => {
 
 
 
-    
+
     return (
         <div>
 
-           
+
 
 
             <section className="our-schedule-area">
-                
-            <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">
-                Bhangra And Giddha Club
-            </h1>
+
+                <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">
+                    Bhangra And Giddha Club
+                </h1>
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
@@ -85,29 +85,32 @@ const BhangraClub = () => {
                                                             </p>
                                                             <h6 style={{ color: 'white' }}>Rules:</h6>
                                                             <p>
-                                                                1. Only Group performances are allowed. <br />
-                                                                2. Dances from all cultures are allowed.<br />
-                                                                3. A team must have a minimum of 8 members and not more than 16 members. <br />
-                                                                4. Performance must be completely folk, and all the team should strictly adhere to rules of different folk dances. (Modern dance forms are not allowed).<br />
-                                                                5. Time limit of the performance is 8-11 mins, and the time will start when music starts or when the first dagga on dhol is hit.<br />
-                                                                6. Props must be brought by the performers themselves. Use of props (like kirpaan) which can harm the stage is not allowed.<br />
-                                                                7. Any kind of vulgarity shall not be tolerated. <br />
-                                                                8. Teams must bring their soundtrack(if required) on a pendrive and submit it prior to the competition. (The track should be in .mp3 format)<br />
-                                                                9. There will be only one round. <br />
-                                                                10. Every team should have their id cards and photocopy of the bank passbook for prize money transfer.<br /><br />
-                                                                <b style={{ color: 'white' }}>GIDDHA:</b><br />
-                                                                • The dress of giddha girls should be according to Punjabi culture.<br />
-                                                                • Action shall be in accordance with traditional dholak taals and traditional style of boli singing.<br /><br />
-                                                                <b style={{ color: 'white' }}>Bhangra:</b><br />
-                                                                • Actions of the performance will be in accordance with traditional form of dhol rhythm such as luddi, dhamal, mirza, chalaan etc.<br />
-                                                                • The dress of Bhangra teams should be according to Punjabi folk.<br /><br />
-                                                                <b style={{ color: 'white' }}>GROUP DANCE:</b><br />
-                                                                • Any Indian folk dance and tribal dance are allowed but western group dance is not allowed. <br /><br />
+                                                                <li>Only Bachelor degree students are allowed (College ID required).</li>
+                                                                <li>Stage setting and clearance time: 3 minutes Time limit: 8-12 minutes.</li>
+                                                                <li>Exceeding the time limit will lead to penalization in marks of 5 marks for every 10 seconds exceeded.</li>
+                                                                <li>Minimum 8 members of a team must be present on the
+                                                                    stage.</li>
+                                                                <li>No other forms of Bhangra are allowed.</li>
+                                                                <li>Audio Track to be submitted via Google form (will be
+                                                                    shared later).</li>
+                                                                <li>Audio track must be a compilation of songs. Recorded
+                                                                    dhol beats and boliya will not be permitted.</li>
+                                                                <li>Teams will bring their own props.</li>
+                                                                <li>Any damage to Stage will lead to disqualification.</li>
+                                                                <li>All decisions are at the sole discretion of the organizing
+                                                                    committee.</li>
+                                                                <li>Any kind of vulgarity shall not be tolerated.</li>
+                                                                <li>Teams must bring their soundtrack (if required) in a pen
+                                                                    drive and submit it before the competition. (The track
+                                                                    should be in .mp3 format)</li>
+                                                                <li>There will be only one round.</li>
+                                                                <li>Every team should have their id cards and photocopy of
+                                                                    the bank passbook for prize money transfer.</li> <br /><br />
 
-                                                                <span style={{ color: 'white' }}><b>Prize Pool: INR 50,000/-</b></span><br /><br />
-                                                                <span style={{ color: 'white' }}>Date: 25<sup>th</sup> March</span><br />
-                                                                <span style={{ color: 'white' }}>Reach 1 day prior to your event. </span><br /><br />
-                                                                <span style={{ color: 'white' }}>Entry Fee: 1500/- per team(for external participant)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/- per student(for NITJ student) </span><br /><br />
+                                                                <span style={{ color: 'white' }}><b>Prize Pool: INR 60,000/-</b></span><br /><br />
+                                                                <span style={{ color: 'white' }}>Date: 9<sup>th</sup> March</span><br />
+                                                                <span style={{ color: 'white' }}>*Reach 1 day prior to your event. </span><br /><br />
+                                                                <span style={{ color: 'white' }}>Entry Fee: 200/- per person(for external participant)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/- per student(for NITJ student) </span><br /><br />
                                                             </p>
                                                         </div>
 
@@ -139,14 +142,14 @@ const BhangraClub = () => {
             <script src="../js/main.js"></script>
 
             {/* Resource jQuery */}
-            <script type='text/javascript' src='../js/jquery.js'></script>
+            {/* <script type='text/javascript' src='../js/jquery.js'></script>
             <script type='text/javascript' src='../js/masonry.pkgd.min.js'></script>
             <script type='text/javascript' src='../js/jquery.collapsible.min.js'></script>
             <script type='text/javascript' src='../js/swiper.min.js'></script>
             <script type='text/javascript' src='../js/jquery.countdown.min.js'></script>
             <script type='text/javascript' src='../js/circle-progress.min.js'></script>
             <script type='text/javascript' src='../js/jquery.countTo.min.js'></script>
-            <script type='text/javascript' src='../js/custom.js'></script>
+            <script type='text/javascript' src='../js/custom.js'></script> */}
         </div>
     );
 };

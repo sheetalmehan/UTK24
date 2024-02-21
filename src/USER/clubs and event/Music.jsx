@@ -118,9 +118,9 @@ export default function Music() {
                                                             • Pronunciation of lyrics<br />
                                                             • Mood and expression<br />
                                                             • Overall impact<br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 6,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 7,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March</span><br />
+                                                            <span style={{ color: 'white' }}>Date: 8<sup>th</sup> March</span><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
                                                             <span style={{ color: 'white' }}>Entry Fee: 200/- per participation(for
@@ -184,15 +184,15 @@ export default function Music() {
                                                             failure of any of your instruments.
                                                         </p>
                                                         <br /><span style={{ color: 'white' }}><b>Prize Pool: INR
-                                                            25,000/-</b></span><br />
+                                                            20,000/-</b></span><br />
                                                         <br />
                                                         <p style={{ color: 'white' }}>
-                                                            Date: 25<sup>th</sup> March<br />
+                                                            Date: 10<sup>th</sup> March<br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
                                                             <span style={{ color: 'white' }}>
                                                                 {/* Last date to register XX March<br/></span> */}
-                                                                Entry Fee: 1000/- per team(for external participant)<br />
+                                                                Entry Fee: 1500/- per team(for external participant)<br />
                                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                 0/- per student(for NITJ student)<br />
                                                                 <br />

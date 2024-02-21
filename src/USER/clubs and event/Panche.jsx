@@ -88,12 +88,20 @@ export default function Panche() {
                                                                 14. Every team should have their id cards and photocopy of bank
                                                                 passbook.<br /><br />
                                                             </p>
+
+                                                            <b style={{ color: 'white' }}>Judging Criteria:</b><br />
+                                                            ● Dress:30%<br />
+                                                            ● Walk:30%<br />
+                                                            ● Creativity and Props:30%<br />
+                                                            ● Makeup/Look:10%<br /><br />
+
+
                                                             <span style={{ color: 'white' }}><b>Prize Pool: INR
-                                                                40,000/-</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 25<sup>th</sup>March</span><br />
+                                                                50,000/-</b></span><br /><br />
+                                                            <span style={{ color: 'white' }}>Date: 8<sup>th</sup>March</span><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: 2000/- per team(for external
+                                                            <span style={{ color: 'white' }}>Entry Fee: 2500/- per team(for external
                                                                 participant)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/-
                                                                 per student(for NITJ student) </span><br />
                                                             <br />
