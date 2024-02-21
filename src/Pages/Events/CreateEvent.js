@@ -291,7 +291,7 @@ const CreateEvent = () => {
                 type="name"
                 name="day"
                 id="day"
-                placeholder="Enter the maximum no of participants name"
+                placeholder="Enter the day on which event has to happen."
                 className="bg-transparent px-2 py-1 border"
                 value={userInput.day}
                 onChange={handleUserInput}
