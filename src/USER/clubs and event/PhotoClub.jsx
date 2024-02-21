@@ -10,7 +10,7 @@ import '../css/style.css';
 import '../css/div_comming_css.css'
 export default function PhotoClub() {
     const navigate = useNavigate();
-    const [activeTab, setActiveTab] = useState('step-one');
+    const [activeTab, setActiveTab] = useState('step-1');
    
 
     const [eventdetails, setEventdetails] = useState({

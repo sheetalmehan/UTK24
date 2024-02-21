@@ -10,13 +10,13 @@ import '../css/style.css';
 import '../css/div_comming_css.css'
 export default function Movie() {
     const navigate = useNavigate();
-    const [activeTab, setActiveTab] = useState('step-one');
+    const [activeTab, setActiveTab] = useState('step-1');
    
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5b55366590253933c77ac',
         minParticipants: 1,
-        maxParticipants: 100
+        maxParticipants: 10
 
     });
 
@@ -28,7 +28,7 @@ export default function Movie() {
             setEventdetails({
                 eventId: '65d5b55366590253933c77ac',
                 minParticipants: 1,
-                maxParticipants: 100
+                maxParticipants: 10
             });
         }
         if (tabId === "step-2") {

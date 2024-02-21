@@ -10,7 +10,7 @@ export default function Sanskriti() {
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5b945a8d0fcbeb3c7c1d6',
         minParticipants: 1,
-        maxParticipants: 100
+        maxParticipants: 4
 
     });
 
@@ -22,7 +22,7 @@ export default function Sanskriti() {
             setEventdetails({
                 eventId: '65d5b945a8d0fcbeb3c7c1d6',
                 minParticipants: 1,
-                maxParticipants: 100
+                maxParticipants: 4
             });
         }
        
