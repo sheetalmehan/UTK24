@@ -18,18 +18,18 @@
     overflow: clip;
 }
 
-.revelbutton {
+.revelbutton1 {
     position: absolute;
-    top: 50%;
+    top: 20%;
     width: 30%;
-    left: 35%;
+    left: 2%;
     height: 30vh;
     text-align: center;
     font-size: 18px;
     border-radius: 20px;
     /* background-color: rgb(164, 161, 161); */
     color: black;
-    font-size: 70px;
+    font-size: 40px;
     /* color: black; */
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -50,6 +50,136 @@
     }
 
 }
+.revelbutton2 {
+    position: absolute;
+    top: 20%;
+    width: 30%;
+    left: 36%;
+    height: 30vh;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+    /* background-color: rgb(164, 161, 161); */
+    color: black;
+    font-size: 40px;
+    /* color: black; */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    @keyframes gradient {
+        0% {
+            background-position: 0 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0 50%;
+        }
+    }
+
+}
+
+.revelbutton3 {
+    position: absolute;
+    top: 20%;
+    width: 30%;
+    left: 69%;
+    height: 30vh;
+    text-align: center;
+    /* font-size: 18px; */
+    border-radius: 20px;
+    /* background-color: rgb(164, 161, 161); */
+    color: black;
+    font-size: 40px;
+    /* color: black; */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    @keyframes gradient {
+        0% {
+            background-position: 0 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0 50%;
+        }
+    }
+
+}
+.revelbutton4 {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    left: 18%;
+    height: 30vh;
+    text-align: center;
+    /* font-size: 18px; */
+    border-radius: 20px;
+    /* background-color: rgb(164, 161, 161); */
+    color: black;
+    font-size: 40px;
+    /* color: black; */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    @keyframes gradient {
+        0% {
+            background-position: 0 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0 50%;
+        }
+    }
+
+}
+.revelbutton5 {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    left: 51%;
+    height: 30vh;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+    /* background-color: rgb(164, 161, 161); */
+    color: black;
+    font-size: 40px;
+    /* color: black; */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    @keyframes gradient {
+        0% {
+            background-position: 0 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0 50%;
+        }
+    }
+
+}
+
 
 .containerpro {
     position: relative;
