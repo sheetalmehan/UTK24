@@ -30,7 +30,6 @@ export default function Fas() {
         console.log("tabId", tabId);
         setActiveTab(tabId);
         if (tabId === "step-one") {
-            console.log("step-one");
             setEventdetails({
                 eventId: '65cf977c762805baf9ec2e1c',
                 minParticipants: 1,
@@ -38,11 +37,66 @@ export default function Fas() {
             });
         }
         if (tabId === "step-two") {
-            console.log("step-two");
             setEventdetails({
-                eventId: '65cf977c762805baf9ec2e1c',
+                eventId: '65d5affcf0fa8ef075fb78ae',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-three") {
+            setEventdetails({
+                eventId: '65d5b11666590253933c777f',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-four") {
+            setEventdetails({
+                eventId: '65d5b27d66590253933c778e',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-five") {
+            setEventdetails({
+                eventId: '65d5adc8a74298259eff0cc6',
+                minParticipants: 3,
+                maxParticipants: 3
+            });
+        }
+        if (tabId === "step-six") {
+            setEventdetails({
+                eventId: '65d5b17066590253933c7782',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-seven") {
+            setEventdetails({
+                eventId: '65d5b1ec66590253933c7788',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-eight") {
+            setEventdetails({
+                eventId: '65d5b1bc66590253933c7785',
+                minParticipants: 2,
+                maxParticipants: 2
+            });
+        }
+        if (tabId === "step-nine") {
+            setEventdetails({
+                eventId: '65d5b23166590253933c778b',
                 minParticipants: 1,
                 maxParticipants: 2
+            });
+        }
+        if (tabId === "step-ten") {
+            setEventdetails({
+                eventId: '65d5b29766590253933c7791',
+                minParticipants: 1,
+                maxParticipants: 1
             });
         }
 
@@ -127,7 +181,7 @@ export default function Fas() {
                                         <a
                                             onClick={() => handleTabClick('step-ten')}
 
-                                            className={`nav-link ${activeTab === 'step-ten' ? 'active' : ''}`} id="tab-11" data-toggle="tab" href="#step-10" role="tab" aria-controls="step-11" aria-expanded="true">DOODLE DELIGHT</a>
+                                            className={`nav-link ${activeTab === 'step-ten' ? 'active' : ''}`} id="tab-11" data-toggle="tab" href="#step-10" role="tab" aria-controls="step-11" aria-expanded="true">DOODODDLE DELIGHT</a>
                                     </li>
 
                                 </ul>
