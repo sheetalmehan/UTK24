@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
+
 
 export default function Sanskriti() {
-   
+    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('step-one');
    
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Import all stylesheets
-
+import { useNavigate } from "react-router-dom";
 import '../css/event.css';
 import '../css/bootstrap.min.css'; // Bootstrap CSS
 import '../css/fontawesome-all.min.css'; // FontAwesome CSS
@@ -10,7 +10,7 @@ import '../css/swiper.min.css'; // Swiper CSS (Note: this import might differ)
 import '../css/style.css';
 import '../css/div_comming_css.css'
 const Drama = () => {
-  
+    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('step-one');
    
 

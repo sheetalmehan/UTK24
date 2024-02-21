@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { useNavigate } from "react-router-dom";
 
 import '../css/event.css';
 import '../css/bootstrap.min.css'; // Bootstrap CSS
@@ -9,7 +9,7 @@ import '../css/swiper.min.css'; // Swiper CSS (Note: this import might differ)
 import '../css/style.css';
 import '../css/div_comming_css.css'
 export default function Music() {
-
+    const navigate = useNavigate();
 
     
 

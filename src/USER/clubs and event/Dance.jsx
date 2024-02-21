@@ -1,6 +1,6 @@
 import React, {  useState } from 'react';
 // import './css/bootstrap.min.css';
-
+import { useNavigate } from "react-router-dom";
 // Import all stylesheets
 
 import '../css/event.css';
@@ -10,7 +10,7 @@ import '../css/swiper.min.css'; // Swiper CSS (Note: this import might differ)
 import '../css/style.css';
 import '../css/div_comming_css.css'
 const Dance = () => {
-   
+    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('step-one');
    
 

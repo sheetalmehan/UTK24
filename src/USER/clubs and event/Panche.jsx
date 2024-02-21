@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { useNavigate } from "react-router-dom";
 import '../css/event.css';
 import '../css/bootstrap.min.css'; // Bootstrap CSS
 import '../css/fontawesome-all.min.css'; // FontAwesome CSS
@@ -9,7 +9,7 @@ import '../css/style.css';
 import '../css/div_comming_css.css'
 
 export default function Panche() {
- 
+    const navigate = useNavigate();
 
     const [activeTab, setActiveTab] = useState('step-one');
    
