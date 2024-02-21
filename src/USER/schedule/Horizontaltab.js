@@ -47,7 +47,7 @@ const AnimatedBox = styled(Box)`
     }
   }
 
-  width: 90%;
+  width: 80%;
   margin: auto;
   padding-top: 20px;
   border-radius: 20px;
@@ -65,14 +65,14 @@ export default function LabTabs() {
   
   return (
     <Container>
-      <h2 className="titl">Schedule</h2>
+      <h2 className="titls">Schedule</h2>
       <AnimatedBox>
         <TabContext value={value}>
           <Box>
             <ResponsiveTabList onChange={handleChange}>
-              <Tab sx={{ width: '10%', margin: '1.5%', borderRadius: '5px', fontSize: '12px', typography: '', backgroundColor: 'pink', height: 15 }} label="Day 1" value="1" />
-              <Tab sx={{ width: '10%', margin: '1.5%', borderRadius: '5px', fontSize: '12px', typography: '', backgroundColor: 'pink', height: 15 }} label="Day 2" value="2" />
-              <Tab sx={{ width: '10%', margin: '1.5%', borderRadius: '5px', fontSize: '12px', typography: '', backgroundColor: 'pink', height: 15 }} label="Day 3" value="3" />
+              <Tab sx={{ width: '8%', margin: '1.5%', borderRadius: '5px', fontSize: '12px', typography: '', backgroundColor: 'pink', height: 15 }} label="Day 1" value="1" />
+              <Tab sx={{ width: '8%', margin: '1.5%', borderRadius: '5px', fontSize: '12px', typography: '', backgroundColor: 'pink', height: 15 }} label="Day 2" value="2" />
+              <Tab sx={{ width: '8%', margin: '1.5%', borderRadius: '5px', fontSize: '12px', typography: '', backgroundColor: 'pink', height: 15 }} label="Day 3" value="3" />
             </ResponsiveTabList>
           </Box>
           <TabPanel value="1"><Schedule1 /></TabPanel>
