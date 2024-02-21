@@ -9,20 +9,64 @@ import '../css/swiper.min.css'; // Swiper CSS (Note: this import might differ)
 import '../css/style.css';
 import '../css/div_comming_css.css'
 export default function Rajbhasha() {
-    const handleClick = (event) => {
-        console.log(event.target.name);
-        if (sessionStorage.getItem("loginToken") === null) {
-            window.location = "../signin.html";
-        } else {
-            window.location = "../paidEventRegister.html?code=" + event.target.id;
-        }
-    };
+   
+    const [activeTab, setActiveTab] = useState('step-one');
+   
 
-    const [activeTab, setActiveTab] = useState('step-1');
+    const [eventdetails, setEventdetails] = useState({
+        eventId: '65d5d8d0a5858e4145844260',
+        minParticipants: 1,
+        maxParticipants: 1
+
+    });
+
 
     const handleTabClick = (tabId) => {
+        console.log("tabId", tabId);
         setActiveTab(tabId);
+        if (tabId === "step-1") {
+            setEventdetails({
+                eventId: '65d5d8d0a5858e4145844260',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-2") {
+            setEventdetails({
+                eventId: '65d5d90da5858e4145844263',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-3") {
+            setEventdetails({
+                eventId: '65d5e46ad6dab049c797fe56',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-4") {
+            setEventdetails({
+                eventId: '65d5d922a5858e4145844266',
+                minParticipants: 1,
+                maxParticipants: 3
+            });
+        }
+        if (tabId === "step-5") {
+            setEventdetails({
+                eventId: '65d5e4dfd6dab049c797fe59',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+       
+
     };
+    const handleClick = () => {
+        console.log("clicked", eventdetails);
+        navigate("/event/registerinevent", { state: { ...eventdetails } });
+    };
+
     return (
         <div>
            {/* Our Schedule Area Start */}

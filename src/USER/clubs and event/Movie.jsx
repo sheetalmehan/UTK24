@@ -9,20 +9,50 @@ import '../css/swiper.min.css'; // Swiper CSS (Note: this import might differ)
 import '../css/style.css';
 import '../css/div_comming_css.css'
 export default function Movie() {
-    const handleClick = (event) => {
-        console.log(event.target.name);
-        if (sessionStorage.getItem("loginToken") === null) {
-            window.location = "../signin.html";
-        } else {
-            window.location = "../paidEventRegister.html?code=" + event.target.id;
-        }
-    };
+   
+    const [activeTab, setActiveTab] = useState('step-one');
+   
 
-    const [activeTab, setActiveTab] = useState('step-1');
+    const [eventdetails, setEventdetails] = useState({
+        eventId: '65d5b55366590253933c77ac',
+        minParticipants: 1,
+        maxParticipants: 100
+
+    });
+
 
     const handleTabClick = (tabId) => {
+        console.log("tabId", tabId);
         setActiveTab(tabId);
+        if (tabId === "step-1") {
+            setEventdetails({
+                eventId: '65d5b55366590253933c77ac',
+                minParticipants: 1,
+                maxParticipants: 100
+            });
+        }
+        if (tabId === "step-2") {
+            setEventdetails({
+                eventId: '65d5b35766590253933c779b',
+                minParticipants:3,
+                maxParticipants: 5
+            });
+        }
+        if (tabId === "step-3") {
+            setEventdetails({
+                eventId: '65d5b32a66590253933c7798',
+                minParticipants: 3,
+                maxParticipants: 5
+            });
+        }
+       
+
     };
+    const handleClick = () => {
+        console.log("clicked", eventdetails);
+        navigate("/event/registerinevent", { state: { ...eventdetails } });
+    };
+
     return (
         <div>
 

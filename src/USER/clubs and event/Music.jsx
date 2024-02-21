@@ -9,20 +9,47 @@ import '../css/swiper.min.css'; // Swiper CSS (Note: this import might differ)
 import '../css/style.css';
 import '../css/div_comming_css.css'
 export default function Music() {
-    const handleClick = (event) => {
-        console.log(event.target.name);
-        if (sessionStorage.getItem("loginToken") === null) {
-            window.location = "../signin.html";
-        } else {
-            window.location = "../paidEventRegister.html?code=" + event.target.id;
-        }
-    };
+
+
+    
 
     const [activeTab, setActiveTab] = useState('step-1');
+   
+
+    const [eventdetails, setEventdetails] = useState({
+        eventId: '65d5d799a5858e414584424b',
+        minParticipants: 1,
+        maxParticipants: 1
+
+    });
+
 
     const handleTabClick = (tabId) => {
+        console.log("tabId", tabId);
         setActiveTab(tabId);
+        if (tabId === "step-1") {
+            setEventdetails({
+                eventId: '65d5d799a5858e414584424b',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-2") {
+            setEventdetails({
+                eventId: '65d5d7aaa5858e414584424e',
+                minParticipants: 1,
+                maxParticipants: 10
+            });
+        }
+       
+
     };
+
+    const handleClick = () => {
+        console.log("clicked", eventdetails);
+        navigate("/event/registerinevent", { state: { ...eventdetails } });
+    };
+  
     return (<div>
 
         {/* Our Schedule Area Start */}

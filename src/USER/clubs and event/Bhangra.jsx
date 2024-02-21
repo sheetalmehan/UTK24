@@ -14,14 +14,35 @@ const BhangraClub = () => {
     const navigate = useNavigate();
     
 
-    const handleClick = (event) => {
-        // console.log(event.target.name);
-        if (sessionStorage.getItem('loginToken') === null) {
-            window.location = '../signin.html';
-        } else {
-            window.location = `../paidEventRegister.html?code=${event.target.id}`;
+    const [activeTab, setActiveTab] = useState('step-one');
+   
+
+    const [eventdetails, setEventdetails] = useState({
+        eventId: '65d5d754a5858e4145844248',
+        minParticipants: 1,
+        maxParticipants: 100
+
+    });
+
+
+    const handleTabClick = (tabId) => {
+        console.log("tabId", tabId);
+        setActiveTab(tabId);
+        if (tabId === "step-one") {
+            setEventdetails({
+                eventId: '65d5d754a5858e4145844248',
+                minParticipants: 1,
+                maxParticipants: 100
+            });
         }
+       
+
     };
+    const handleClick = () => {
+        console.log("clicked", eventdetails);
+        navigate("/event/registerinevent", { state: { ...eventdetails } });
+    };
+
 
 
     

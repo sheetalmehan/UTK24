@@ -10,19 +10,48 @@ import '../css/swiper.min.css'; // Swiper CSS (Note: this import might differ)
 import '../css/style.css';
 import '../css/div_comming_css.css'
 const Dance = () => {
-    const handleClick = (event) => {
-        // console.log(event.target.name);
-        if (sessionStorage.getItem("loginToken") === null) {
-            window.location = "../signin.html";
-        } else {
-            window.location = "../paidEventRegister.html?code=" + event.target.id;
-        }
-    };
- 
+   
     const [activeTab, setActiveTab] = useState('step-one');
+   
+
+    const [eventdetails, setEventdetails] = useState({
+        eventId: '65d5d596a5858e414584423a',
+        minParticipants: 1,
+        maxParticipants: 1
+
+    });
+
 
     const handleTabClick = (tabId) => {
+        console.log("tabId", tabId);
         setActiveTab(tabId);
+        if (tabId === "step-one") {
+            setEventdetails({
+                eventId: '65d5d596a5858e414584423a',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-two") {
+            setEventdetails({
+                eventId: '65d5d69fa5858e4145844242',
+                minParticipants: 2,
+                maxParticipants: 2
+            });
+        }
+        if (tabId === "step-three") {
+            setEventdetails({
+                eventId: '65d5d56ea5858e4145844237',
+                minParticipants: 5,
+                maxParticipants: 100
+            });
+        }
+       
+
+    };
+    const handleClick = () => {
+        console.log("clicked", eventdetails);
+        navigate("/event/registerinevent", { state: { ...eventdetails } });
     };
 
     

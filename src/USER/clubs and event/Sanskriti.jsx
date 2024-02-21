@@ -1,6 +1,37 @@
 import React from 'react'
 
 export default function Sanskriti() {
+   
+    const [activeTab, setActiveTab] = useState('step-one');
+   
+
+    const [eventdetails, setEventdetails] = useState({
+        eventId: '65d5b945a8d0fcbeb3c7c1d6',
+        minParticipants: 1,
+        maxParticipants: 100
+
+    });
+
+
+    const handleTabClick = (tabId) => {
+        console.log("tabId", tabId);
+        setActiveTab(tabId);
+        if (tabId === "step-one") {
+            setEventdetails({
+                eventId: '65d5b945a8d0fcbeb3c7c1d6',
+                minParticipants: 1,
+                maxParticipants: 100
+            });
+        }
+       
+    };
+    const handleClick = () => {
+        console.log("clicked", eventdetails);
+        navigate("/event/registerinevent", { state: { ...eventdetails } });
+    };
+
+
+
     return (
         <div>
             

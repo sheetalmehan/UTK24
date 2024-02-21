@@ -9,20 +9,35 @@ import '../css/swiper.min.css'; // Swiper CSS (Note: this import might differ)
 import '../css/style.css';
 import '../css/div_comming_css.css'
 export default function Animation() {
-    const handleClick = (event) => {
-        // console.log(event.target.name);
-        if (sessionStorage.getItem("loginToken") === null) {
-            window.location = "../signin.html";
-        } else {
-            window.location = "../paidEventRegister.html?code=" + event.target.id;
-        }
-    };
+    
+    const [activeTab, setActiveTab] = useState('step-one');
+   
 
-    const [activeTab, setActiveTab] = useState('step-1');
+    const [eventdetails, setEventdetails] = useState({
+        eventId: '65d5e550d6dab049c797fe5c',
+        minParticipants: 1,
+        maxParticipants: 1
+
+    });
+
 
     const handleTabClick = (tabId) => {
+        console.log("tabId", tabId);
         setActiveTab(tabId);
+        if (tabId === "step-one") {
+            setEventdetails({
+                eventId: '65d5e550d6dab049c797fe5c',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+       
     };
+    const handleClick = () => {
+        console.log("clicked", eventdetails);
+        navigate("/event/registerinevent", { state: { ...eventdetails } });
+    };
+
     return (<div>
 
         {/* Our Schedule Area Start */}

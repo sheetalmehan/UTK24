@@ -9,20 +9,63 @@ import '../css/swiper.min.css'; // Swiper CSS (Note: this import might differ)
 import '../css/style.css';
 import '../css/div_comming_css.css'
 export default function PhotoClub() {
-    const handleClick = (event) => {
-        console.log(event.target.name);
-        if (sessionStorage.getItem("loginToken") === null) {
-            window.location = "../signin.html";
-        } else {
-            window.location = "../paidEventRegister.html?code=" + event.target.id;
-        }
-    };
+   
+    const [activeTab, setActiveTab] = useState('step-one');
+   
 
-    const [activeTab, setActiveTab] = useState('step-1');
+    const [eventdetails, setEventdetails] = useState({
+        eventId: '65d5b834a8d0fcbeb3c7c1ca',
+        minParticipants: 1,
+        maxParticipants: 2
+
+    });
+
 
     const handleTabClick = (tabId) => {
+        console.log("tabId", tabId);
         setActiveTab(tabId);
+        if (tabId === "step-1") {
+            setEventdetails({
+                eventId: '65d5b834a8d0fcbeb3c7c1ca',
+                minParticipants: 1,
+                maxParticipants: 2
+            });
+        }
+        if (tabId === "step-2") {
+            setEventdetails({
+                eventId: '65d5b7b9a8d0fcbeb3c7c1c4',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-3") {
+            setEventdetails({
+                eventId: '65d5b736a8d0fcbeb3c7c1c0',
+                minParticipants: 3,
+                maxParticipants: 5
+            });
+        }
+        if (tabId === "step-four") {
+            setEventdetails({
+                eventId: '65d5b27d66590253933c778e',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-five") {
+            setEventdetails({
+                eventId: '65d5b7eea8d0fcbeb3c7c1c7',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+      
     };
+    const handleClick = () => {
+        console.log("clicked", eventdetails);
+        navigate("/event/registerinevent", { state: { ...eventdetails } });
+    };
+
     return (
         <div>
 

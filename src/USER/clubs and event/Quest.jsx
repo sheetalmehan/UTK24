@@ -8,20 +8,43 @@ import '../css/swiper.min.css'; // Swiper CSS (Note: this import might differ)
 import '../css/style.css';
 import '../css/div_comming_css.css'
 export default function Quest() {
-    const handleClick = (event) => {
-        console.log(event.target.name);
-        if (sessionStorage.getItem("loginToken") === null) {
-            window.location = "../signin.html";
-        } else {
-            window.location = "../paidEventRegister.html?code=" + event.target.id;
-        }
-    };
+  
+    const [activeTab, setActiveTab] = useState('step-one');
+   
 
-    const [activeTab, setActiveTab] = useState('step-1');
+    const [eventdetails, setEventdetails] = useState({
+        eventId: '65d5d884a5858e414584425a',
+        minParticipants: 1,
+        maxParticipants: 3
+
+    });
+
 
     const handleTabClick = (tabId) => {
+        console.log("tabId", tabId);
         setActiveTab(tabId);
+        if (tabId === "step-one") {
+            setEventdetails({
+                eventId: '65d5d884a5858e414584425a',
+                minParticipants: 1,
+                maxParticipants: 3
+            });
+        }
+        if (tabId === "step-2") {
+            setEventdetails({
+                eventId: '65d5d89aa5858e414584425d',
+                minParticipants: 1,
+                maxParticipants: 3
+            });
+        }
+       
+
     };
+    const handleClick = () => {
+        console.log("clicked", eventdetails);
+        navigate("/event/registerinevent", { state: { ...eventdetails } });
+    };
+
     return (
         <div>
             {/* Our Schedule Area Start */}

@@ -10,19 +10,69 @@ import '../css/swiper.min.css'; // Swiper CSS (Note: this import might differ)
 import '../css/style.css';
 import '../css/div_comming_css.css'
 const Drama = () => {
-    const handleClick = (event) => {
-        // console.log(event.target.name);
-        if (sessionStorage.getItem("loginToken") === null) {
-            window.location = "../signin.html";
-        } else {
-            window.location = "../paidEventRegister.html?code=" + event.target.id;
-        }
-    };
-
+  
     const [activeTab, setActiveTab] = useState('step-one');
+   
+
+    const [eventdetails, setEventdetails] = useState({
+        eventId: '65d5d396a5858e4145844229',
+        minParticipants: 5,
+        maxParticipants: 25
+
+    });
+
 
     const handleTabClick = (tabId) => {
+        console.log("tabId", tabId);
         setActiveTab(tabId);
+        if (tabId === "step-one") {
+            setEventdetails({
+                eventId: '65d5d396a5858e4145844229',
+                minParticipants: 5,
+                maxParticipants: 25
+            });
+        }
+        if (tabId === "step-two") {
+            setEventdetails({
+                eventId: '65d5d329a5858e4145844224',
+                minParticipants: 4,
+                maxParticipants: 20
+            });
+        }
+        if (tabId === "step-three") {
+            setEventdetails({
+                eventId: '65d5d4b0a5858e4145844230',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-four") {
+            setEventdetails({
+                eventId: '65d5b27d66590253933c778e',
+                minParticipants: 1,
+                maxParticipants: 1
+            });
+        }
+        if (tabId === "step-five") {
+            setEventdetails({
+                eventId: '65d5adc8a74298259eff0cc6',
+                minParticipants: 3,
+                maxParticipants: 3
+            });
+        }
+        if (tabId === "step-six") {
+            setEventdetails({
+                eventId: '65d5d3cda5858e414584422c',
+                minParticipants: 2,
+                maxParticipants: 5
+            });
+        }
+      
+
+    };
+    const handleClick = () => {
+        console.log("clicked", eventdetails);
+        navigate("/event/registerinevent", { state: { ...eventdetails } });
     };
 
 
@@ -94,8 +144,7 @@ const Drama = () => {
                                     &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
 
                                     {/* Nav Item */}
-                                    <li className="nav-item"
-                                    // style={{ paddingTop: '10px' }}
+                                    {/* <li className="nav-item"
                                     >
                                         <a
                                             aria-controls="step-four"
@@ -111,8 +160,8 @@ const Drama = () => {
                                         >
                                             MIME
                                         </a>
-                                    </li>
-
+                                    </li> */}
+{/* 
                                     <li className="nav-item"
                                     // style={{ paddingTop: '10px' }}
                                     >
@@ -130,7 +179,7 @@ const Drama = () => {
                                         >
                                             Vidhushak- Comedy Stage Play
                                         </a>
-                                    </li>
+                                    </li> */}
 
                                     <li className="nav-item"
                                     // style={{ paddingTop: '10px' }}

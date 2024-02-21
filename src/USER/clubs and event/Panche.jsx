@@ -9,13 +9,23 @@ import '../css/style.css';
 import '../css/div_comming_css.css'
 
 export default function Panche() {
-    const handleClick = (event) => {
-        console.log(event.target.name);
-        if (sessionStorage.getItem("loginToken") === null) {
-            window.location = "../signin.html";
-        } else {
-            window.location = "../paidEventRegister.html?code=" + event.target.id;
-        }
+ 
+
+    const [activeTab, setActiveTab] = useState('step-one');
+   
+
+    const [eventdetails, setEventdetails] = useState({
+        eventId: '65d5b908a8d0fcbeb3c7c1d3',
+        minParticipants: 2,
+        maxParticipants: 25
+
+    });
+
+
+  
+    const handleClick = () => {
+        console.log("clicked", eventdetails);
+        navigate("/event/registerinevent", { state: { ...eventdetails } });
     };
     return (
         <div>
