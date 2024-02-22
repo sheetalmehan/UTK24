@@ -16,7 +16,7 @@ export default function Fas() {
 
 
     const [activeTab, setActiveTab] = useState('step-one');
-   
+
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65cf977c762805baf9ec2e1c',
@@ -122,21 +122,21 @@ export default function Fas() {
                                         <a
                                             onClick={() => handleTabClick('step-one')}
 
-                                            className={`nav-link ${activeTab === 'step-one' ? 'active' : ''}`} id="tab-onr" data-toggle="tab"  role="tab" aria-controls="step-one" aria-expanded="true">ART EXHIBITION</a>
+                                            className={`nav-link ${activeTab === 'step-one' ? 'active' : ''}`} id="tab-onr" data-toggle="tab" role="tab" aria-controls="step-one" aria-expanded="true">ART EXHIBITION</a>
                                     </li>
 
                                     <li className="nav-item">
                                         <a
                                             onClick={() => handleTabClick('step-two')}
 
-                                            className={`nav-link ${activeTab === 'step-two' ? 'active' : ''}`} id="tab-two" data-toggle="tab"  role="tab" aria-controls="step-two" aria-expanded="true">DO-ART</a>
+                                            className={`nav-link ${activeTab === 'step-two' ? 'active' : ''}`} id="tab-two" data-toggle="tab" role="tab" aria-controls="step-two" aria-expanded="true">DO-ART</a>
                                     </li>
 
                                     <li className="nav-item">
                                         <a
                                             onClick={() => handleTabClick('step-three')}
 
-                                            className={`nav-link ${activeTab === 'step-three' ? 'active' : ''}`} id="tab-three" data-toggle="tab"  role="tab" aria-controls="step-three" aria-expanded="true">CINEART ODYSSEY</a>
+                                            className={`nav-link ${activeTab === 'step-three' ? 'active' : ''}`} id="tab-three" data-toggle="tab" role="tab" aria-controls="step-three" aria-expanded="true">CINEART ODYSSEY</a>
                                     </li>
 
                                     <li className="nav-item">
@@ -144,7 +144,7 @@ export default function Fas() {
                                             onClick={() => handleTabClick('step-four')}
 
                                             className={`nav-link ${activeTab === 'step-four' ? 'active' : ''}`}
-                                            id="tab-four" data-toggle="tab"  role="tab" aria-controls="step-four" aria-expanded="true">LETTART</a>
+                                            id="tab-four" data-toggle="tab" role="tab" aria-controls="step-four" aria-expanded="true">LETTART</a>
                                     </li>
                                     {/* Nav Item */}
                                     <li className="nav-item">
@@ -219,10 +219,11 @@ export default function Fas() {
                                                                 <br /> 3. Artworks for sale will be exhibited separately and 20%
                                                                 of profit will be kept by the fine arts society.
                                                                 <br /> 4. Decisions of Judges will be considered final.
+                                                                <br /> 5. Participants can not use mobile phones.
                                                             </p>
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 24-26<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: FREE </span> <br /><br />
+                                                            <span style={{ color: 'white' }}>Date: 8-10<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: Not disclosed. </span> <br /><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
                                                         </div>
@@ -266,10 +267,10 @@ export default function Fas() {
                                                                 the provided art medium.
                                                             </p>
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 3,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 5,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: FREE </span> <br /><br />
+                                                            <span style={{ color: 'white' }}>Date: 8<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: 50/- (external participant)<br />*Free for NITJ Student. </span> <br /><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
                                                         </div>
@@ -316,10 +317,10 @@ export default function Fas() {
                                                                 reference
                                                             </p>
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 3,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 5,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: FREE </span> <br /><br />
+                                                            <span style={{ color: 'white' }}>Date: 8<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: 50-/ Per person(External students)<br />*Free for NITJ Student </span> <br /><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
                                                         </div>
@@ -364,10 +365,10 @@ export default function Fas() {
                                                                 <br />4. Mobile phone usage is not allowed.
                                                             </p>
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 3,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 5,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: FREE </span> <br /><br />
+                                                            <span style={{ color: 'white' }}>Date: 10<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: 50/- per person (external Students).<br />*Free for NITJ Students. </span> <br /><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
                                                         </div>
@@ -404,17 +405,19 @@ export default function Fas() {
                                                                     <font size={4}> Event rules and guidelines</font>
                                                                 </b><br />
                                                                 <br />Time limit: 60 minutes
-                                                                <br />Team size: 1 member<br /><br />
-                                                                <br />1. Participants would choose a chit and draw the specified
-                                                                item.
-                                                                <br />2. A4 sheet and colors will be provided.
-                                                                <br />3. Mobile phones are not allowed.
+                                                                <br />Team size: 1-3 member<br /><br />
+
+                                                                <li> Team would choose a chit and draw according to the given idea.</li>
+                                                                <li> Create a relay art challenge where each artist contributes to a shared artwork, passing it along for others to continue and build upon.</li>
+                                                                <li> Each artist will have a 20 minute time limit to contribute to the relay art challenge ,adding their creative touch before passing it on.</li>
+                                                                <li> A3 sheet , colors and pencils will be provided.</li>
+                                                                <li> Participants can not use mobile phones.</li>
                                                             </p>
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 3,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 6,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: FREE </span> <br /><br />
+                                                            <span style={{ color: 'white' }}>Date: 8<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: 100/- (external participant)  <br />*Free for NITJ Student </span> <br /><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
                                                         </div>
@@ -459,10 +462,10 @@ export default function Fas() {
                                                                 <br />4. Decisions of the Judges will be considered final.
                                                             </p>
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 3,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 5,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 25<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: FREE </span> <br /><br />
+                                                            <span style={{ color: 'white' }}>Date: 9<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: 50/- per person(external student)<br />*Free for NITJ Student. </span> <br /><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
                                                         </div>
@@ -500,14 +503,14 @@ export default function Fas() {
                                                                 <br />Time limit: 10 minutes
                                                                 <br />Team size: 1 member<br /><br />
                                                                 <br />1. Participants would draw by their choice in 10 minutes.
-                                                                <br />2. A4 sheet, pencil, and colors will be provided.
+                                                                <br />2. A3 sheet, pencil, and colors will be provided.
                                                                 <br />3. Participants can not use mobile phones.
                                                             </p>
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 3,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 5,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 25<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: FREE </span> <br /><br />
+                                                            <span style={{ color: 'white' }}>Date: 9<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: 50/- per person (For external students)<br />*Free for NITJ students. </span> <br /><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
                                                         </div>
@@ -554,10 +557,10 @@ export default function Fas() {
                                                                 <br />3. Participants can use their mobile phones.
                                                             </p>
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 3,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 6,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 25<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: FREE </span> <br /><br />
+                                                            <span style={{ color: 'white' }}>Date: 9<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: 100/- Per person (External students)<br />*Free for NITJ Students. </span> <br /><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
                                                         </div>
@@ -601,10 +604,10 @@ export default function Fas() {
                                                                 <br />3. At a particular angle, the figure should be depicted.
                                                             </p>
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 5,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 6,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 26<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: FREE </span> <br /><br />
+                                                            <span style={{ color: 'white' }}>Date: 10<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: 100/- per person (External students)<br />*Free for NITJ students. </span> <br /><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
                                                         </div>
@@ -641,22 +644,21 @@ export default function Fas() {
                                                                     <font size={4}> Event rules and guidelines</font>
                                                                 </b><br />
                                                                 <br />
-                                                            </p><h5>Submit At: finearts@nitj.ac.in</h5>
-                                                            <h5>Deadline: 25th march till 8:00 pm</h5>
-                                                            <br />1. This is an online event.
-                                                            <br />2. Participants can submit their digital artwork through mail
-                                                            within the provided time.
-                                                            <br />3. This will require students to design their emoji on a digital
-                                                            platform. The art needs to reflect their expression by illustrating
-                                                            facial emotion, places, types of animals, etc. One must not copy the
-                                                            emoji from WhatsApp or other social media.
-                                                            <br />4. Emojis should be creative and different.
-                                                            <p />
+                                                                <h5>Time limit: 60 minutes</h5>
+                                                                <h5>Team Size: 1 member</h5>
+                                                                <li>Paper sheet will be provided.</li>
+                                                                <li>Pencil,Pen,Eraser,Sharpener,Sketch color will be provided.</li>
+                                                                <li>Theme: Culture of different countries.</li>
+                                                                <li>Each participant will randomly select a chit , and based on the country name ,they have to create a doodle art that reflects the cultural elements of that specific country.</li>
+                                                                <li>Participants can not use mobile phones.</li>
+
+
+                                                            </p >
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 3,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 5,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 26<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: FREE </span> <br /><br />
+                                                            <span style={{ color: 'white' }}>Date: 10<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: 50/- per person (external students)<br />*Free for NITJ Students. </span> <br /><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
                                                         </div>

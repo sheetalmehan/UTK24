@@ -9,7 +9,7 @@ import '../css/style.css';
 import '../css/div_comming_css.css'
 export default function Quest() {
     const navigate = useNavigate();
-    const [activeTab, setActiveTab] = useState('step-one');
+    const [activeTab, setActiveTab] = useState('step-1');
    
 
     const [eventdetails, setEventdetails] = useState({
@@ -95,43 +95,31 @@ export default function Quest() {
                                                                 knowledge.</p><br />
                                                             <h6 style={{ color: 'white' }}>Rules:</h6>
                                                             <p>
-                                                                <br />1. The team size can vary from minimum of 1 to maximum of 3
-                                                                members.
-                                                                <br />2. The team members must be from the same institute and
-                                                                should have their valid college id cards with them during the
-                                                                event.
-                                                                <br />3. Each Quiz will have two stages: - The Prelims Round and
-                                                                The Final Stage Round.
-                                                                <br />4. The top 5 Teams from the Prelims round will reach the
-                                                                Stage Round, in each quiz.
-                                                                <br />5. A team can register and participate in any or both the
-                                                                quizzes.
-                                                                <br />6. The detailed rules for the Prelims Sub-Rounds and the
-                                                                Sub-Rounds of the Final Stage will be told by the Quizmaster(s)
-                                                                during the conduction respective events.
-                                                                <br />7. Some examples of the sub-rounds that will be conducted
-                                                                are: - Pounce and Bounce Quizzing, Rapid Fire Round, Buzzer
-                                                                Round etc.
-                                                                <br />8. The team members are instructed to not to follow any
-                                                                unfair means during the event, if found so, the team will be
-                                                                disqualified with immediate effect.
-                                                                <br />9. Any type of misbehavior or sabotage to the decorum of the
-                                                                event will not be tolerated and will lead to the debarration of
-                                                                the team from the event(s).
-                                                                <br />10. The decision of the Quizmaster(s) will be final in case
-                                                                of any ambiguity.<br /><br />
-                                                                <span style={{ color: 'white' }}><b>Prize Pool: INR 7,000/-
+                                                                <li>The team size can vary from a minimum of 1 to a maximum of 3 members.</li>
+                                                                <li>Registration fees will be Rs 50/- lone wolf and 100/- per team.</li>
+                                                                <li>The team members must be from the same institute and should have their valid college id cards with them during the event.</li>
+                                                                <li>Each Quiz will have two stages: - The Prelims Round and The Final Stage Round.</li>
+                                                                <li>The top 5 Teams from the Prelims round will reach the Stage Round, in each quiz.</li>
+                                                                <li>A team can register and participate in any or both quizzes.</li>
+                                                                <li>The detailed rules for the Prelims Sub-Rounds and the</li>
+                                                                <li>Sub-Rounds of the Final Stage will be told by the</li>
+                                                                <li>Quizmaster(s) during the conduction of respective events.</li>
+                                                                <li>Some examples of the sub-rounds that will be conducted are: - Pounce and Bounce Quizzing, Rapid Fire Round, Buzzer Round, etc.</li>
+                                                                <li>The team members are instructed not to follow any unfair means during the event, if found so, the team will be disqualified with immediate effect.</li>
+                                                                <li>Any type of misbehavior or sabotage to the decorum of the event will not be tolerated and will lead to the debarkation of the team from the event(s).</li>
+                                                                <li>The decision of the Quizmaster(s) will be final in case of any ambiguity.</li>
+                                                                <span style={{ color: 'white' }}><b>Prize Pool: INR 8,000/-
                                                                 </b></span><br /><br />
-                                                                <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March</span><br />
+                                                                <span style={{ color: 'white' }}>Date: 8<sup>th</sup> March</span><br />
                                                                 <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                                 </span><br /><br />
-                                                                <span style={{ color: 'white' }}>Entry Fee: FREE<br /></span> <br /><br />
+                                                                <span style={{ color: 'white' }}>Entry Fee: 100/- per person (for external students.)<br/> * Free for NITJ students.<br /></span> <br /><br />
                                                             </p>
                                                         </div>
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="qst0" name="COGNITO">Register
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register
                                                     </a>
                                                 </div>
                                             </div>
@@ -183,16 +171,16 @@ export default function Quest() {
                                                                 <br />10. The decision of the Quizmaster(s) will be final in case
                                                                 of any ambiguity.<br /><br />
                                                                 <br />
-                                                                <span style={{ color: 'white' }}><b>Prize Pool: INR 7,000/-
+                                                                <span style={{ color: 'white' }}><b>Prize Pool: INR 8,000/-
                                                                 </b></span><br /><br />
-                                                                <span style={{ color: 'white' }}>Date: 25<sup>th</sup> March</span><br />
+                                                                <span style={{ color: 'white' }}>Date: 10<sup>th</sup> March</span><br />
                                                                 <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                                 </span><br /><br />
-                                                                <span style={{ color: 'white' }}>Entry Fee: FREE<br /></span> <br /><br />
+                                                                <span style={{ color: 'white' }}>Entry Fee: 100/- per person(external students)<br/>*Free for NITJ Students.<br /></span> <br /><br />
                                                                 <br />
                                                             </p>
                                                         </div>
-                                                        <a className="btn confer-btn" id="qst1" name="MONEY GPT">Register
+                                                        <a className="btn confer-btn" onClick={handleClick}>Register
                                                         </a>
                                                     </div>
                                                     {/* Single Schedule Info */}
