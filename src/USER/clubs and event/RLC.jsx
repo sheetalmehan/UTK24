@@ -10,7 +10,7 @@ import '../css/style.css';
 import '../css/div_comming_css.css'
 export default function RLC() {
     const navigate = useNavigate();
-    const [activeTab, setActiveTab] = useState('step-one');
+    const [activeTab, setActiveTab] = useState('step-1');
    
 
     const [eventdetails, setEventdetails] = useState({
@@ -64,11 +64,11 @@ export default function RLC() {
                                             className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} id="tab-onr" data-toggle="tab" href="#step-one" role="tab" aria-controls="step-one" aria-expanded="true"> FOLK SINGING </a>
                                     </li>
                                     {/* Nav Item */}
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-2')}
 
                                             className={`nav-link ${activeTab === 'step-2' ? 'active' : ''}`} id="tab-two" data-toggle="tab" href="#step-two" role="tab" aria-controls="step-two" aria-expanded="true">MUSHAIRA </a>
-                                    </li>
+                                    </li> */}
 
                                     {/* <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-3')}
@@ -106,7 +106,7 @@ export default function RLC() {
                                                         {/* Single Schedule Thumb */}
                                                         {/* Single Schedule Info */}
                                                         <div className="single-schedule-info">
-                                                            <h3> FOLK SINGING </h3>
+                                                            <h3> IKTARA </h3>
                                                             <p>This event is basically an open mic event in which each of the
                                                                 participants will have to recite their self-written content. The
                                                                 content must be in Hindi. It will lay down the benefits for new
@@ -119,23 +119,18 @@ export default function RLC() {
                                                                 <b>
                                                                     <font size={4}> Event rules and guidelines</font>
                                                                 </b><br />
-                                                                <br /> 1.There is individual participation.
-                                                                <br /> 2. Students can present any poem, stand-up comedy, rap,
-                                                                Shayari or song etc. in Hindi language.
-                                                                <br /> 3. There will be one round only.
-                                                                <br /> 4. There will be total 3 winners at 3 positions.
-                                                                <br /> 5. The judgement of judges will be final.
-                                                                <br /> 6. The content of each participant should be of minimum 2
-                                                                minutes and maximum 3 minutes .
-                                                                <br /> 7. The content presented is to be self written.
-                                                                <br /> 8. The content should be decent, and it should not be
-                                                                delivering any offensive message.
+                                                                <li>Maximum time of performance will be of 7 minutes and the warning bell ring after 4 minutes.</li>
+                                                                <li>A team can have a maximum of 4 members.</li>
+                                                                <li>Folk song will not be sung on the recorded music of instruments.</li>
+                                                                <li>In Folk song performance western instruments are not allowed, the allowed instruments are like tumbi, sarngi, algoze, vanjli, dhad, dhol, dholki, gharha, chimta, bugdu or bugchu, garhwa, hamel, khartal, been, sankh, ngara etc.</li>
+                                                                <li>Use of Harmonium is allowed.</li>
+                                                                <li>Entry fee is 300 Rupees per team.</li>
                                                             </p>
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 8,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 16,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: 150 INR/- per person(for
+                                                            <span style={{ color: 'white' }}>Date: 9th<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: 300 INR/- per person(for
                                                                 external
                                                                 participant)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/-
                                                                 per student(for NITJ student) </span> <br /><br />

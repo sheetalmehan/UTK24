@@ -57,11 +57,11 @@ export default function Animation() {
                                         className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} data-toggle="tab" href="#step-one" id="tab-onr" role="tab"> COSCON </a>
                                 </li>
                                 {/* Nav Item */}
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <a aria-controls="step-two" aria-expanded="true" onClick={() => handleTabClick('step-2')}
 
                                         className={`nav-link ${activeTab === 'step-2' ? 'active' : ''}`} data-toggle="tab" href="#step-two" id="tab-two" role="tab"> EXHIBITION </a>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                         {/* Tab Content */}
@@ -86,35 +86,37 @@ export default function Animation() {
                                                             and win exciting prizes.</p><br />
                                                         <h6 style={{ color: 'white' }}>Rules:</h6>
                                                         <p>
-                                                            1. In the Registration process itself, Students have to submit
-                                                            their video of 2-3 min. A list of shortlisted students will
-                                                            perform on stage at NITJ on UTKANSH.<br />
-                                                            2. Participants can perform in Hindi and English language only
-                                                            within 3 minutes after which 20% marks will be deducted after 10
-                                                            seconds and disqualification may occur after 20 seconds.( any
-                                                            number as time is fixed ).<br />
-                                                            3. Participants can perform with instrumental accompaniment or
-                                                            with a backing track but the judging will be done solely on the
-                                                            basis of vocal performance.<br />
-                                                            4. Performers can be disqualified on the spot for misconduct,
-                                                            obscenity or foul language. Judging will be done solely on the
-                                                            basis of vocal performance. <br /><br />
-                                                            <b style={{ color: 'white' }}>Judging Criteria:</b><br />
+                                                           <li> Register for the competition through the online registration link.</li>
+                                                           <li> Don on your favorite costume on Day 1 and Day 2 of Utkansh.</li>
+                                                           <li> Complete the registration by visiting our stall on & receive your wristband.</li>
+                                                           <li> Explore COS-CON by visiting the various photo zones and attractions.</li>
+                                                           <li> Create the best photo/video media content in your costume.</li>
+                                                           <li> Scan the QR code on your wristband and submit your media entries.</li>
+                                                           <li> The top 3 costumes will be awarded amazing prizes worth 10k INR!</li>
+                                                           <li> Participate in fun & games and receive exciting freebies and coupons!</li>
+                                                           <li> Get creative, keep in mind the event guidelines and have fun at COS-CON!</li>
+                                                           <li> Participants must dress respectfully; any form of indecency will result in the immediate disqualification from the event. Hence, if the participants feel like any costume might be considered vulgar or indecent, they are strongly advised to consult the event coordinators.</li>
+                                                           <li> We have zero tolerance for nudity: costumes which give the illusion of nudity are also not permitted.</li>
+                                                           <li> Costumes must not be offensive to public, political or religious sentiments; any violators will be held accountable and disqualified immediately.</li>
+                                                           <li> Participants planning to use props must get prior permission from the organizers; fire, explosives, liquids, realistic weapons such as firearms or blades, chemicals and other hazardous materials are prohibited.</li>
+                                                           <li> Event organizers have the complete authority to disqualify or take action against the participations in case of any violations.</li>
+                                                           <li> Act responsibly and be considerate to fellow participants and organizers. Any act of indecency or violence, threats of violence or intimidation towards anyone including</li>
+                                                           <li> participants, organizers, attendees etc., will result in immediate disqualification.</li>
+                                                            <li> All participants must have their valid college IDs during COS-CON.</li>
+                                                            <br/>
+                                                            {/* <b style={{ color: 'white' }}>Judging Criteria:</b><br />
                                                             • Quality of voice<br />
                                                             • Sense of scale and beat<br />
                                                             • Improvisation<br />
                                                             • Pronunciation of lyrics<br />
                                                             • Mood and expression<br />
-                                                            • Overall impact<br /><br />
+                                                            • Overall impact<br /><br /> */}
                                                             <span style={{ color: 'white' }}><b>Prize Pool: 6,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March</span><br />
+                                                            <span style={{ color: 'white' }}>Date: 8-10<sup>th</sup> March</span><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: 200/- per participation(for
-                                                                external
-                                                                participant)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/-
-                                                                per student(for NITJ student) </span> <br /><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: Not disclosed. </span> <br /><br />
                                                         </p>
                                                     </div>
                                                 </div>

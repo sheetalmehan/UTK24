@@ -107,8 +107,8 @@ export default function Sanskriti() {
                                                                 • Teams will be given a maximum of 10 minutes to perform their
                                                                 staging.<br /><br />
                                                                 <span style={{ color: 'white' }}><b>Prize Pool: INR
-                                                                    12,000/-</b></span><br /><br />
-                                                                <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March</span><br />
+                                                                    7,000/-</b></span><br /><br />
+                                                                <span style={{ color: 'white' }}>Date: 9<sup>th</sup> March</span><br />
                                                                 <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                                 </span><br /><br />
                                                                 <span style={{ color: 'white' }}>Entry Fee: 500/- per team(for external
