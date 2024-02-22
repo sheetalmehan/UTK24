@@ -119,7 +119,7 @@ export default function Quest() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="qst0" name="COGNITO">Register
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register
                                                     </a>
                                                 </div>
                                             </div>
@@ -180,7 +180,7 @@ export default function Quest() {
                                                                 <br />
                                                             </p>
                                                         </div>
-                                                        <a className="btn confer-btn" id="qst1" name="MONEY GPT">Register
+                                                        <a className="btn confer-btn" onClick={handleClick}>Register
                                                         </a>
                                                     </div>
                                                     {/* Single Schedule Info */}

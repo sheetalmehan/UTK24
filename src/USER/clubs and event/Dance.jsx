@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 // import './css/bootstrap.min.css';
 import { useNavigate } from "react-router-dom";
 // Import all stylesheets
@@ -12,7 +12,7 @@ import '../css/div_comming_css.css'
 const Dance = () => {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('step-one');
-   
+
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d596a5858e414584423a',
@@ -46,7 +46,7 @@ const Dance = () => {
                 maxParticipants: 100
             });
         }
-       
+
 
     };
     const handleClick = () => {
@@ -54,7 +54,7 @@ const Dance = () => {
         navigate("/event/registerinevent", { state: { ...eventdetails } });
     };
 
-    
+
     return (
         <div>
             {/* <div className="cd-overlay-nav">
@@ -67,9 +67,9 @@ const Dance = () => {
 
             {/* <a href="dance.html#0" className="cd-nav-trigger">Menu<span className="cd-icon"></span></a> */}
 
-           
+
             <section className="our-schedule-area">
-            <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Dance Club</h1>
+                <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Dance Club</h1>
 
                 <div className="container">
                     <div className="row">
@@ -149,7 +149,7 @@ const Dance = () => {
                                                                     7. The decision of the judges and the organizing team shall be final and binding.<br /><br />
 
                                                                     <br />
-                                                                    
+
                                                                     <span style={{ color: 'white' }}><b>Prize Pool: INR 7,000/-</b></span><br /><br />
 
                                                                     <span style={{ color: 'white' }}>
@@ -166,8 +166,8 @@ const Dance = () => {
                                                             </div>
                                                         </div>
                                                         {/* Schedule Btn */}
-                                                        {/* <a name="BEAT THE STREET - Solo Face Off" id="da0" className="btn confer-btn">Register </a> */}
-                                                        <p><br />On Spot Registration!</p>
+                                                        <a onClick={handleClick} className="btn confer-btn">Register </a>
+                                                        {/* <p><br />On Spot Registration!</p> */}
                                                         {/* <a name="Face-Off" id="da0" className="btn confer-btn">Register </a> */}
                                                     </div>
                                                 </div>
@@ -245,7 +245,9 @@ const Dance = () => {
                                                                     Note: Reach 1 day prior to the venue.<br /><br />
                                                                 </span>
                                                                 <br />
-                                                                <p><br />On Spot Registration!</p>
+                                                                {/* <p><br />On Spot Registration!</p> */}
+                                                                <a className="btn confer-btn" onClick={handleClick}>Register </a>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -321,7 +323,7 @@ const Dance = () => {
                                                         </div>
                                                     </div>
                                                     {/* Schedule Btn */}
-                                                    <a name="SHUT UP ‘N’ DANCE - Group Dance" id="da2" className="btn confer-btn"onClick={handleClick} >Register </a>
+                                                    <a className="btn confer-btn" onClick={handleClick} >Register </a>
                                                 </div>
                                             </div>
                                             {/* Single Schedule Area */}

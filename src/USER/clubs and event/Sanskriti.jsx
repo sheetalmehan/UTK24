@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function Sanskriti() {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('step-one');
-   
+
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5b945a8d0fcbeb3c7c1d6',
@@ -25,7 +25,7 @@ export default function Sanskriti() {
                 maxParticipants: 4
             });
         }
-       
+
     };
     const handleClick = () => {
         console.log("clicked", eventdetails);
@@ -36,11 +36,11 @@ export default function Sanskriti() {
 
     return (
         <div>
-            
-          
+
+
             <section className="our-schedule-area">
-            <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Sanskriti Club</h1>
-           
+                <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Sanskriti Club</h1>
+
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
@@ -119,7 +119,7 @@ export default function Sanskriti() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a name="Cultural Exhibition" id="sans0" className="btn confer-btn">Register
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register
                                                     </a>
                                                 </div>
                                             </div>

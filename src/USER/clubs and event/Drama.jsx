@@ -254,7 +254,7 @@ const Drama = () => {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="dr0" name="Hallabol - Nukkad Natak" onClick={handleClick}>Register</a>
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register</a>
                                                 </div>
                                             </div>
                                             {/* More Schedule Btn */}
@@ -317,7 +317,7 @@ const Drama = () => {
                                                                 <br />
                                                             </p>
                                                         </div>
-                                                        <a className="btn confer-btn" id="dr1" name="Rangmanch - stage play" onClick={handleClick}>Register</a>
+                                                        <a className="btn confer-btn" onClick={handleClick}>Register</a>
                                                     </div>
                                                     {/* Single Schedule Info */}
 
@@ -389,7 +389,8 @@ const Drama = () => {
                                                     </div>
 
                                                     {/* Schedule Btn */}
-                                                    <span style={{ color: 'white' }}>On Spot Registrations. </span><br /><br />
+                                                    {/* <span style={{ color: 'white' }}>On Spot Registrations. </span><br /><br /> */}
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register</a>
                                                     {/* <a className="btn confer-btn" id="dr2" name="Monoact">Register </a> */}
                                                 </div>
 
@@ -448,7 +449,7 @@ const Drama = () => {
                                                     {/* Single Schedule Info */}
 
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="dr3" name="MIME" onClick={handleClick}>Register </a>
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -500,7 +501,7 @@ const Drama = () => {
                                                     {/* Single Schedule Info */}
 
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="dr3" name="MIME">Register </a>
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -559,7 +560,8 @@ const Drama = () => {
                                                                     <br />
                                                                 </p>
                                                             </div>
-                                                            <a className="btn confer-btn" id="dr1" name="Rangmanch - stage play" onClick={handleClick}>Register</a>
+                                                            <a className="btn confer-btn" onClick={handleClick}>Register</a>
+
                                                         </div>
                                                     </div>
                                                 </div>

@@ -148,7 +148,7 @@ export default function PhotoClub() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a name="DRISHYA" href="../eventregister.html" id="netra0" className="btn confer-btn">Register </a>
+                                                    <a onClick={handleClick} className="btn confer-btn">Register </a>
                                                 </div>
                                             </div>
                                             {/* More Schedule Btn */}
@@ -194,7 +194,7 @@ export default function PhotoClub() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a name="NAZARIYA" id="netra1" className="btn confer-btn">Register </a>
+                                                    <a onClick={handleClick} className="btn confer-btn">Register </a>
                                                 </div>
                                             </div>
                                             {/* More Schedule Btn */}
@@ -237,6 +237,8 @@ export default function PhotoClub() {
                                                         </div>
                                                     </div>
                                                     {/* Schedule Btn */}
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register</a>
+
                                                     {/* <a name="SNAP TREASURE" id="ne4" className="btn confer-btn">Register </a> */}
                                                 </div>
                                                 {/* Single Schedule Area */}
@@ -290,6 +292,7 @@ export default function PhotoClub() {
 
                                                         </div>
                                                     </div>
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register</a>
                                                 </div>
                                             </div>
                                         </div>

@@ -11,7 +11,7 @@ import '../css/div_comming_css.css'
 export default function RLC() {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('step-1');
-   
+
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5b86ea8d0fcbeb3c7c1cd',
@@ -38,7 +38,7 @@ export default function RLC() {
                 maxParticipants: 100
             });
         }
-       
+
 
     };
     const handleClick = () => {
@@ -48,10 +48,10 @@ export default function RLC() {
 
     return (
         <div>
-           {/* Our Schedule Area Start */}
+            {/* Our Schedule Area Start */}
             <section className="our-schedule-area">
-            <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Regional Language Club</h1>
-            
+                <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Regional Language Club</h1>
+
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
@@ -94,7 +94,7 @@ export default function RLC() {
                             </div>
                             {/* Tab Content */}
                             <div className="tab-content" id="conferScheduleTabContent">
-                                {activeTab==='step-1' &&<div className="tab-pane fade show active" id="step-one" role="tabpanel" aria-labelledby="monday-tab">
+                                {activeTab === 'step-1' && <div className="tab-pane fade show active" id="step-one" role="tabpanel" aria-labelledby="monday-tab">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -140,14 +140,14 @@ export default function RLC() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a name="MEHFIL" id="ra0" className="btn confer-btn">Register </a>
+                                                    <a onClick={handleClick} className="btn confer-btn">Register </a>
                                                 </div>
                                             </div>
                                             {/* More Schedule Btn */}
                                         </div>
                                     </div>
                                 </div>}
-                                {activeTab==='step-2' &&<div className="tab-pane fade show active" id="step-two" role="tabpanel" aria-labelledby="monday-tab">
+                                {activeTab === 'step-2' && <div className="tab-pane fade show active" id="step-two" role="tabpanel" aria-labelledby="monday-tab">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -192,14 +192,14 @@ export default function RLC() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a name="PRAGHYANSH" id="ra1" className="btn confer-btn">Register </a>
+                                                    <a onClick={handleClick} className="btn confer-btn">Register </a>
                                                 </div>
                                             </div>
                                             {/* More Schedule Btn */}
                                         </div>
                                     </div>
                                 </div>}
-                                {activeTab==='step-3' &&<div className="tab-pane fade show active" id="step-three" role="tabpanel" aria-labelledby="monday-tab">
+                                {activeTab === 'step-3' && <div className="tab-pane fade show active" id="step-three" role="tabpanel" aria-labelledby="monday-tab">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -249,14 +249,14 @@ export default function RLC() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a name="PATROKAR BABU" id="ra2" className="btn confer-btn">Register </a>
+                                                    <a onClick={handleClick} className="btn confer-btn">Register </a>
                                                 </div>
                                             </div>
                                             {/* More Schedule Btn */}
                                         </div>
                                     </div>
                                 </div>}
-                                {activeTab==='step-4' &&<div className="tab-pane fade show active" id="step-four" role="tabpanel" aria-labelledby="monday-tab">
+                                {activeTab === 'step-4' && <div className="tab-pane fade show active" id="step-four" role="tabpanel" aria-labelledby="monday-tab">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -284,6 +284,8 @@ export default function RLC() {
                                                             {/* <span style="color:white">Reach 1 day prior to your event. </span><br><br>  */}
                                                         </div>
                                                     </div>
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register</a>
+
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
                                                     {/* <a name="Pragyansh" id="ra3" className="btn confer-btn">Register </a> */}
@@ -293,7 +295,7 @@ export default function RLC() {
                                         </div>
                                     </div>
                                 </div>}
-                                {activeTab==='step-5' &&<div className="tab-pane fade show active" id="step-five" role="tabpanel" aria-labelledby="monday-tab">
+                                {activeTab === 'step-5' && <div className="tab-pane fade show active" id="step-five" role="tabpanel" aria-labelledby="monday-tab">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -322,6 +324,8 @@ export default function RLC() {
                                                             {/* <span style="color:white">Reach 1 day prior to your event. </span><br><br>  */}
                                                         </div>
                                                     </div>
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register</a>
+
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
                                                     {/* <a name="JASHN-E-UTKANSH" id="ra5"
@@ -331,7 +335,7 @@ export default function RLC() {
                                         </div>
                                     </div>
                                 </div>}
-                                {activeTab==='step-6' &&<div className="tab-pane fade show active" id="step-six" role="tabpanel" aria-labelledby="monday-tab">
+                                {activeTab === 'step-6' && <div className="tab-pane fade show active" id="step-six" role="tabpanel" aria-labelledby="monday-tab">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -360,6 +364,8 @@ export default function RLC() {
                                                             {/* <span style="color:white">Reach 1 day prior to your event. </span><br><br>  */}
                                                         </div>
                                                     </div>
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register</a>
+
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
                                                     {/* <a name="Kavya Kala" id="ra7" className="btn confer-btn">Register </a> */}
@@ -378,13 +384,6 @@ export default function RLC() {
                 {/* <div className="p-2"><h4>Rahul kumar Ranjan</h4>  <h5>+916280349542</h5></div>
     <div className="p-2"><h4>Sombir Singh</h4>  <h5>+916284192596</h5></div> */}
             </div>
-            {/* **** All JS Files ***** */}
-            {/* jQuery 2.2.4 */}
-            {/* Bootstrap */}
-            {/* All Plugins */}
-            {/* Active */}
-            {/* NAvbar jQuery */}
-            {/* Resource jQuery */}
         </div>
 
     )

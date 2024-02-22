@@ -11,7 +11,7 @@ import '../css/div_comming_css.css'
 export default function Animation() {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('step-1');
-   
+
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5e550d6dab049c797fe5c',
@@ -31,7 +31,7 @@ export default function Animation() {
                 maxParticipants: 100
             });
         }
-       
+
     };
     const handleClick = () => {
         console.log("clicked", eventdetails);
@@ -86,24 +86,24 @@ export default function Animation() {
                                                             and win exciting prizes.</p><br />
                                                         <h6 style={{ color: 'white' }}>Rules:</h6>
                                                         <p>
-                                                           <li> Register for the competition through the online registration link.</li>
-                                                           <li> Don on your favorite costume on Day 1 and Day 2 of Utkansh.</li>
-                                                           <li> Complete the registration by visiting our stall on & receive your wristband.</li>
-                                                           <li> Explore COS-CON by visiting the various photo zones and attractions.</li>
-                                                           <li> Create the best photo/video media content in your costume.</li>
-                                                           <li> Scan the QR code on your wristband and submit your media entries.</li>
-                                                           <li> The top 3 costumes will be awarded amazing prizes worth 10k INR!</li>
-                                                           <li> Participate in fun & games and receive exciting freebies and coupons!</li>
-                                                           <li> Get creative, keep in mind the event guidelines and have fun at COS-CON!</li>
-                                                           <li> Participants must dress respectfully; any form of indecency will result in the immediate disqualification from the event. Hence, if the participants feel like any costume might be considered vulgar or indecent, they are strongly advised to consult the event coordinators.</li>
-                                                           <li> We have zero tolerance for nudity: costumes which give the illusion of nudity are also not permitted.</li>
-                                                           <li> Costumes must not be offensive to public, political or religious sentiments; any violators will be held accountable and disqualified immediately.</li>
-                                                           <li> Participants planning to use props must get prior permission from the organizers; fire, explosives, liquids, realistic weapons such as firearms or blades, chemicals and other hazardous materials are prohibited.</li>
-                                                           <li> Event organizers have the complete authority to disqualify or take action against the participations in case of any violations.</li>
-                                                           <li> Act responsibly and be considerate to fellow participants and organizers. Any act of indecency or violence, threats of violence or intimidation towards anyone including</li>
-                                                           <li> participants, organizers, attendees etc., will result in immediate disqualification.</li>
+                                                            <li> Register for the competition through the online registration link.</li>
+                                                            <li> Don on your favorite costume on Day 1 and Day 2 of Utkansh.</li>
+                                                            <li> Complete the registration by visiting our stall on & receive your wristband.</li>
+                                                            <li> Explore COS-CON by visiting the various photo zones and attractions.</li>
+                                                            <li> Create the best photo/video media content in your costume.</li>
+                                                            <li> Scan the QR code on your wristband and submit your media entries.</li>
+                                                            <li> The top 3 costumes will be awarded amazing prizes worth 10k INR!</li>
+                                                            <li> Participate in fun & games and receive exciting freebies and coupons!</li>
+                                                            <li> Get creative, keep in mind the event guidelines and have fun at COS-CON!</li>
+                                                            <li> Participants must dress respectfully; any form of indecency will result in the immediate disqualification from the event. Hence, if the participants feel like any costume might be considered vulgar or indecent, they are strongly advised to consult the event coordinators.</li>
+                                                            <li> We have zero tolerance for nudity: costumes which give the illusion of nudity are also not permitted.</li>
+                                                            <li> Costumes must not be offensive to public, political or religious sentiments; any violators will be held accountable and disqualified immediately.</li>
+                                                            <li> Participants planning to use props must get prior permission from the organizers; fire, explosives, liquids, realistic weapons such as firearms or blades, chemicals and other hazardous materials are prohibited.</li>
+                                                            <li> Event organizers have the complete authority to disqualify or take action against the participations in case of any violations.</li>
+                                                            <li> Act responsibly and be considerate to fellow participants and organizers. Any act of indecency or violence, threats of violence or intimidation towards anyone including</li>
+                                                            <li> participants, organizers, attendees etc., will result in immediate disqualification.</li>
                                                             <li> All participants must have their valid college IDs during COS-CON.</li>
-                                                            <br/>
+                                                            <br />
                                                             {/* <b style={{ color: 'white' }}>Judging Criteria:</b><br />
                                                             • Quality of voice<br />
                                                             • Sense of scale and beat<br />

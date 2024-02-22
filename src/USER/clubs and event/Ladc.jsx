@@ -145,7 +145,7 @@ export default function Ladc() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="ladc0" name="HAIKU"  onclick={handleClick}>Register
+                                                    <a className="btn confer-btn" id="ladc0" name="HAIKU"  onClick={handleClick}>Register
                                                     </a>
                                                 </div>
                                             </div>
@@ -192,7 +192,7 @@ export default function Ladc() {
                                                                 <br />
                                                             </p>
                                                         </div>
-                                                        <a className="btn confer-btn" id="ladc1" name="OPEN MIC" onclick={handleClick}>Register
+                                                        <a className="btn confer-btn" id="ladc1" name="OPEN MIC" onClick={handleClick}>Register
                                                         </a>
                                                     </div>
                                                     {/* Single Schedule Info */}
@@ -253,7 +253,7 @@ export default function Ladc() {
                                                         </div>
                                                     </div>
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="ladc2" name="VOXWARS" onclick={handleClick}>Register </a>
+                                                    <a className="btn confer-btn" id="ladc2" name="VOXWARS" onClick={handleClick}>Register </a>
                                                 </div>
                                                 {/* Single Schedule Area */}
                                             </div>
@@ -307,7 +307,7 @@ export default function Ladc() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="ladc3" name="JUDGY" onclick={handleClick}>Register </a>
+                                                    <a className="btn confer-btn" id="ladc3" name="JUDGY" onClick={handleClick}>Register </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -376,7 +376,7 @@ export default function Ladc() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="ladc4" name="SECRET JAR" onclick={handleClick}>Register </a>
+                                                    <a className="btn confer-btn" id="ladc4" name="SECRET JAR" onClick={handleClick}>Register </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -428,7 +428,7 @@ export default function Ladc() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="ladc5" name="CARPE DIEM" onclick={handleClick}>Register </a>
+                                                    <a className="btn confer-btn" id="ladc5" name="CARPE DIEM" onClick={handleClick}>Register </a>
                                                 </div>
                                             </div>
                                         </div>

@@ -48,10 +48,6 @@ const BhangraClub = () => {
 
     return (
         <div>
-
-
-
-
             <section className="our-schedule-area">
 
                 <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">
@@ -115,7 +111,7 @@ const BhangraClub = () => {
                                                         </div>
 
                                                     </div>
-                                                    <a name="Folk Lore" id="bh0" className="btn confer-btn" onCanPlay={handleClick}>Register </a>
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register </a>
 
                                                 </div>
                                             </div>
