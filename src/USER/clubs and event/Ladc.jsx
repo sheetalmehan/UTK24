@@ -10,7 +10,7 @@ import '../css/style.css';
 import '../css/div_comming_css.css'
 export default function Ladc() {
     const navigate = useNavigate();
-    const [activeTab, setActiveTab] = useState('step-one');
+    const [activeTab, setActiveTab] = useState('step-1');
    
 
     const [eventdetails, setEventdetails] = useState({
@@ -81,7 +81,7 @@ export default function Ladc() {
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-3')}
 
-                                            className={`nav-link ${activeTab === 'step-3' ? 'active' : ''}`} id="tab-three" data-toggle="tab" href="#step-three" role="tab" aria-controls="step-three" aria-expanded="true">DEBATE LEAGUE</a>
+                                            className={`nav-link ${activeTab === 'step-3' ? 'active' : ''}`} id="tab-three" data-toggle="tab" href="#step-three" role="tab" aria-controls="step-three" aria-expanded="true">VOXWARS</a>
                                     </li>
                                     {/* Nav Item */}
                                     {/* <li className="nav-item">
@@ -135,17 +135,17 @@ export default function Ladc() {
                                                                 stories for the time in which the previous participants will be
                                                                 reciting their masterpieces.<br /> <br />
                                                                 <span style={{ color: 'white' }}><b>Prize Pool: INR
-                                                                    3,000/-</b></span><br /><br />
-                                                                <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March</span><br />
+                                                                    4,000/-</b></span><br /><br />
+                                                                <span style={{ color: 'white' }}>Date: 10<sup>th</sup> March</span><br />
                                                                 <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                                 </span><br /><br />
-                                                                <span style={{ color: 'white' }}>Entry Fee: FREE </span> <br /><br />
+                                                                <span style={{ color: 'white' }}>Entry Fee: Not disclosed. </span> <br /><br />
                                                             </p>
                                                         </div>
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="ladc0" name="HAIKU"  onclick={handleClick}>Register
+                                                    <a className="btn confer-btn" id="ladc0" name="HAIKU"  onClick={handleClick}>Register
                                                     </a>
                                                 </div>
                                             </div>
@@ -177,24 +177,22 @@ export default function Ladc() {
                                                             </p>
                                                             <h6 style={{ color: 'white' }}>Rules:</h6>
                                                             <p>
-                                                                <br />1. Each round will consist of 10 participants at max.
-                                                                <br />2. Each participant is given a page from a book that is
-                                                                selected at random.
-                                                                <br />3. The participant is given 10 minutes to black out words.
-                                                                The words that are left should form a poem.<br />
+                                                               <li> A total of 5 minutes per speaker will be allotted.</li>
+                                                               <li> Literary-related stuff, such as poetry, college-related anecdotes, storytelling, and jokes, is allowed, but no singing.</li>
+                                                               <li> It's not a competition but a reward-based event</li>
                                                             </p>
                                                             <br />
                                                             <p style={{ color: 'white' }}>
                                                                 <span style={{ color: 'white' }}><b>Prize Pool: INR
-                                                                    3,000/-</b></span><br /><br />
-                                                                <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March</span><br />
+                                                                    4,000/-</b></span><br /><br />
+                                                                <span style={{ color: 'white' }}>Date: 10<sup>th</sup> March</span><br />
                                                                 <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                                 </span><br /><br />
-                                                                <span style={{ color: 'white' }}>Entry Fee: FREE </span> <br /><br />
+                                                                <span style={{ color: 'white' }}>Entry Fee: Not disclosed. </span> <br /><br />
                                                                 <br />
                                                             </p>
                                                         </div>
-                                                        <a className="btn confer-btn" id="ladc1" name="OPEN MIC" onclick={handleClick}>Register
+                                                        <a className="btn confer-btn" id="ladc1" name="OPEN MIC" onClick={handleClick}>Register
                                                         </a>
                                                     </div>
                                                     {/* Single Schedule Info */}
@@ -218,10 +216,10 @@ export default function Ladc() {
                                                         {/* Single Schedule Thumb */}
                                                         {/* Single Schedule Info */}
                                                         <div className="single-schedule-info">
-                                                            <h3>DEBATE LEAGUE </h3>
+                                                            <h3>VOXWARS </h3>
                                                             <p>
                                                                 Oratorio is a series of mini-events all revolving around
-                                                                literature, oration, and pure fun. In DEBATE LEAGUE every
+                                                                literature, oration, and pure fun. In VOXWARS every
                                                                 contestant will have a panel before them. They have to convince
                                                                 the panel as to why their favorite book is worth a read!
                                                                 Convince your way into the panel's heart!
@@ -229,25 +227,33 @@ export default function Ladc() {
                                                             </p>
                                                             <h6 style={{ color: 'white' }}>Rules:</h6>
                                                             <p>
-                                                                <br />1. We will have a total of 5 rounds.
-                                                                <br />2. Each round will have 10 people at random.
-                                                                <br />3. Cover Pages of the books will be given, and no two same
-                                                                cover pages will be given to the people from the same round.
-                                                                <br />4. The time limit to think will be 1 min and to speak will
-                                                                again be a minute<br /><br />
+                                                                <li>Three speakers for each team.</li>
+                                                                <li>For substantive speeches, 3 minutes. One knock at the 45 secs, another at the 2nd minute and 30 secs and final knocks at 3 mins.</li>
+                                                                <li>POIs allowed during substantive speeches.</li>
+                                                                <li>For reply, 1 minute , 30 secs. One knock at the end of time duration.</li>
+                                                                <li>No POIs allowed during reply speeches.</li>
+                                                                <li>Speaker’s role attached.</li>
+                                                                <li>Adjudication functions are also attached.</li>
+                                                                <li>Motions will revolve around various theme and time of preparation will be 30 minutes.</li>
+                                                                <li>There will be a preliminary rounds and followed by semi final and grand final.</li>
+                                                                <li>Match up for preliminary will be made based on random order.</li>
+                                                                <li>This will be a knockout competition.</li>
+                                                                <li>In the preliminary and elimination round, sides (government or opposition) will be determined by coin toss.</li>
+                                                                <li>Adjudicators’ decision cannot be cancelled, but we can seek for responsibility.</li>
+                                                                <li>Case-building may not involve anyone other than the three team members.</li>
                                                             </p><p style={{ color: 'white' }}>
                                                                 <span style={{ color: 'white' }}><b>Prize Pool: INR
-                                                                    3,000/-</b></span><br /><br />
-                                                                Date: 24<sup>th</sup> March<br />
+                                                                    7,000/-</b></span><br /><br />
+                                                                Date: 8-9<sup>th</sup> March<br />
                                                                 <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                                 </span><br /><br />
-                                                                <span style={{ color: 'white' }}>Entry Fee: FREE </span> <br /><br />
+                                                                <span style={{ color: 'white' }}>Entry Fee: 200/- per person(for external students)<br/>*Free for NITJ Students. </span> <br /><br />
                                                             </p><br /><br />
                                                             <p />
                                                         </div>
                                                     </div>
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="ladc2" name="DEBATE LEAGUE" onclick={handleClick}>Register </a>
+                                                    <a className="btn confer-btn" id="ladc2" name="VOXWARS" onClick={handleClick}>Register </a>
                                                 </div>
                                                 {/* Single Schedule Area */}
                                             </div>
@@ -301,7 +307,7 @@ export default function Ladc() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="ladc3" name="JUDGY" onclick={handleClick}>Register </a>
+                                                    <a className="btn confer-btn" id="ladc3" name="JUDGY" onClick={handleClick}>Register </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -370,7 +376,7 @@ export default function Ladc() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="ladc4" name="SECRET JAR" onclick={handleClick}>Register </a>
+                                                    <a className="btn confer-btn" id="ladc4" name="SECRET JAR" onClick={handleClick}>Register </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -422,7 +428,7 @@ export default function Ladc() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="ladc5" name="CARPE DIEM" onclick={handleClick}>Register </a>
+                                                    <a className="btn confer-btn" id="ladc5" name="CARPE DIEM" onClick={handleClick}>Register </a>
                                                 </div>
                                             </div>
                                         </div>

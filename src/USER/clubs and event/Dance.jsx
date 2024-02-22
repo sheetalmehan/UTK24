@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 // import './css/bootstrap.min.css';
 import { useNavigate } from "react-router-dom";
 // Import all stylesheets
@@ -12,7 +12,7 @@ import '../css/div_comming_css.css'
 const Dance = () => {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('step-one');
-   
+
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d596a5858e414584423a',
@@ -46,7 +46,7 @@ const Dance = () => {
                 maxParticipants: 100
             });
         }
-       
+
 
     };
     const handleClick = () => {
@@ -54,7 +54,7 @@ const Dance = () => {
         navigate("/event/registerinevent", { state: { ...eventdetails } });
     };
 
-    
+
     return (
         <div>
             {/* <div className="cd-overlay-nav">
@@ -67,9 +67,9 @@ const Dance = () => {
 
             {/* <a href="dance.html#0" className="cd-nav-trigger">Menu<span className="cd-icon"></span></a> */}
 
-           
+
             <section className="our-schedule-area">
-            <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Dance Club</h1>
+                <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Dance Club</h1>
 
                 <div className="container">
                     <div className="row">
@@ -148,18 +148,17 @@ const Dance = () => {
                                                                     6. Obscenity of any kind is not allowed and will lead to immediate disqualification.<br />
                                                                     7. The decision of the judges and the organizing team shall be final and binding.<br /><br />
 
-                                                                    {/* Judging Criteria:
-                    1) Participants shall be penalized for not adhering to the time
-                    limits.<br />
-                    2) Variety in the moves shown.<br />
-                    3) Clarity, Perfection, Difficulty level and Entertainment Quotient
-                    of the moves shown.<br />
-                    */}
                                                                     <br />
+
+                                                                    <span style={{ color: 'white' }}><b>Prize Pool: INR 7,000/-</b></span><br /><br />
+
                                                                     <span style={{ color: 'white' }}>
-                                                                        Date: 25<sup>th</sup> March<br />
+                                                                        Date: 9<sup>th</sup> March<br />
                                                                         Note: Reach 1 day prior to the venue.<br />
                                                                         Registration date: On spot registration. <br />
+                                                                        Entry Fee: 200/- per person(for external participant)<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/- per student(for NITJ student)<br />
+                                                                        Note: Reach 1 day prior to the venue.<br /><br />
                                                                     </span>
 
                                                                     <br />
@@ -167,8 +166,8 @@ const Dance = () => {
                                                             </div>
                                                         </div>
                                                         {/* Schedule Btn */}
-                                                        {/* <a name="BEAT THE STREET - Solo Face Off" id="da0" className="btn confer-btn">Register </a> */}
-                                                        <p><br />On Spot Registration!</p>
+                                                        <a onClick={handleClick} className="btn confer-btn">Register </a>
+                                                        {/* <p><br />On Spot Registration!</p> */}
                                                         {/* <a name="Face-Off" id="da0" className="btn confer-btn">Register </a> */}
                                                     </div>
                                                 </div>
@@ -235,12 +234,20 @@ const Dance = () => {
                                                                     • Making their performance unconventional. (e.g., boys doing belly dance)<br /><br />
                                                                 </p>
 
-                                                                <p style={{ color: 'white' }}>
-                                                                    Date: 26<sup>th</sup> March<br />
+                                                                <span style={{ color: 'white' }}><b>Prize Pool: INR 7,000/-</b></span><br /><br />
+
+                                                                <span style={{ color: 'white' }}>
+                                                                    Date: 10<sup>th</sup> March<br />
                                                                     Note: Reach 1 day prior to the venue.<br />
-                                                                </p>
+                                                                    Registration date: On spot registration. <br />
+                                                                    Entry Fee: 200/- per person(for external participant)<br />
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/- per student(for NITJ student)<br />
+                                                                    Note: Reach 1 day prior to the venue.<br /><br />
+                                                                </span>
                                                                 <br />
-                                                                <p><br />On Spot Registration!</p>
+                                                                {/* <p><br />On Spot Registration!</p> */}
+                                                                <a className="btn confer-btn" onClick={handleClick}>Register </a>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -308,15 +315,15 @@ const Dance = () => {
 
                                                                 </p>
                                                                 <span style={{ color: 'white' }}><b>Prize Pool: INR 18,000/-</b></span><br /><br />
-                                                                Date: 24<sup>th</sup> March<br />
-                                                                Entry Fee: 1500/- per team(for external participant)<br />
+                                                                Date: 8<sup>th</sup> March<br />
+                                                                Entry Fee: 120/- per person(for external participant)<br />
                                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/- per student(for NITJ student)<br />
                                                                 Note: Reach 1 day prior to the venue.<br /><br />
                                                             </div>
                                                         </div>
                                                     </div>
                                                     {/* Schedule Btn */}
-                                                    <a name="SHUT UP ‘N’ DANCE - Group Dance" id="da2" className="btn confer-btn"onClick={handleClick} >Register </a>
+                                                    <a className="btn confer-btn" onClick={handleClick} >Register </a>
                                                 </div>
                                             </div>
                                             {/* Single Schedule Area */}
@@ -332,23 +339,6 @@ const Dance = () => {
             <div className="d-flex justify-content-around mb-3">
                 {/* Contact information */}
             </div>
-
-            {/* Include other scripts as needed */}
-            {/* <script src="../js/jquery.min.js"></script>
-            <script src="../js/bootstrap.min.js"></script>
-            <script src="../js/confer.bundle.js"></script>
-            <script src="../js/active.js"></script>
-            <script src="../js/jquery-2.1.1.js"></script>
-            <script src="../js/velocity.min.js"></script>
-            <script src="../js/main.js"></script>
-            <script type='text/javascript' src='../js/jquery.js'></script>
-            <script type='text/javascript' src='../js/masonry.pkgd.min.js'></script>
-            <script type='text/javascript' src='../js/jquery.collapsible.min.js'></script>
-            <script type='text/javascript' src='../js/swiper.min.js'></script>
-            <script type='text/javascript' src='../js/jquery.countdown.min.js'></script>
-            <script type='text/javascript' src='../js/circle-progress.min.js'></script>
-            <script type='text/javascript' src='../js/jquery.countTo.min.js'></script>
-            <script type='text/javascript' src='../js/custom.js'></script> */}
         </div>
 
 

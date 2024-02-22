@@ -128,7 +128,8 @@ const MerchandiseForm = () => {
                         <label htmlFor="quantity">Quantity</label>
                         <input type="number" id="quantity" name="quantity" min="1" max="10" onChange={handleChange} value={formData.quantity} required />
                         <div>
-                            Payable amount: ₹{formData.quantity * 350}
+                            {/* Payable amount: ₹{formData.quantity * 350} */}
+                            Payable amount: Not disclosed.
                         </div>
                         <p id="tshirt-message"></p>
                         <button style={{alignItems:'center'}} id="checkout-button" onClick={() => setPopup(true)} >

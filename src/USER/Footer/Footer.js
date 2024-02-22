@@ -19,8 +19,8 @@ const Footer = () => {
         {/* <li><a className="anchor" href="https://www.instagram.com/abhishek1108032022/"><FontAwesomeIcon icon={faTelegram} size="3x"/></a></li> */}
       </ul>
       {/* <div class="container"> */}
-        <div class="row footer_bottom justify-content-center">
-          <p class="">
+        <div className="row footer_bottom justify-content-center">
+          <p className="">
             Made with <FontAwesomeIcon icon={faHeart} /> by <a href="">WEB AND APP TEAM UTKANSH</a>
             <br></br> Copyright &copy; Utkansh
             <script>document.write(new Date().getFullYear());</script>

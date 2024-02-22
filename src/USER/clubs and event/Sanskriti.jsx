@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function Sanskriti() {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('step-one');
-   
+
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5b945a8d0fcbeb3c7c1d6',
@@ -25,7 +25,7 @@ export default function Sanskriti() {
                 maxParticipants: 4
             });
         }
-       
+
     };
     const handleClick = () => {
         console.log("clicked", eventdetails);
@@ -36,11 +36,11 @@ export default function Sanskriti() {
 
     return (
         <div>
-            
-          
+
+
             <section className="our-schedule-area">
-            <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Sanskriti Club</h1>
-           
+                <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Sanskriti Club</h1>
+
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
@@ -107,8 +107,8 @@ export default function Sanskriti() {
                                                                 • Teams will be given a maximum of 10 minutes to perform their
                                                                 staging.<br /><br />
                                                                 <span style={{ color: 'white' }}><b>Prize Pool: INR
-                                                                    12,000/-</b></span><br /><br />
-                                                                <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March</span><br />
+                                                                    7,000/-</b></span><br /><br />
+                                                                <span style={{ color: 'white' }}>Date: 9<sup>th</sup> March</span><br />
                                                                 <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                                 </span><br /><br />
                                                                 <span style={{ color: 'white' }}>Entry Fee: 500/- per team(for external
@@ -119,7 +119,7 @@ export default function Sanskriti() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a name="Cultural Exhibition" id="sans0" className="btn confer-btn">Register
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register
                                                     </a>
                                                 </div>
                                             </div>

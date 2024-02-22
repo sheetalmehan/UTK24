@@ -11,8 +11,8 @@ import '../css/style.css';
 import '../css/div_comming_css.css'
 export default function Rajbhasha() {
     const navigate = useNavigate();
-    const [activeTab, setActiveTab] = useState('step-one');
-   
+    const [activeTab, setActiveTab] = useState('step-1');
+
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d8d0a5858e4145844260',
@@ -60,7 +60,7 @@ export default function Rajbhasha() {
                 maxParticipants: 1
             });
         }
-       
+
 
     };
     const handleClick = () => {
@@ -70,10 +70,10 @@ export default function Rajbhasha() {
 
     return (
         <div>
-           {/* Our Schedule Area Start */}
+            {/* Our Schedule Area Start */}
             <section className="our-schedule-area">
-            <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Rajbhasha Samiti</h1>
-            
+                <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Rajbhasha Samiti</h1>
+
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
@@ -116,7 +116,7 @@ export default function Rajbhasha() {
                             </div>
                             {/* Tab Content */}
                             <div className="tab-content" id="conferScheduleTabContent">
-                                {activeTab==='step-1' &&<div className="tab-pane fade show active" id="step-one" role="tabpanel" aria-labelledby="monday-tab">
+                                {activeTab === 'step-1' && <div className="tab-pane fade show active" id="step-one" role="tabpanel" aria-labelledby="monday-tab">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -141,6 +141,7 @@ export default function Rajbhasha() {
                                                                 <b>
                                                                     <font size={4}> Event rules and guidelines</font>
                                                                 </b><br />
+
                                                                 <br /> 1.There is individual participation.
                                                                 <br /> 2. Students can present any poem, stand-up comedy, rap,
                                                                 Shayari or song etc. in Hindi language.
@@ -154,10 +155,10 @@ export default function Rajbhasha() {
                                                                 delivering any offensive message.
                                                             </p>
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 8,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 6,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 24<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: 150 INR/- per person(for
+                                                            <span style={{ color: 'white' }}>Date: 10<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: 100 INR/- per person(for
                                                                 external
                                                                 participant)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/-
                                                                 per student(for NITJ student) </span> <br /><br />
@@ -167,14 +168,14 @@ export default function Rajbhasha() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a name="MEHFIL" id="ra0" className="btn confer-btn">Register </a>
+                                                    <a onClick={handleClick} className="btn confer-btn">Register </a>
                                                 </div>
                                             </div>
                                             {/* More Schedule Btn */}
                                         </div>
                                     </div>
                                 </div>}
-                                {activeTab==='step-2' &&<div className="tab-pane fade show active" id="step-two" role="tabpanel" aria-labelledby="monday-tab">
+                                {activeTab === 'step-2' && <div className="tab-pane fade show active" id="step-two" role="tabpanel" aria-labelledby="monday-tab">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -197,6 +198,7 @@ export default function Rajbhasha() {
                                                                 <b>
                                                                     <font size={4}> Event rules and guidelines</font>
                                                                 </b><br />
+                                                                <h5>This event is for NIT JALANDHAR students only.</h5>
                                                                 <br />1. There is individual participation.
                                                                 <br />2. Each participant will be given a topic and they will have
                                                                 to speak on that topic(extempore).
@@ -206,27 +208,30 @@ export default function Rajbhasha() {
                                                                 <br />6. The judgement of judges will be final.
                                                             </p>
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 8,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 4,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 25<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: 150 INR/- per student(for
+                                                            <span style={{ color: 'white' }}>Date: 10<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>
+                                                                {/* Entry Fee: 150 INR/- per student(for
                                                                 external
                                                                 participant)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/-
-                                                                per student(for NITJ student) </span> <br /><br />
+                                                                per student(for NITJ student) */}
+                                                                Entry Fee: Free.
+                                                            </span> <br /><br />
                                                             <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                             </span><br /><br />
                                                         </div>
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a name="PRAGHYANSH" id="ra1" className="btn confer-btn">Register </a>
+                                                    <a onClick={handleClick} className="btn confer-btn">Register </a>
                                                 </div>
                                             </div>
                                             {/* More Schedule Btn */}
                                         </div>
                                     </div>
                                 </div>}
-                                {activeTab==='step-3' &&<div className="tab-pane fade show active" id="step-three" role="tabpanel" aria-labelledby="monday-tab">
+                                {activeTab === 'step-3' && <div className="tab-pane fade show active" id="step-three" role="tabpanel" aria-labelledby="monday-tab">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -263,10 +268,10 @@ export default function Rajbhasha() {
                                                                 topic and then they will be given time for cross- questioning.
                                                             </p>
                                                             <br /><br />
-                                                            <span style={{ color: 'white' }}><b>Prize Pool: 8,000/-
+                                                            <span style={{ color: 'white' }}><b>Prize Pool: 6,000/-
                                                                 INR</b></span><br /><br />
-                                                            <span style={{ color: 'white' }}>Date: 26<sup>th</sup> March.</span><br />
-                                                            <span style={{ color: 'white' }}>Entry Fee: 150 INR/- per student(for
+                                                            <span style={{ color: 'white' }}>Date: 9<sup>th</sup> March.</span><br />
+                                                            <span style={{ color: 'white' }}>Entry Fee: 100 INR/- per student(for
                                                                 external
                                                                 participant)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/-
                                                                 per student(for NITJ student) </span> <br /><br />
@@ -276,14 +281,14 @@ export default function Rajbhasha() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a name="PATROKAR BABU" id="ra2" className="btn confer-btn">Register </a>
+                                                    <a onClick={handleClick} className="btn confer-btn">Register </a>
                                                 </div>
                                             </div>
                                             {/* More Schedule Btn */}
                                         </div>
                                     </div>
                                 </div>}
-                                {activeTab==='step-4' &&<div className="tab-pane fade show active" id="step-four" role="tabpanel" aria-labelledby="monday-tab">
+                                {activeTab === 'step-4' && <div className="tab-pane fade show active" id="step-four" role="tabpanel" aria-labelledby="monday-tab">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -302,25 +307,24 @@ export default function Rajbhasha() {
                                                                     <font size={4}> Event rules and guidelines</font>
                                                                 </b> <br />
                                                             </p><h5>This event is for NIT JALANDHAR students only.</h5>
-                                                            A) All The decisions will be reserved to Rajbhasha.<br />
-                                                            B) Some of the rounds will be presented at that time only.<br />
-                                                            C) No entry fee will be there<br />
-                                                            D) Rounds are of team events having 2 to 3 members in each.<br />
-                                                            E) Indiscipline will not be allowed in any case.<br />
-                                                            F) Use of mobile phones in the venue is strictly prohibited<p />
+                                                            <li>There will be multiple teams.</li>
+                                                            <li>Each team consists of maximum 3 participants.</li>
+                                                            <li>There will be total 3 rounds and at end the teams with highest points will win.</li>
+                                                            <li>There will be total 3 winning teams at 3 positions.</li>
+                                                            <li>The judgement of judges will be final.</li>
                                                             {/* <span style="color:white">Reach 1 day prior to your event. </span><br><br>  */}
                                                         </div>
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    {/* <a name="Pragyansh" id="ra3" className="btn confer-btn">Register </a> */}
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register</a>
                                                 </div>
                                             </div>
                                             {/* More Schedule Btn */}
                                         </div>
                                     </div>
                                 </div>}
-                                {activeTab==='step-5' &&<div className="tab-pane fade show active" id="step-five" role="tabpanel" aria-labelledby="monday-tab">
+                                {activeTab === 'step-5' && <div className="tab-pane fade show active" id="step-five" role="tabpanel" aria-labelledby="monday-tab">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -340,15 +344,16 @@ export default function Rajbhasha() {
                                                                     <font size={4}> Event rules and guidelines </font>
                                                                 </b><br />
                                                             </p><h5>This event is for NIT JALANDHAR students only.</h5>
-                                                            A) All The decisions will be reserved to Rajbhasha.<br />
-                                                            B) Some of the rounds will be presented at that time only.<br />
-                                                            C) No entry fee will be there<br />
-                                                            D) Rounds are of team events having 2 to 3 members in each.<br />
-                                                            E) Indiscipline will not be allowed in any case.<br />
-                                                            F) Use of mobile phones in the venue is strictly prohibited. <p />
+                                                            <li>There is individual participation.</li>
+                                                            <li>Each participant will have to submit self written shayari/gazal that will be in hindi or urdu that will be posted on Instagram in form of reel.</li>
+                                                            <li>The Participants should restrict their content through reels of duration 1 to 1.5 minutes.</li>
+                                                            <li>There will be total 3 winners.</li>
+                                                            <li>The judgement will be based on content to likes ratio 7:3.</li>
+                                                            <li>The judgment of judges will be final.</li>
                                                             {/* <span style="color:white">Reach 1 day prior to your event. </span><br><br>  */}
                                                         </div>
                                                     </div>
+                                                    <a className="btn confer-btn" onClick={handleClick}>Register</a>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
                                                     {/* <a name="JASHN-E-UTKANSH" id="ra5"
@@ -358,43 +363,7 @@ export default function Rajbhasha() {
                                         </div>
                                     </div>
                                 </div>}
-                                {activeTab==='step-6' &&<div className="tab-pane fade show active" id="step-six" role="tabpanel" aria-labelledby="monday-tab">
-                                    {/* Single Tab Content */}
-                                    <div className="single-tab-content">
-                                        <div className="row">
-                                            <div className="col-12">
-                                                {/* Single Schedule Area */}
-                                                <div className="single-schedule-area single-page d-flex flex-wrap justify-content-between align-items-center wow fadeInUp" data-wow-delay="300ms">
-                                                    {/* Single Schedule Thumb and Info */}
-                                                    <div className="single-schedule-tumb-info d-flex align-items-center">
-                                                        {/* Single Schedule Thumb */}
-                                                        {/* Single Schedule Info */}
-                                                        <div className="single-schedule-info">
-                                                            <h3> Kavya Kala</h3>
-                                                            <h6 style={{ color: 'white' }}>Rules:</h6>
-                                                            <p>
-                                                            </p><p style={{ textAlign: 'left' }}>
-                                                                <b>
-                                                                    <font size={4}> Event rules and guidelines</font>
-                                                                </b> <br />
-                                                            </p><h5>This event is for NIT JALANDHAR students only.</h5>
-                                                            A) All The decisions will be reserved to Rajbhasha.<br />
-                                                            B) Some of the rounds will be presented at that time only.<br />
-                                                            C) No entry fee will be there.<br />
-                                                            D) Rounds are of team events having 2 to 3 members in each.<br />
-                                                            E) Indiscipline will not be allowed in any case.<br />
-                                                            F) Use of mobile phones in the venue is strictly prohibited <p />
-                                                            {/* <span style="color:white">Reach 1 day prior to your event. </span><br><br>  */}
-                                                        </div>
-                                                    </div>
-                                                    {/* Single Schedule Info */}
-                                                    {/* Schedule Btn */}
-                                                    {/* <a name="Kavya Kala" id="ra7" className="btn confer-btn">Register </a> */}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>}
+
                             </div>
                         </div>
                     </div>
@@ -402,16 +371,7 @@ export default function Rajbhasha() {
             </section>
             {/* Our Schedule Area End */}
             <div className="d-flex justify-content-around mb-3">
-                {/* <div className="p-2"><h4>Rahul kumar Ranjan</h4>  <h5>+916280349542</h5></div>
-    <div className="p-2"><h4>Sombir Singh</h4>  <h5>+916284192596</h5></div> */}
             </div>
-            {/* **** All JS Files ***** */}
-            {/* jQuery 2.2.4 */}
-            {/* Bootstrap */}
-            {/* All Plugins */}
-            {/* Active */}
-            {/* NAvbar jQuery */}
-            {/* Resource jQuery */}
         </div>
 
     )
