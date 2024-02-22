@@ -48,7 +48,7 @@ const AnimatedBox = styled(Box)`
     }
   }
 
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding-top: 20px;
   border-radius: 20px;
