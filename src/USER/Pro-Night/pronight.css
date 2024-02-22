@@ -26,10 +26,13 @@
     height: 30vh;
     text-align: center;
     font-size: 18px;
+  
     border-radius: 20px;
     /* background-color: rgb(164, 161, 161); */
     color: black;
     font-size: 40px;
+    opacity: 0.5;
+    font-family: 'Times New Roman', Times, serif;
     /* color: black; */
 
 
@@ -47,6 +50,8 @@
     /* background-color: rgb(164, 161, 161); */
     color: black;
     font-size: 40px;
+    opacity: 0.5;
+    font-family: 'Times New Roman', Times, serif;
     /* color: black; */
 
 }
@@ -63,6 +68,8 @@
     /* background-color: rgb(164, 161, 161); */
     color: black;
     font-size: 40px;
+    opacity: 0.5;
+    font-family: 'Times New Roman', Times, serif;
     /* color: black; */
 
 
@@ -80,6 +87,8 @@
     /* background-color: rgb(164, 161, 161); */
     color: black;
     font-size: 40px;
+    opacity: 0.5;
+    font-family: 'Times New Roman', Times, serif;
     /* color: black; */
 
 
@@ -97,6 +106,8 @@
     /* background-color: rgb(164, 161, 161); */
     color: black;
     font-size: 40px;
+    opacity: 0.5;
+    font-family: 'Times New Roman', Times, serif;
     /* color: black; */
 
 
