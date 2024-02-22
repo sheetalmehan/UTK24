@@ -34,6 +34,7 @@
 
 
 }
+
 .revelbutton2 {
     position: absolute;
     top: 20%;
@@ -63,9 +64,10 @@
     color: black;
     font-size: 40px;
     /* color: black; */
-    
+
 
 }
+
 .revelbutton4 {
     position: absolute;
     top: 50%;
@@ -79,9 +81,10 @@
     color: black;
     font-size: 40px;
     /* color: black; */
-    
+
 
 }
+
 .revelbutton5 {
     position: absolute;
     top: 50%;
@@ -95,7 +98,7 @@
     color: black;
     font-size: 40px;
     /* color: black; */
-   
+
 
 }
 
@@ -261,13 +264,7 @@
 
 
     .revelbutton {
-        /* opacity: 0.5;
-        z-index: 500;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 70;
-        font-size: 5.5vw;
-        position: absolute;
-        color: rgb(11, 11, 11); */
+     
         top: 57%;
         left: 35%;
         width: 30%;
@@ -278,6 +275,68 @@
         justify-content: center;
 
     }
+
+
+    .revelbutton1 {
+        top: 15%;
+        left: 7%;
+        width: 40%;
+        height: 5vh;
+        border-radius: 20px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .revelbutton2 {
+        top: 15%;
+        left: 53%;
+        width: 40%;
+        height: 5vh;
+        border-radius: 20px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .revelbutton3 {
+        top: 40%;
+        left: 7%;
+        width: 40%;
+        height: 5vh;
+        border-radius: 20px;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .revelbutton4 {
+        top: 40%;
+        left: 53%;
+        width: 40%;
+        height: 5vh;
+        border-radius: 20px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .revelbutton5 {
+        top: 65%;
+        left: 30%;
+        width: 40%;
+        height: 5vh;
+        border-radius: 20px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
 
     .pronighthome {
 

@@ -94,7 +94,7 @@
     padding: 10px 50px 10px 50px;}
   #aftermovie3{
 
-    width: 500px;
+    width: 700px;
   }
   .mainImg {
     color: black;
@@ -438,9 +438,18 @@
 
     #aftermovie3{
 
-      width: 100%;
+      width: 87%;
+      margin: auto;
     }
+    .titla{
 
+      text-align: center;
+       /* margin: '90px 0px 0px 0px'; */
+      margin: 90px 0px -25px 0px;
+      font-size: 2.6rem;
+      z-index:  100;
+    
+    }
     .titl{
 
       /* text-align: center; */
@@ -622,18 +631,26 @@
       padding-top: 0px;
       padding-right: 0px;
       padding-bottom: 0px;
-      padding-left: 0px;
+      padding-left: 30px;
       line-height: 28px;
     }
-  
+    .titl{
+
+      text-align: center;
+       /* margin: '90px 0px 0px 0px'; */
+      margin: 100px 0px 40px 0px;
+      font-size: 2.6rem;
+      z-index:  100;
+    
+    }
     .text-blk.description {
       font-size: 16px;
       padding-top: 0px;
-      padding-right: 0px;
+      padding-right: 30px;
       padding-bottom: 0px;
-      padding-left: 0px;
+      padding-left: 30px;
       line-height: 22px;
-    }
+  }
   
     .allText {
       padding-top: 0px;

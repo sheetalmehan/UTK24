@@ -23,8 +23,9 @@ const ResponsiveTabList = styled(TabList)`
   // background-color: pink;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
-    margin-left: 10%;
+    width: 90%;
+    margin:auto;
+    // padding: 0% 1% 0% 1%;
   }
 `;
 
@@ -62,7 +63,7 @@ export default function LabTabs() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  
+
   return (
     <Container>
       <h2 className="titls">Schedule</h2>
@@ -70,10 +71,55 @@ export default function LabTabs() {
         <TabContext value={value}>
           <Box>
             <ResponsiveTabList onChange={handleChange}>
-              <Tab sx={{ width: '8%', margin: '1.5%', borderRadius: '5px', fontSize: '12px', typography: '', backgroundColor: 'pink', height: 15 }} label="Day 1" value="1" />
-              <Tab sx={{ width: '8%', margin: '1.5%', borderRadius: '5px', fontSize: '12px', typography: '', backgroundColor: 'pink', height: 15 }} label="Day 2" value="2" />
-              <Tab sx={{ width: '8%', margin: '1.5%', borderRadius: '5px', fontSize: '12px', typography: '', backgroundColor: 'pink', height: 15 }} label="Day 3" value="3" />
-            </ResponsiveTabList>
+              <Tab
+                sx={{
+                  width: '6%', // Take up full width initially
+                
+                  margin: '1.5%',
+                  borderRadius: '5px',
+                  fontSize: '12px',
+                  typography: '',
+                  backgroundColor: 'pink',
+                  height: 15,
+                  '@media screen and (max-width: 768px)': { // Adjust styles for larger screens
+                    width: '1%', // Adjust maximum width for larger screens if needed
+                  },
+                }}
+                label="Day 1"
+                value="1"
+              />  <Tab
+                sx={{
+                  width: '6%', // Take up full width initially
+             
+                  margin: '1.5%',
+                  borderRadius: '5px',
+                  fontSize: '12px',
+                  typography: '',
+                  backgroundColor: 'pink',
+                  height: 15,
+                  '@media screen and (max-width: 768px)': { // Adjust styles for larger screens
+                    width: '1%', // Adjust maximum width for larger screens if needed
+                  },
+                }}
+                label="Day 2"
+                value="2"
+              />        <Tab
+                sx={{
+                  width: '6%', // Take up full width initially
+              
+                  margin: '1.5%',
+                  borderRadius: '5px',
+                  fontSize: '12px',
+                  typography: '',
+                  backgroundColor: 'pink',
+                  height: 15,
+                  '@media screen and (max-width: 942px)': { // Adjust styles for larger screens
+                    width: '1%', // Adjust maximum width for larger screens if needed
+                  },
+                }}
+                label="Day 3"
+                value="3"
+              />    </ResponsiveTabList>
           </Box>
           <TabPanel value="1"><Schedule1 /></TabPanel>
           <TabPanel value="2"><Schedule2 /></TabPanel>

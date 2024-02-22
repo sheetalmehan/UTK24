@@ -188,7 +188,8 @@ footer {
     }
     .contactform{
 
-        margin: 0px;
-        width: 110%;
+        margin-left: -50px;
+        width: 140%;
+        margin-top:30px;
     }
 }

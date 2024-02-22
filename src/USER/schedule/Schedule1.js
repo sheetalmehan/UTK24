@@ -84,7 +84,7 @@ export default function VerticalTabs() {
                 <div className='each'>
 
                     <div> 
-                    <h1 className='heads'> Duet Dance</h1>
+                      <h1 className='heads'> Duet Dance</h1>
                         <p className='para'>Venue:Lecture Theater</p>
                         <p className='para'>Time:02:00 PM</p>
                     </div>
