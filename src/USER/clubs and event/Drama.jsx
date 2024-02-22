@@ -141,7 +141,7 @@ const Drama = () => {
                                             Monoact
                                         </a>
                                     </li>
-                                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+                                    {/* &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; */}
 
                                     {/* Nav Item */}
                                     {/* <li className="nav-item"

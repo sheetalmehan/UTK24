@@ -313,7 +313,7 @@ const Dance = () => {
 
                                                                 </p>
                                                                 <span style={{ color: 'white' }}><b>Prize Pool: INR 18,000/-</b></span><br /><br />
-                                                                Date: 24<sup>th</sup> March<br />
+                                                                Date: 8<sup>th</sup> March<br />
                                                                 Entry Fee: 120/- per person(for external participant)<br />
                                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/- per student(for NITJ student)<br />
                                                                 Note: Reach 1 day prior to the venue.<br /><br />
