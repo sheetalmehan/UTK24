@@ -240,11 +240,13 @@ const authSlice = createSlice({
         state.data = {}; // Clear 'data' from Redux state on logout
       })
       .addCase(getUserData.fulfilled, (state, action) => {
-        localStorage.setItem("data", JSON.stringify(action?.payload?.user));
-        localStorage.setItem("isLoggedIn", true);
-        state.isLoggedIn = true;
-        state.data = action?.payload?.user;
-        state.role = action?.payload?.user?.role;
+        if (action?.payload?.success) {
+          localStorage.setItem("data", JSON.stringify(action?.payload?.user));
+          localStorage.setItem("isLoggedIn", true);
+          state.isLoggedIn = true;
+          state.data = action?.payload?.user;
+          state.role = action?.payload?.user?.role;
+        }
       });
   },
 });

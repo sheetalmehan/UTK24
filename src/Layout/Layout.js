@@ -36,15 +36,17 @@ const Layout = ({ children }) => {
       <div className="drawer absolute z-50 right-0 w-fit">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          <label htmlFor="my-drawer" className="cursor-pointer relative" onClick={changeWidth} style={{padding:'5px'}}>
-            <FontAwesomeIcon icon={faBars}  style={{ marginRight: '18px', marginTop: '23px' }} />
+          <label htmlFor="my-drawer" className="cursor-pointer relative" onClick={changeWidth} style={{ padding: '5px' }}>
+            <FontAwesomeIcon icon={faBars} style={{ marginRight: '18px', marginTop: '23px' }} />
           </label>
         </div>
 
         <div className="drawer-side w-0">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
 
-          <ul className="menu p-4 w-48 sm:w-80 bg-base-100 text-base-content relative">
+          <ul className="menu p-4 w-48 sm:w-80 bg-base-100 text-base-content relative margin_km_kro">
+            <h5 style={{ fontWeight: '700' }}>Dashboard</h5>
+            <hr style={{borderColor:'white'}}></hr>
             <div className="hidden-div">
               <li><Link style={{ textDecoration: 'none' }} to="/" >Home</Link></li>
               <li><Link style={{ textDecoration: 'none' }} to="/Gallery" >Gallery</Link></li>
@@ -58,6 +60,7 @@ const Layout = ({ children }) => {
               <li><Link style={{ textDecoration: 'none' }} to="/Contacts" >Contact us</Link></li>
 
             </div>
+
 
             <li className="w-fit absolute right-2 z-50">
               <button onClick={hideDrawer}>
@@ -103,7 +106,7 @@ const Layout = ({ children }) => {
                 <Link style={{ textDecoration: 'none' }} to={"/admin/dashboard"}>COORDINATOR Dashboard</Link>
               </li>
             )}
-           
+
             {
               isLoggedIn &&
               role === 'ADMIN' &&
@@ -133,7 +136,7 @@ const Layout = ({ children }) => {
 
 
 
-            <li className="absolute bottom-4 w-[90%] flex flex-wrap justify-center bottom-0">
+            <li className="absolute bottom-8 w-[90%] flex flex-wrap justify-center bottom-0">
               {!isLoggedIn ? (
                 <>
                   <button className="btn btn-green">

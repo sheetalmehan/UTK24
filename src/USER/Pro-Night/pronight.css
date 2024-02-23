@@ -26,7 +26,7 @@
     height: 30vh;
     text-align: center;
     font-size: 18px;
-  
+
     border-radius: 20px;
     /* background-color: rgb(164, 161, 161); */
     color: black;
@@ -272,10 +272,28 @@
 
 @media (max-width: 947px) {
 
+    .prn {
+        min-height: 87vh;
+        background-color: black;
+    }
 
+    .prnv {
+        padding-top: 55%;
+        ;
+    }
+
+    .prnt {
+        font-size: 1.5rem;
+    }
+
+    .prnc {
+        margin-top: -25%;
+        width: fit-content;
+        padding: 20px;
+    }
 
     .revelbutton {
-     
+
         top: 57%;
         left: 35%;
         width: 30%;
