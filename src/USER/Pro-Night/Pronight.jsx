@@ -52,9 +52,10 @@ export default function Pronight() {
 
     return (
         <div>
-            <section className="pronight_pro_night prn">
+            <section className="pronight_pro_night prn" style={{backgroundColor:'black'}}>
                 <div id="pro-night">
-                    <video src={videoFile} className="pronight_pro_video prnv" loop autoPlay muted>
+                    <video className="pronight_pro_video prnv" loop autoPlay muted>
+                        <source src="https://res.cloudinary.com/dijzvijky/video/upload/v1708605856/fast_clip_1_qdp3s9.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                     <h1 className="pronight_title_pro">ProNight</h1>

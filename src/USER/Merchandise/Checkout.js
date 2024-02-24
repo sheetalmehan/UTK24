@@ -139,7 +139,7 @@ const MerchandiseForm = () => {
                         <input type="text" id="reference" name="paymentReferenceNumber" onChange={handleChange} value={formData.paymentReferenceNumber} required />
                     </form>
 
-                    {popup && <QRPopup setPopup={setPopup} />}
+                    {popup && <QRPopup setPopup={setPopup} amount={formData.quantity * 350} />}
 
                 </div>
                 <div className="lower-section" style={{ marginTop: '75px' }}>
