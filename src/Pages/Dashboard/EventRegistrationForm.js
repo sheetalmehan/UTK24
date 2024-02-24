@@ -143,7 +143,7 @@ function EventRegistrationForm() {
                             </div>
                         </div>
 
-                        {popup && <QRPopup setPopup={setPopup} />}
+                        {popup && <QRPopup setPopup={setPopup} amount={location.state.amount} />}
                         <div className="card-body">
                             <form className="needs-validation container mx-auto" noValidate>
                                 {formData.participants.map((member, index) => (

@@ -15,7 +15,7 @@ const Merchandise = () => {
                     </figure>
                     <h3 className="text-center" style={{ fontFamily: 'mountains,serif', color: '#ffffff' }}>Utkansh Tshirt Black</h3>
                     {/* <h5 className="text-center pt-2" style={{ fontFamily: 'mountains,serif', color: '#ffffff' }}>Price 350/-</h5> */}
-                    <h5 className="text-center pt-2" style={{ fontFamily: 'mountains,serif', color: '#ffffff' }}>Price - Not disclosed</h5>
+                    <h5 className="text-center pt-2" style={{ fontFamily: 'mountains,serif', color: '#ffffff' }}>Price - ₹350.00</h5>
                     {/* Replace anchor tag with Link */}
                     <h2 style={{ fontWeight: 'bold', color: 'blue' }} className="text-center">
                         <Link to="/merchandise/tshirtdetails/1" style={{ color: 'blue' }}>Order Now</Link>
@@ -27,7 +27,7 @@ const Merchandise = () => {
                     </figure>
                     <h3 className="text-center" style={{ fontFamily: 'mountains,serif', color: '#ffffff' }}>Utkansh Tshirt Gray</h3>
                     {/* <h5 className="text-center pt-2" style={{ fontFamily: 'mountains,serif', color: '#ffffff' }}>Price 300/-</h5> */}
-                    <h5 className="text-center pt-2" style={{ fontFamily: 'mountains,serif', color: '#ffffff' }}>Price - Not disclosed</h5>
+                    <h5 className="text-center pt-2" style={{ fontFamily: 'mountains,serif', color: '#ffffff' }}>Price - ₹350.00</h5>
 
                     {/* Replace anchor tag with Link */}
                     <h2 style={{ fontWeight: 'bold', color: 'blue' }} className="text-center">

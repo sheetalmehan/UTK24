@@ -16,8 +16,8 @@ export default function Animation() {
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5e550d6dab049c797fe5c',
         minParticipants: 1,
-        maxParticipants: 100
-
+        maxParticipants: 100,
+        amount: 0,
     });
 
 
@@ -28,7 +28,8 @@ export default function Animation() {
             setEventdetails({
                 eventId: '65d5e550d6dab049c797fe5c',
                 minParticipants: 1,
-                maxParticipants: 100
+                maxParticipants: 100,
+                amount:0,
             });
         }
 
