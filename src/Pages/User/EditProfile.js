@@ -75,7 +75,7 @@ const EditProfile = () => {
 
   return (
     // <Layout>
-      <div className="flex items-center justify-center h-[100vh]">
+      <div className="flex items-center justify-center h-[120vh]">
         <form
           onSubmit={handleFormSubmit}
           className="flex flex-col justify-center gap-5 rounded-lg p-4 text-white w-80 h-[26rem] shadow-[0_0_10px_black]"

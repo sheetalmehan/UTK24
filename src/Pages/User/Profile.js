@@ -7,7 +7,7 @@ const Profile = () => {
   const dispatch = useDispatch();
 
   const userData = useSelector((state) => state?.auth?.data);
-
+   console.log("userData",userData);
   // function to handle the cancel subscription of course
   const handleCourseCancelSubscription = async () => {
     await dispatch(getUserData());
@@ -19,7 +19,7 @@ const Profile = () => {
   }, []);
   return (
     // <Layout>
-      <div className="min-h-[90vh] flex items-center justify-center" style={{minHeight:'90vh'}}>
+    <div className="flex items-center justify-center h-[120vh]">
         <div className="my-10 flex flex-col gap-4 rounded-lg p-4 text-white w-80 shadow-[0_0_10px_black]">
           {/* <img
             className="w-40 m-auto rounded-full border border-black"
@@ -31,12 +31,12 @@ const Profile = () => {
             {userData.fullName}
           </h3>
 
-          <div className="grid grid-cols-2">
-            <p>Email :</p>
-            <p>{userData?.email}</p><br></br>
-            <p>Role :</p>
-            <p>{userData?.role}</p>
-            <br></br>
+          <div className="">
+            <p>Email :   &nbsp;     {userData?.email}</p><br></br>
+            {/* <p>Role :   &nbsp;&nbsp;&nbsp; {userData?.role}</p>
+            <br></br> */}
+            <p>Phone :   &nbsp;     {userData?.phone}</p><br></br>
+            
          
           </div>
 
@@ -48,9 +48,9 @@ const Profile = () => {
                   ? "/denied"
                   : "/changepassword"
               }
-              className="w-1/0.1 border border-yellow-600 hover:border-yellow-500 transition-all ease-in-out duration-300 rounded-sm py-2 font-semibold cursor-pointer text-center"
+              className="w-1/2 border border-yellow-600 hover:border-yellow-500 transition-all ease-in-out duration-300 rounded-sm py-2 font-semibold cursor-pointer text-center"
               >
-              <button>Change Password</button>
+              <button> Change Password</button>
             </Link>
 
             <Link
@@ -61,7 +61,7 @@ const Profile = () => {
               }
               className="w-1/2 border border-yellow-600 hover:border-yellow-500 transition-all ease-in-out duration-300 rounded-sm py-2 font-semibold cursor-pointer text-center"
             >
-              <button>Edit Profile</button>
+              <button>Edit <br></br> Profile</button>
             </Link>
           </div>
 

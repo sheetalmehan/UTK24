@@ -59,7 +59,7 @@ const ChangePassword = () => {
   return (<>
    
       {/* forget password container */}
-      <div className="flex items-center justify-center h-[100vh]">
+      <div className="flex items-center justify-center h-[120vh]">
         {/* forget password card */}
         <form
           onSubmit={handleFormSubmit}

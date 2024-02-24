@@ -25,17 +25,17 @@ const AccomodationPage = () => {
   return (
     <div className='accomodation' style={{minHeight:'100vh'}}>
       <div style={{minHeight:'100px'}}></div>
-      {/* <h2 className="titl" style={{ textAlign: 'center',  fontSize: '3.6rem', zIndex: 100 }}>
+      <h2 className="titl" style={{ textAlign: 'center',  fontSize: '3.6rem', zIndex: 100 }}>
         Accomodation
-      </h2> */}
+      </h2>
       <div className="containeraco">
-        <h2 className="titl" style={{ textAlign: 'center', fontSize: '3.6rem', zIndex: 100 }}>
+        {/* <h2 className="titl" style={{ textAlign: 'center', fontSize: '3.6rem', zIndex: 100 }}>
           We will reveal soon..
-        </h2>
-        {/* <div className="gridaco">
+        </h2> */}
+        <div className="gridaco">
           <div className="cardss">
-            <h2 className="card_title">Basic</h2>
-            <p className="pricing">₹ 20<span className="small">/per day</span></p>
+            <h2 className="card_title">One Day Pack</h2>
+            <p className="pricing">₹ 400<span className="small">/Per person</span></p>
             <hr />
             <ul className="features">
               <li>24*7 Wi-Fi</li>
@@ -48,8 +48,8 @@ const AccomodationPage = () => {
           </div>
 
           <div className="cardss">
-            <h2 className="card_title">Basic</h2>
-            <p className="pricing">₹ 20<span className="small">/per day</span></p>
+            <h2 className="card_title">Two Day Pack</h2>
+            <p className="pricing">₹ 650<span className="small">/Per person</span></p>
             <hr />
             <ul className="features">
               <li>24*7 Wi-Fi</li>
@@ -62,8 +62,8 @@ const AccomodationPage = () => {
           </div>
 
           <div className="cardss">
-            <h2 className="card_title">Basic</h2>
-            <p className="pricing">₹ 20<span className="small">/per day</span></p>
+            <h2 className="card_title">Three Day Pack</h2>
+            <p className="pricing">₹ 900<span className="small">/Per person</span></p>
             <hr />
             <ul className="features">
               <li>24*7 Wi-Fi</li>
@@ -74,7 +74,7 @@ const AccomodationPage = () => {
             <p className="features"><b>Note: </b>Food Will Cost Extra.</p>
             <a className="cta_btn" onClick={() => handleClick(3)}>Buy Now</a>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
 

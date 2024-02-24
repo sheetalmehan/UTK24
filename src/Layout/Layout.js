@@ -26,6 +26,7 @@ const Layout = ({ children }) => {
   };
 
   const handleLogout = async (event) => {
+    hideDrawer();
     event.preventDefault();
     const res = dispatch(logout());
     if (res?.payload?.success) navigate("/");
@@ -132,8 +133,8 @@ const Layout = ({ children }) => {
                 <Link style={{ textDecoration: 'none' }} to={"/user/profile"}>My Profile</Link>
               </li>
             )}
-            <li style={{ textDecoration: 'none' }}  className="text-decoration-none no-underline"></li>
-            <li style={{ textDecoration: 'none' }}  className="text-decoration-none no-underline"></li>
+            <li style={{ textDecoration: 'none', opacity:'0' }}  className="text-decoration-none no-underline"></li>
+            <li style={{ textDecoration: 'none',opacity:'0'}}  className="text-decoration-none no-underline"></li>
 
 
 
@@ -141,14 +142,14 @@ const Layout = ({ children }) => {
             <li className="absolute bottom-2 w-[90%] flex flex-wrap justify-center bottom-0" style={{marginTop:'20px'}}>
               {!isLoggedIn ? (
                 <>
-                  <button className="btn btn-green">
+                  <button className="btn btn-green" onClick={hideDrawer}>
                     <Link style={{ textDecoration: 'none' }} to={"/login"}>Login / Signup</Link>
                   </button>
                 </>
               ) : (
                 <>
-                  <button className="btn btn-red">
-                    <Link style={{ textDecoration: 'none' }} onClick={handleLogout}>Logout</Link>
+                  <button className="btn btn-red"  onClick={handleLogout}>
+                    <Link style={{ textDecoration: 'none' }}>Logout</Link>
                   </button>
                 </>
               )}

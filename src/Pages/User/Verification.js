@@ -39,7 +39,7 @@ const Verifyaccount = () => {
       {/* forget password container */}
       <div
         // onSubmit={handleFormSubmit}
-        className="flex items-center justify-center h-[100vh]"
+        className="flex items-center justify-center h-[120vh]"
       >
         {/* forget password card */}
         <form className="flex flex-col justify-center gap-6 rounded-lg p-4 text-white w-80 h-[26rem] shadow-[0_0_10px_black]">

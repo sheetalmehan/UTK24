@@ -116,7 +116,7 @@ const Signup = () => {
 
   return (
     // <Layout>
-    <div className="flex items-center justify-center h-[130vh]">
+    <div className="flex items-center justify-center h-[150vh]">
       <form
         onSubmit={createNewAccount}
         className="flex flex-col justify-center gap-3 rounded-lg p-4 text-white w-96 shadow-[0_0_10px_black]"

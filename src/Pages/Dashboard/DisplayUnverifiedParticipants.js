@@ -21,6 +21,7 @@ const DisplayParticipants = () => {
     courseId: '',
     lectureId: ''
   });
+  console.log("participants",participants);
 
   // Initialize currentVideoIndex state
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
@@ -68,17 +69,28 @@ const DisplayParticipants = () => {
             <div className="space-y-5 w-[28rem] p-2 rounded-lg shadow-[0_0_10px_black]">
               <div>
                 <h1>
-                  <span className="text-yellow-500">Team Name : </span>
-                  {participants && participants[currentVideoIndex]?.title}
+                  <span className="text-yellow-500" style={{fontSize:'20px'}}>Team Name : 
+                  {participants && participants[currentVideoIndex]?.teamName}</span>
                 </h1>
                 <p>
                   {" "}
                   <span className="text-yellow-500 line-clamp-4">
-                    Description :{" "}
-                  </span>
-                  {participants && participants[currentVideoIndex]?.description}
+                    college Name :{" "}
+               
+                  {participants && participants[currentVideoIndex]?.collegeName}   </span>
                 </p>
+                <p>
+                  {" "}
+                  <span className="text-yellow-500 line-clamp-4">
+                    Payment ID :{" "}
+               
+                  {participants && participants[currentVideoIndex]?.paymentReferenceNumber}   </span>
+                </p>
+
+
               </div>
+
+
               {role === "ADMIN" && (
                 <button
                   onClick={() =>
@@ -138,7 +150,7 @@ const DisplayParticipants = () => {
                           {" "}
                           Participant {index + 1} :{" "}
                         </span>
-                        {element?.title}
+                        {element?.teamName}
                       </p>
                     </li>
                   );
