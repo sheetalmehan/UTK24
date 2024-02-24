@@ -18,6 +18,7 @@ export default function Animation() {
         minParticipants: 1,
         maxParticipants: 100,
         amount: 0,
+        eventTitle:'COSCON',
     });
 
 
@@ -29,7 +30,9 @@ export default function Animation() {
                 eventId: '65d5e550d6dab049c797fe5c',
                 minParticipants: 1,
                 maxParticipants: 100,
-                amount: 0,
+                amount:0,
+                eventTitle:'COSCON',
+
             });
         }
 

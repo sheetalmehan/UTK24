@@ -22,7 +22,9 @@ export default function Fas() {
         eventId: '65cf977c762805baf9ec2e1c',
         minParticipants: 1,
         maxParticipants: 2,
-        amount:0,
+        amount: 0,
+        eventTitle: 'ART EXHIBITION',
+
 
     });
 
@@ -35,7 +37,9 @@ export default function Fas() {
                 eventId: '65cf977c762805baf9ec2e1c',
                 minParticipants: 1,
                 maxParticipants: 2,
-                amount:0,
+                amount: 0,
+                eventTitle: 'ART EXHIBITION',
+
             });
         }
         if (tabId === "step-two") {
@@ -43,7 +47,9 @@ export default function Fas() {
                 eventId: '65d5affcf0fa8ef075fb78ae',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:50,
+                amount: 50,
+                eventTitle: 'DO-ART',
+
             });
         }
         if (tabId === "step-three") {
@@ -51,7 +57,9 @@ export default function Fas() {
                 eventId: '65d5b11666590253933c777f',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:50,
+                amount: 50,
+                eventTitle: 'CINEART ODYSSEY',
+
             });
         }
         if (tabId === "step-four") {
@@ -59,7 +67,9 @@ export default function Fas() {
                 eventId: '65d5b27d66590253933c778e',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:50,
+                amount: 50,
+                eventTitle: 'LETTART',
+
             });
         }
         if (tabId === "step-five") {
@@ -68,7 +78,9 @@ export default function Fas() {
                 minParticipants: 3,
                 maxParticipants: 3,
                 amount: 100,
-                perTeam:true,
+                perTeam: true,
+                eventTitle: 'RELAY ART CHALLENGE',
+
             });
         }
         if (tabId === "step-six") {
@@ -76,7 +88,9 @@ export default function Fas() {
                 eventId: '65d5b17066590253933c7782',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:50,
+                amount: 50,
+                eventTitle: 'PEBBLE PAINTING EXTRAVAGANZA',
+
             });
         }
         if (tabId === "step-seven") {
@@ -84,7 +98,9 @@ export default function Fas() {
                 eventId: '65d5b1ec66590253933c7788',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:50,
+                amount: 50,
+                eventTitle: '10-MIN CHALLENGE',
+
             });
         }
         if (tabId === "step-eight") {
@@ -92,7 +108,9 @@ export default function Fas() {
                 eventId: '65d5b1bc66590253933c7785',
                 minParticipants: 2,
                 maxParticipants: 2,
-                amount:100,
+                amount: 100,
+                eventTitle: 'ART BEYOND SIGHT',
+
             });
         }
         if (tabId === "step-nine") {
@@ -100,7 +118,9 @@ export default function Fas() {
                 eventId: '65d5b23166590253933c778b',
                 minParticipants: 1,
                 maxParticipants: 2,
-                amount:100,
+                amount: 100,
+                eventTitle: 'HAND PAINTING',
+
             });
         }
         if (tabId === "step-ten") {
@@ -108,7 +128,9 @@ export default function Fas() {
                 eventId: '65d5b29766590253933c7791',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:50,
+                amount: 50,
+                eventTitle: 'DOODODDLE DELIGHT',
+
             });
         }
 

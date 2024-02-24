@@ -20,6 +20,8 @@ const Drama = () => {
         maxParticipants: 25,
         amount: 1500,
         perTeam: true,
+        eventTitle: 'Hallabol – Nukkad Natak',
+
     });
 
 
@@ -32,7 +34,9 @@ const Drama = () => {
                 minParticipants: 5,
                 maxParticipants: 25,
                 amount: 1500,
-                perTeam:true,
+                perTeam: true,
+                eventTitle: 'Hallabol – Nukkad Natak',
+
             });
         }
         if (tabId === "step-two") {
@@ -42,6 +46,8 @@ const Drama = () => {
                 maxParticipants: 20,
                 amount: 1500,
                 perTeam: true,
+                eventTitle: 'Rangmanch – Stage Play',
+
             });
         }
         if (tabId === "step-three") {
@@ -50,6 +56,8 @@ const Drama = () => {
                 minParticipants: 1,
                 maxParticipants: 1,
                 amount: 1500,
+                eventTitle: 'Monoact',
+
             });
         }
         if (tabId === "step-four") {
@@ -58,6 +66,8 @@ const Drama = () => {
                 minParticipants: 1,
                 maxParticipants: 1,
                 amount: 1500,
+                eventTitle: 'BHANGRA',
+
             });
         }
         if (tabId === "step-five") {
@@ -66,6 +76,8 @@ const Drama = () => {
                 minParticipants: 3,
                 maxParticipants: 3,
                 amount: 1500,
+                eventTitle: 'BHANGRA',
+
             });
         }
         if (tabId === "step-six") {
@@ -75,6 +87,8 @@ const Drama = () => {
                 maxParticipants: 5,
                 amount: 100,
                 perTeam: true,
+                eventTitle: 'IMPROV',
+
             });
         }
 

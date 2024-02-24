@@ -115,7 +115,7 @@ function EventRegistrationForm() {
                 <div className="col-sm-8 col-md-9 col-lg-12 mx-auto">
                     <div className="card card-signin my-5" id="user_container">
                         <div className="card-body">
-                            <h1 className="card-title text-center" id="titleForEvent">Event Title</h1>
+                            <h1 className="card-title text-center" id="titleForEvent">{location.state.eventTitle}</h1>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-md-6 col-lg-4 mb-3">
@@ -142,8 +142,8 @@ function EventRegistrationForm() {
                                 </div>
                             </div>
                         </div>
-
-                        {popup && <QRPopup setPopup={setPopup} amount={location.state.amount * ((location.state?.perTeam) ? 1 : formData?.participants?.length)} />}
+{console.log(location.state)}
+                        {popup && <QRPopup setPopup={setPopup} amount={location.state.amount * ((location.state.perTeam) ? 1 : formData.participants.length)} />}
                         <div className="card-body">
                             <form className="needs-validation container mx-auto" noValidate>
                                 {formData.participants.map((member, index) => (
