@@ -16,7 +16,8 @@ export default function RLC() {
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5b86ea8d0fcbeb3c7c1cd',
         minParticipants: 1,
-        maxParticipants: 4
+        maxParticipants: 4,
+        amount:300,
 
     });
 
@@ -28,14 +29,16 @@ export default function RLC() {
             setEventdetails({
                 eventId: '65d5b86ea8d0fcbeb3c7c1cd',
                 minParticipants: 1,
-                maxParticipants: 4
+                maxParticipants: 4,
+                amount:300,
             });
         }
         if (tabId === "step-2") {
             setEventdetails({
                 eventId: '65d5b8a8a8d0fcbeb3c7c1d0',
                 minParticipants: 1,
-                maxParticipants: 100
+                maxParticipants: 100,
+                amount:300,
             });
         }
 

@@ -17,7 +17,8 @@ export default function Rajbhasha() {
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d8d0a5858e4145844260',
         minParticipants: 1,
-        maxParticipants: 1
+        maxParticipants: 1,
+        amount:100,
 
     });
 
@@ -29,35 +30,40 @@ export default function Rajbhasha() {
             setEventdetails({
                 eventId: '65d5d8d0a5858e4145844260',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:100,
             });
         }
         if (tabId === "step-2") {
             setEventdetails({
                 eventId: '65d5d90da5858e4145844263',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:0,
             });
         }
         if (tabId === "step-3") {
             setEventdetails({
                 eventId: '65d5e46ad6dab049c797fe56',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:100,
             });
         }
         if (tabId === "step-4") {
             setEventdetails({
                 eventId: '65d5d922a5858e4145844266',
                 minParticipants: 1,
-                maxParticipants: 3
+                maxParticipants: 3,
+                amount:0,
             });
         }
         if (tabId === "step-5") {
             setEventdetails({
                 eventId: '65d5e4dfd6dab049c797fe59',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:0,
             });
         }
 

@@ -17,7 +17,8 @@ const Dance = () => {
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d596a5858e414584423a',
         minParticipants: 1,
-        maxParticipants: 1
+        maxParticipants: 1,
+        amount: 200,
 
     });
 
@@ -29,21 +30,24 @@ const Dance = () => {
             setEventdetails({
                 eventId: '65d5d596a5858e414584423a',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount: 200,
             });
         }
         if (tabId === "step-two") {
             setEventdetails({
                 eventId: '65d5d69fa5858e4145844242',
                 minParticipants: 2,
-                maxParticipants: 2
+                maxParticipants: 2,
+                amount: 200,
             });
         }
         if (tabId === "step-three") {
             setEventdetails({
                 eventId: '65d5d56ea5858e4145844237',
                 minParticipants: 5,
-                maxParticipants: 100
+                maxParticipants: 100,
+                amount: 120,
             });
         }
 

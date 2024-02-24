@@ -20,7 +20,8 @@ const BhangraClub = () => {
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d754a5858e4145844248',
         minParticipants: 1,
-        maxParticipants: 100
+        maxParticipants: 100,
+        price: 200,
 
     });
 
@@ -32,7 +33,8 @@ const BhangraClub = () => {
             setEventdetails({
                 eventId: '65d5d754a5858e4145844248',
                 minParticipants: 1,
-                maxParticipants: 100
+                maxParticipants: 100,
+                price: 200,
             });
         }
 
