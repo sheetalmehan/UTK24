@@ -114,6 +114,7 @@ function EventRegistrationForm() {
             <div className="row" style={{ paddingTop: '50px' }}>
                 <div className="col-sm-8 col-md-9 col-lg-12 mx-auto">
                     <div className="card card-signin my-5" id="user_container">
+
                         <div className="card-body">
                             <h1 className="card-title text-center" id="titleForEvent">{location.state.eventTitle}</h1>
                             <div className="container">
@@ -128,24 +129,16 @@ function EventRegistrationForm() {
                                         <input type="text" className={`form-control ${formErrors.college ? 'is-invalid' : ''}`} id="college" name="college" value={formData.college} onChange={handleChange} required />
                                         {formErrors.college && <div className="invalid-feedback">{formErrors.college}</div>}
                                     </div>
-                                    <div className="col-md-6 col-lg-4 mb-3">
-                                        <label htmlFor="paymentReferenceNumber" className="form-label">Payment Ref. No.</label>
-                                        <div className="input-group">
-                                            <input type="text" className={`form-control ${formErrors.paymentReferenceNumber ? 'is-invalid' : ''}`} id="paymentReferenceNumber" name="paymentReferenceNumber" value={formData.paymentReferenceNumber} onChange={handleChange} required />
-                                            <button className="btn btn-success" type="button" onClick={() => setPopup(true)} style={{ zIndex: '0' }}>Open QR</button>
-                                        </div>
-                                        {formErrors.paymentReferenceNumber && <div className="invalid-feedback">{formErrors.paymentReferenceNumber}</div>}
-                                        <div className="mt-3">
-                                            <button className="btn btn-success w-100 d-md-none mb-3" type="button" onClick={() => setPopup(true)}>Open QR</button>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
-{console.log(location.state)}
+
+
+                        {console.log(location.state)}
                         {popup && <QRPopup setPopup={setPopup} amount={location.state.amount * ((location.state.perTeam) ? 1 : formData.participants.length)} />}
                         <div className="card-body">
-                            <form className="needs-validation container mx-auto" noValidate>
+                            {/* <form  noValidate> */}
                                 {formData.participants.map((member, index) => (
                                     <div key={index} className="mb-4">
                                         <h2 style={{ color: 'grey', textAlign: 'center', marginBottom: '1rem' }}>Details of Member {index + 1}</h2>
@@ -170,16 +163,33 @@ function EventRegistrationForm() {
                                 ))}
                                 <div className="row justify-content-center">
                                     <div className="col-md-4 mb-3">
-                                        <button className="btn btn-success w-100 mb-2" type="button" onClick={addMember}>Add Member</button>
+                                        <button className="btn btn- w-100 mb-2" type="button" onClick={addMember}>Add Member</button>
                                     </div>
                                     <div className="col-md-4 mb-3">
-                                        <button className="btn btn-secondary w-100 mb-2" type="button" onClick={deleteLastMember} disabled={formData.participants.length <= 1}>Delete Last Member</button>
+                                        <button className="btn btn-danger w-100 mb-2" type="button" onClick={deleteLastMember} disabled={formData.participants.length <= 1}>Delete Last Member</button>
                                     </div>
+
                                     <div className="col-md-4 mb-3">
-                                        <button className="btn btn-danger w-100" type="button" onClick={registerToEvent}>Submit</button>
+                                        <button className="btn btn-success w-100 mb-2" type="button" onClick={() => setPopup(true)} style={{ zIndex: '0' }}>Open QR</button>
+
+                                        {/* <div className="mt-3">
+                                            <button className="btn btn-success w-100 d-md-none mb-3" type="button" onClick={() => setPopup(true)}>Open QR</button>
+                                        </div> */}
+                                    </div>
+
+                                    <label htmlFor="paymentReferenceNumber" className="form-label">Enter Payment Ref. No./UTR No</label>
+                                     
+                                    <div className="input-group" style={{width:'95%',margin:'10px',borderRadius:'10px'}}>
+                                        <input style={{borderRadius:'10px'}} type="text" className={`form-control ${formErrors.paymentReferenceNumber ? 'is-invalid' : ''}`} id="paymentReferenceNumber" name="paymentReferenceNumber" value={formData.paymentReferenceNumber} onChange={handleChange} required />
+                                    </div>
+                                    {formErrors.paymentReferenceNumber && <div className="invalid-feedback">{formErrors.paymentReferenceNumber}</div>}
+
+
+                                    <div className="col-md-4 mb-3">
+                                        <button className="btn btn-primary w-100" type="button" onClick={registerToEvent}>Submit</button>
                                     </div>
                                 </div>
-                            </form>
+                            {/* </form> */}
                         </div>
 
                     </div>
