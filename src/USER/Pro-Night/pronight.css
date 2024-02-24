@@ -102,7 +102,7 @@
     position: absolute;
     top: 50%;
     width: 30%;
-    left: 51%;
+    left: 60%;
     height: 30vh;
     text-align: center;
     font-size: 18px;
@@ -330,7 +330,7 @@
 
 
     .revelbutton1 {
-        top: 15%;
+        top: 17%;
         left: 7%;
         width: 40%;
         height: 5vh;
@@ -342,7 +342,7 @@
     }
 
     .revelbutton2 {
-        top: 20%;
+        top: 17%;
         left: 53%;
         width: 40%;
         height: 5vh;

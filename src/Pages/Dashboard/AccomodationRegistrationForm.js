@@ -110,18 +110,16 @@ function AccomodationRegistrationForm() {
 
     return (
         <div className="container" style={{ paddingTop: '100px' , minHeight: '90vh' }}>
-            <div className="row">
+              <h3 className="text-center" style={{color:'White',font:'Times New Roman'}} id="">Booking is going to start Very Soon.....</h3>
+                          
+            {/* <div className="row">
                 <div className="col-sm-8 col-md-9 col-lg-12 mx-auto">
                     <div className="card card-signin my-5" id="user_container">
                         <div className="card-body">
                             <h1 className="card-title text-center" id="titleForEvent">Event Title</h1>
                             <div className="container">
                                 <div className="row">
-                                    {/* <div className="col-md-6 col-lg-4 mb-3">
-                                        <label htmlFor="teamName" className="form-label">Team Name</label>
-                                        <input type="text" className={`form-control ${formErrors.teamName ? 'is-invalid' : ''}`} id="teamName" name="teamName" value={formData.teamName} onChange={handleChange} required />
-                                        {formErrors.teamName && <div className="invalid-feedback">{formErrors.teamName}</div>}
-                                    </div> */}
+                                   
                                     <div className="col-md-6 col-lg-4 mb-3">
                                         <label htmlFor="college" className="form-label">College Name</label>
                                         <input type="text" className={`form-control ${formErrors.college ? 'is-invalid' : ''}`} id="college" name="college" value={formData.college} onChange={handleChange} required />
@@ -192,7 +190,7 @@ function AccomodationRegistrationForm() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
