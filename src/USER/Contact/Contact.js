@@ -99,7 +99,7 @@ const ContactSection = () => {
 
 
               <div className="column right">
-                <div className="text">Message me</div>
+                <div className="text">Message us</div>
                 <form className='contactform' onSubmit={handleSubmit}>
                   <div className="fields">
                     <div className="field namee">
