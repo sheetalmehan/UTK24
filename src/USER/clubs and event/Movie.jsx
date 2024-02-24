@@ -17,7 +17,10 @@ export default function Movie() {
         eventId: '65d5b55366590253933c77ac',
         minParticipants: 1,
         maxParticipants: 10,
-        amount:250,
+        amount: 250,
+
+        eventTitle: 'FILM MAKING ',
+
 
     });
 
@@ -30,7 +33,9 @@ export default function Movie() {
                 eventId: '65d5b55366590253933c77ac',
                 minParticipants: 1,
                 maxParticipants: 10,
-                amount:250,
+                amount: 250,
+                eventTitle: 'FILM MAKING ',
+
             });
         }
         if (tabId === "step-2") {
@@ -38,7 +43,9 @@ export default function Movie() {
                 eventId: '65d5b35766590253933c779b',
                 minParticipants: 3,
                 maxParticipants: 5,
-                amount:200,
+                amount: 200,
+                eventTitle: 'MAD-ADS',
+
             });
         }
         if (tabId === "step-3") {
@@ -46,7 +53,10 @@ export default function Movie() {
                 eventId: '65d5b32a66590253933c7798',
                 minParticipants: 3,
                 maxParticipants: 5,
-                amount:200,
+                amount: 200,
+                perTeam: true,
+                eventTitle: 'CREATIVE CHAOS',
+
             });
         }
 

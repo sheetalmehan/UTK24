@@ -19,9 +19,10 @@ const BhangraClub = () => {
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d754a5858e4145844248',
-        minParticipants: 1,
+        minParticipants: 8,
         maxParticipants: 100,
-        price: 200,
+        amount: 200,
+        eventTitle:'BHANGRA',
 
     });
 
@@ -32,9 +33,10 @@ const BhangraClub = () => {
         if (tabId === "step-one") {
             setEventdetails({
                 eventId: '65d5d754a5858e4145844248',
-                minParticipants: 1,
+                minParticipants: 8,
                 maxParticipants: 100,
-                price: 200,
+                amount: 200,
+                eventTitle: 'BHANGRA',
             });
         }
 

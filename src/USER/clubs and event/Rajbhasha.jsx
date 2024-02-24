@@ -18,7 +18,9 @@ export default function Rajbhasha() {
         eventId: '65d5d8d0a5858e4145844260',
         minParticipants: 1,
         maxParticipants: 1,
-        amount:100,
+        amount: 100,
+        eventTitle: 'MEHFIL',
+
 
     });
 
@@ -31,7 +33,9 @@ export default function Rajbhasha() {
                 eventId: '65d5d8d0a5858e4145844260',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:100,
+                amount: 100,
+                eventTitle: 'MEHFIL',
+
             });
         }
         if (tabId === "step-2") {
@@ -39,7 +43,9 @@ export default function Rajbhasha() {
                 eventId: '65d5d90da5858e4145844263',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:0,
+                amount: 0,
+                eventTitle: 'PRAGHYANSH',
+
             });
         }
         if (tabId === "step-3") {
@@ -47,7 +53,9 @@ export default function Rajbhasha() {
                 eventId: '65d5e46ad6dab049c797fe56',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:100,
+                amount: 100,
+                eventTitle: 'PATROKAR BABU',
+
             });
         }
         if (tabId === "step-4") {
@@ -55,7 +63,9 @@ export default function Rajbhasha() {
                 eventId: '65d5d922a5858e4145844266',
                 minParticipants: 1,
                 maxParticipants: 3,
-                amount:0,
+                amount: 0,
+                eventTitle: 'FILMY SANGRAM',
+
             });
         }
         if (tabId === "step-5") {
@@ -63,7 +73,9 @@ export default function Rajbhasha() {
                 eventId: '65d5e4dfd6dab049c797fe59',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:0,
+                amount: 0,
+                eventTitle: 'JASHN-E-UTKANSH',
+
             });
         }
 

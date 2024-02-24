@@ -17,7 +17,9 @@ export default function RLC() {
         eventId: '65d5b86ea8d0fcbeb3c7c1cd',
         minParticipants: 1,
         maxParticipants: 4,
-        amount:300,
+        amount: 300,
+        eventTitle: 'FOLK SINGING',
+
 
     });
 
@@ -30,7 +32,9 @@ export default function RLC() {
                 eventId: '65d5b86ea8d0fcbeb3c7c1cd',
                 minParticipants: 1,
                 maxParticipants: 4,
-                amount:300,
+                amount: 300,
+                eventTitle: 'FOLK SINGING',
+
             });
         }
         if (tabId === "step-2") {
@@ -38,7 +42,9 @@ export default function RLC() {
                 eventId: '65d5b8a8a8d0fcbeb3c7c1d0',
                 minParticipants: 1,
                 maxParticipants: 100,
-                amount:300,
+                amount: 300,
+                eventTitle: 'PRAGHYANSH',
+
             });
         }
 

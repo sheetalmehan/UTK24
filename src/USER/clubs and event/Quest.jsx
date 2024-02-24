@@ -17,6 +17,8 @@ export default function Quest() {
         minParticipants: 1,
         maxParticipants: 3,
         amount: 100,
+        eventTitle: 'COGNITO',
+
 
     });
 
@@ -30,6 +32,8 @@ export default function Quest() {
                 minParticipants: 1,
                 maxParticipants: 3,
                 amount: 100,
+                eventTitle: 'COGNITO',
+
             });
         }
         if (tabId === "step-2") {
@@ -38,6 +42,8 @@ export default function Quest() {
                 minParticipants: 1,
                 maxParticipants: 3,
                 amount: 100,
+                eventTitle: 'MONEY GPT',
+
             });
         }
 

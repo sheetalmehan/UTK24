@@ -17,7 +17,8 @@ export default function PhotoClub() {
         eventId: '65d5b834a8d0fcbeb3c7c1ca',
         minParticipants: 1,
         maxParticipants: 2,
-        amount:0,
+        amount: 0,
+        eventTitle: 'DRISHYA',
 
     });
 
@@ -30,7 +31,9 @@ export default function PhotoClub() {
                 eventId: '65d5b834a8d0fcbeb3c7c1ca',
                 minParticipants: 1,
                 maxParticipants: 2,
-                amount:0,
+                amount: 0,
+                eventTitle: 'DRISHYA',
+
             });
         }
         if (tabId === "step-2") {
@@ -38,7 +41,9 @@ export default function PhotoClub() {
                 eventId: '65d5b7b9a8d0fcbeb3c7c1c4',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:0,
+                amount: 0,
+                eventTitle: 'NAZARIYA',
+
             });
         }
         if (tabId === "step-3") {
@@ -46,7 +51,9 @@ export default function PhotoClub() {
                 eventId: '65d5b736a8d0fcbeb3c7c1c0',
                 minParticipants: 3,
                 maxParticipants: 5,
-                amount:0,
+                amount: 0,
+                eventTitle: 'SNAP TREASURE',
+
             });
         }
         if (tabId === "step-four") {
@@ -54,7 +61,9 @@ export default function PhotoClub() {
                 eventId: '65d5b27d66590253933c778e',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:0,
+                amount: 0,
+                eventTitle: 'CINEPULSE',
+
             });
         }
         if (tabId === "step-five") {
@@ -62,7 +71,9 @@ export default function PhotoClub() {
                 eventId: '65d5b7eea8d0fcbeb3c7c1c7',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:49,
+                amount: 49,
+                eventTitle: 'CINEPULSE',
+
             });
         }
 
@@ -143,7 +154,7 @@ export default function PhotoClub() {
                                                                 <li>Submit before 3 MARCH, 11:59 PM.</li>
                                                                 <li>The decision taken by the judges shall be final and binding. In case of any disputes NIT Jalandhar reserves the rights in its sole discretion.</li>
                                                                 <li>Registration: <a href='https://forms.gle/xDN1TLCiGS6fZ7Pf7' target='_blank'> Link</a></li>
-                                                                
+
                                                             </p>
                                                             <br /><br />
                                                             <span style={{ color: 'white' }}><b>Prize Pool: 4,000/- INR</b></span><br /><br />

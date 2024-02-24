@@ -19,7 +19,9 @@ export default function Panche() {
         minParticipants: 2,
         maxParticipants: 25,
         amount: 2500,
-        perTeam:true,
+        perTeam: true,
+        eventTitle: 'Panache - The fashion Parade',
+
     });
 
 

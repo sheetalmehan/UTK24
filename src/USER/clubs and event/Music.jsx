@@ -11,16 +11,18 @@ import '../css/div_comming_css.css'
 export default function Music() {
     const navigate = useNavigate();
 
-    
+
 
     const [activeTab, setActiveTab] = useState('step-1');
-   
+
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d799a5858e414584424b',
         minParticipants: 1,
         maxParticipants: 1,
-        amount:200,
+        amount: 200,
+        eventTitle: 'THE VOICE',
+
 
     });
 
@@ -33,7 +35,9 @@ export default function Music() {
                 eventId: '65d5d799a5858e414584424b',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:200,
+                amount: 200,
+                eventTitle: 'THE VOICE',
+
             });
         }
         if (tabId === "step-2") {
@@ -42,10 +46,12 @@ export default function Music() {
                 minParticipants: 1,
                 maxParticipants: 10,
                 amount: 1500,
-                perTeam:true,
+                perTeam: true,
+                eventTitle: 'MEGA SONIC',
+
             });
         }
-       
+
 
     };
 
@@ -53,13 +59,13 @@ export default function Music() {
         console.log("clicked", eventdetails);
         navigate("/event/registerinevent", { state: { ...eventdetails } });
     };
-  
+
     return (<div>
 
         {/* Our Schedule Area Start */}
         <section className="our-schedule-area">
-        <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Music Club NITJ<i>(Octaves)</i></h1>
-       
+            <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Music Club NITJ<i>(Octaves)</i></h1>
+
             <div className="container">
                 <div className="row">
                     <div className="col-12">
