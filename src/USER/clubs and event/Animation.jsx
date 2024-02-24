@@ -32,6 +32,7 @@ export default function Animation() {
                 maxParticipants: 100,
                 amount:0,
                 eventTitle:'COSCON',
+
             });
         }
 
@@ -41,7 +42,7 @@ export default function Animation() {
         navigate("/event/registerinevent", { state: { ...eventdetails } });
     };
 
-    return (<div>
+    return (<div className='ALLEVENT'>
 
         {/* Our Schedule Area Start */}
         <section className="our-schedule-area">

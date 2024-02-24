@@ -67,7 +67,7 @@ const Dance = () => {
 
 
     return (
-        <div>
+        <div className='ALLEVENT'>
             {/* <div className="cd-overlay-nav">
                 <span></span>
             </div> */}

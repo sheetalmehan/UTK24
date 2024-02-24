@@ -3,6 +3,7 @@ import './member.css';
 import VanillaTilt from './Vanillatilt.js'; // Import the default export from VanillaTilt.js
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faYoutube, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faPerson, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const FacultyCoordinators = () => {
     // useEffect(() => {
@@ -21,15 +22,15 @@ const FacultyCoordinators = () => {
                         <h3>Prof Binod Kumar Kanaujia</h3>
                         <h4>Director</h4>
                         <span>
-                            <img src="https://nitj.irins.org/assets/profile_images/60657.jpg" alt="director" />
+                            <img src="https://v1.nitj.ac.in/images/admin_page/Director/Director.jpg" alt="director" />
                         </span>
                         <div className="content">
                             <h2>01</h2>
                             <div>
                                 {/* <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a> */}
-                                <a href="https://www.linkedin.com/in/prof-binod-kumar-kanaujia-42430762/?originalSubdomain=in" target="_blank">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ color: 'black' }} />
+                                <a href="https://departments.nitj.ac.in/dept/ece/Faculty/6430446f38bff038a7808ab6" target="_blank">
+                                    <FontAwesomeIcon icon={faUser} size="2x" style={{ color: 'black' }} />
                                 </a>
                                 {/* <a href="https://github.com/" target="_blank">
                                     <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
@@ -57,8 +58,8 @@ const FacultyCoordinators = () => {
                             <div>
                                 {/* <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a> */}
-                                <a href="https://www.linkedin.com/in/anish-sachdeva-9683436/" target="_blank">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ color: 'black' }} />
+                                <a href="https://departments.nitj.ac.in/dept/ipe/Faculty/6430445738bff038a780609d" target="_blank">
+                                    <FontAwesomeIcon icon={faUser} size="2x" style={{ color: 'black' }} />
                                 </a>
                                 {/* <a href="https://github.com/" target="_blank">
                                     <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
@@ -76,211 +77,85 @@ const FacultyCoordinators = () => {
                         <div className="content">
                             <h2>03</h2>
                             <div>
-                               
-                                <a href="https://www.linkedin.com/in/jaspreet-kaur-8a93a056/?originalSubdomain=in" target="_blank">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ color: 'black' }} />
+
+                                <a href="https://departments.nitj.ac.in/dept/cy/Faculty/6430445238bff038a7805070" target="_blank">
+                                    <FontAwesomeIcon icon={faUser} size="2x" style={{ color: 'black' }} />
                                 </a>
-                                
+
                             </div>
                         </div>
                     </div>
 
 
-                   
+
                 </div>
             </div>
-
 
             <div className="container1">
-                <h2 className='teamheading' style={{ textAlign: 'center', }}>Faculty Coordinators</h2>
+
                 <div className="cont">
-                    <div className="card4545 card1 main-card">
-                        <h3>Prof Binod Kumar Kanaujia</h3>
-                        <h4>Director</h4>
+                    <div className="card4545 card1">
+                        <h3>Dr Indu Saini</h3>
+                        <h4>Chair person</h4>
                         <span>
-                            <img src="https://nitj.irins.org/assets/profile_images/60657.jpg" alt="director" />
+                            <img src="https://www.nitj.ac.in/images/faculty/18011954316.png" alt="" />
                         </span>
                         <div className="content">
-                            <h2>01</h2>
+                            <h2>04</h2>
                             <div>
                                 {/* <a href="https://www.instagram.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a> */}
-                                <a href="https://www.linkedin.com/in/prof-binod-kumar-kanaujia-42430762/?originalSubdomain=in" target="_blank">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ color: 'black' }} />
+                    <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a> */}
+                                <a href="https://departments.nitj.ac.in/dept/ece/Faculty/6430445538bff038a7805caf" target="_blank">
+                                    <FontAwesomeIcon icon={faUser} size="2x" style={{ color: 'black' }} />
                                 </a>
                                 {/* <a href="https://github.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
-                                </a> */}
+                    <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
+                </a> */}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card4545 card1">
+                        <h3>Dr Afzal Sikandar</h3>
+                        <h4>Deputy Chair Person</h4>
+                        <span>
+                            <img src="https://www.nitj.ac.in/images/faculty/18020663191.jpg" alt="" />
+                        </span>
+                        <div className="content">
+                            <h2>05</h2>
+                            <div>
+
+                                <a href="https://departments.nitj.ac.in/dept/ice/Faculty/6430446838bff038a7807deb" target="_blank">
+                                    <FontAwesomeIcon icon={faUser} size="2x" style={{ color: 'black' }} />
+                                </a>
+
                             </div>
                         </div>
                     </div>
 
 
                     <div className="card4545 card1">
-                        <h3>Lovish Garg</h3>
-                        <h4>Convenor</h4>
+                        <h3>Dr Narendra Kumar</h3>
+                        <h4>Deputy Chair Person</h4>
                         <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1676977602/core_members/lovish_garg_e2rvqt.jpg" alt="" />
+                            <img src="https://v1.nitj.ac.in/nitj_files/links/Photo_69247.jpeg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>01</h2>
+                            <h2>06</h2>
                             <div>
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
-                                <a href="https://www.linkedin.com/home" target="_blank">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ color: 'black' }} />
-                                </a>
-                                <a href="https://github.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card4545 card1">
-                        <h3>Lovish Garg</h3>
-                        <h4>Convenor</h4>
-                        <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1676977602/core_members/lovish_garg_e2rvqt.jpg" alt="" />
-                        </span>
-                        <div className="content">
-                            <h2>01</h2>
-                            <div>
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
-                                <a href="https://www.linkedin.com/home" target="_blank">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ color: 'black' }} />
-                                </a>
-                                <a href="https://github.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card4545 card1">
-                        <h3>Lovish Garg</h3>
-                        <h4>Convenor</h4>
-                        <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1676977602/core_members/lovish_garg_e2rvqt.jpg" alt="" />
-                        </span>
 
-                    </div>
-                    <div className="card4545 card1">
-                        <h3>Lovish Garg</h3>
-                        <h4>Convenor</h4>
-                        <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1676977602/core_members/lovish_garg_e2rvqt.jpg" alt="" />
-                        </span>
-                        <div className="content">
-                            <h2>01</h2>
-                            <div>
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
-                                <a href="https://www.linkedin.com/home" target="_blank">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ color: 'black' }} />
+                                <a href="https://departments.nitj.ac.in/dept/ipe/Faculty/6430446d38bff038a780895c" target="_blank">
+                                    <FontAwesomeIcon icon={faUser} size="2x" style={{ color: 'black' }} />
                                 </a>
-                                <a href="https://github.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
-                                </a>
+
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </div>
-            <div className="container1">
-                <h2 className='teamheading' style={{ textAlign: 'center', }}>Faculty Coordinators</h2>
-                <div className="cont">
-                    <div className="card4545 card1 main-card">
-                        <h3>Prof Binod Kumar Kanaujia</h3>
-                        <h4>Director</h4>
-                        <span>
-                            <img src="https://nitj.irins.org/assets/profile_images/60657.jpg" alt="director" />
-                        </span>
-                        <div className="content">
-                            <h2>01</h2>
-                            <div>
-                                {/* <a href="https://www.instagram.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a> */}
-                                <a href="https://www.linkedin.com/in/prof-binod-kumar-kanaujia-42430762/?originalSubdomain=in" target="_blank">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ color: 'black' }} />
-                                </a>
-                                {/* <a href="https://github.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
-                                </a> */}
-                            </div>
-                        </div>
-                    </div>
 
-
-                    <div className="card4545 card1">
-                        <h3>Lovish Garg</h3>
-                        <h4>Convenor</h4>
-                        <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1676977602/core_members/lovish_garg_e2rvqt.jpg" alt="" />
-                        </span>
-                        <div className="content">
-                            <h2>01</h2>
-                            <div>
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
-                                <a href="https://www.linkedin.com/home" target="_blank">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ color: 'black' }} />
-                                </a>
-                                <a href="https://github.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card4545 card1">
-                        <h3>Lovish Garg</h3>
-                        <h4>Convenor</h4>
-                        <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1676977602/core_members/lovish_garg_e2rvqt.jpg" alt="" />
-                        </span>
-                        <div className="content">
-                            <h2>01</h2>
-                            <div>
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
-                                <a href="https://www.linkedin.com/home" target="_blank">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ color: 'black' }} />
-                                </a>
-                                <a href="https://github.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card4545 card1">
-                        <h3>Lovish Garg</h3>
-                        <h4>Convenor</h4>
-                        <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1676977602/core_members/lovish_garg_e2rvqt.jpg" alt="" />
-                        </span>
-
-                    </div>
-                    <div className="card4545 card1">
-                        <h3>Lovish Garg</h3>
-                        <h4>Convenor</h4>
-                        <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1676977602/core_members/lovish_garg_e2rvqt.jpg" alt="" />
-                        </span>
-                        <div className="content">
-                            <h2>01</h2>
-                            <div>
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
-                                <a href="https://www.linkedin.com/home" target="_blank">
-                                    <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ color: 'black' }} />
-                                </a>
-                                <a href="https://github.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 }
