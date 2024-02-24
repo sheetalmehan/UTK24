@@ -36,28 +36,31 @@ const Layout = ({ children }) => {
       <div className="drawer absolute z-50 right-0 w-fit">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          <label htmlFor="my-drawer" className="cursor-pointer relative" onClick={changeWidth} style={{padding:'5px'}}>
-            <FontAwesomeIcon icon={faBars}  style={{ marginRight: '18px', marginTop: '23px' }} />
+          <label htmlFor="my-drawer" className="cursor-pointer relative" onClick={changeWidth} style={{ padding: '5px' }}>
+            <FontAwesomeIcon icon={faBars} style={{ marginRight: '18px', marginTop: '23px' }} />
           </label>
         </div>
 
         <div className="drawer-side w-0">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
 
-          <ul className="menu p-4 w-48 sm:w-80 bg-base-100 text-base-content relative">
+          <ul className="menu p-4 w-48 sm:w-80 bg-base-100 text-base-content relative margin_km_kro" style={{overflow:'visible'}}>
+            <h5 style={{ fontWeight: '700' }}>Dashboard</h5>
+            <hr style={{borderColor:'white'}}></hr>
             <div className="hidden-div">
-              <li><Link style={{ textDecoration: 'none' }} to="/" >Home</Link></li>
-              <li><Link style={{ textDecoration: 'none' }} to="/Gallery" >Gallery</Link></li>
-              <li><Link style={{ textDecoration: 'none' }} to="/clubsandevent" >Events</Link></li>
-              <li><Link style={{ textDecoration: 'none' }} to="/megaevent" >Mega Events</Link></li>
-              <li><Link style={{ textDecoration: 'none' }} to="/merchandise" >Merchandise</Link></li>
-              <li><Link style={{ textDecoration: 'none' }} to="/accomodationPage" >Accommodation</Link></li>
-              <li><Link style={{ textDecoration: 'none' }} to="/TeamMembers" >Team Members</Link></li>
-              <li><Link style={{ textDecoration: 'none' }} to="/FacultyCoordinators" >Faculty Coordinator </Link></li>
-              <li><Link style={{ textDecoration: 'none' }} to="/Developers" >Developers</Link></li>
-              <li><Link style={{ textDecoration: 'none' }} to="/Contacts" >Contact us</Link></li>
+              <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/" >Home</Link></li>
+              <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/Gallery" >Gallery</Link></li>
+              <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/clubsandevent" >Events</Link></li>
+              <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/megaevent" >Mega Events</Link></li>
+              <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/merchandise" >Merchandise</Link></li>
+              <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/accomodationPage" >Accommodation</Link></li>
+              <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/TeamMembers" >Team Members</Link></li>
+              <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/FacultyCoordinators" >Faculty Coordinator </Link></li>
+              <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/Developers" >Developers</Link></li>
+              <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/Contacts" >Contact us</Link></li>
 
             </div>
+
 
             <li className="w-fit absolute right-2 z-50">
               <button onClick={hideDrawer}>
@@ -66,49 +69,49 @@ const Layout = ({ children }) => {
             </li>
 
             {isLoggedIn && role === "ADMIN" && (
-              <li>
+              <li onClick={hideDrawer}>
                 <Link style={{ textDecoration: 'none' }} to={"/admin/dashboard"}>Events Dashboard</Link>
               </li>
             )}
             {isLoggedIn && role === "ADMIN" && (
-              <li>
+              <li onClick={hideDrawer}>
                 <Link style={{ textDecoration: 'none' }} to={"/admin/merchandise"}>Merchandise Dashboard</Link>
               </li>
             )}
             {isLoggedIn && role === "ADMIN" && (
-              <li>
+              <li onClick={hideDrawer}>
                 <Link style={{ textDecoration: 'none' }} to={"/admin/accommodation"}>Accomodation Dashboard</Link>
               </li>
             )}
 
             {isLoggedIn && role === "USER" && (
-              <li>
+              <li onClick={hideDrawer}>
                 <Link style={{ textDecoration: 'none' }} to={"/user/dashboard"}>My Events</Link>
               </li>
             )}
             {isLoggedIn && role === "USER" && (
-              <li>
+              <li onClick={hideDrawer}>
                 <Link style={{ textDecoration: 'none' }} to={"/merchandise/myOrders"}>My Orders</Link>
               </li>
             )}
             {isLoggedIn && role === "USER" && (
-              <li>
+              <li onClick={hideDrawer}>
                 <Link style={{ textDecoration: 'none' }} to={"/accommodation/myBookings"}>My Bookings</Link>
               </li>
             )}
 
 
             {isLoggedIn && role === "COORDINATOR" && (
-              <li>
+              <li onClick={hideDrawer}>
                 <Link style={{ textDecoration: 'none' }} to={"/admin/dashboard"}>COORDINATOR Dashboard</Link>
               </li>
             )}
-           
+
             {
               isLoggedIn &&
               role === 'ADMIN' &&
               (
-                <li>
+                <li onClick={hideDrawer}>
                   <Link style={{ textDecoration: 'none' }} className="text-decoration-none no-underline" to={"/contact/newQuery"}>New Queries</Link>
                 </li>
               )
@@ -119,21 +122,23 @@ const Layout = ({ children }) => {
               isLoggedIn &&
               role === 'ADMIN' &&
               (
-                <li>
+                <li onClick={hideDrawer}>
                   <Link style={{ textDecoration: 'none' }} className="text-decoration-none no-underline" to={"/contact/answeredQuery"}>Old Queries</Link>
                 </li>
               )
             }
             {isLoggedIn && (
-              <li>
+              <li onClick={hideDrawer}>
                 <Link style={{ textDecoration: 'none' }} to={"/user/profile"}>My Profile</Link>
               </li>
             )}
+            <li style={{ textDecoration: 'none' }}  className="text-decoration-none no-underline"></li>
+            <li style={{ textDecoration: 'none' }}  className="text-decoration-none no-underline"></li>
 
 
 
 
-            <li className="absolute bottom-4 w-[90%] flex flex-wrap justify-center bottom-0">
+            <li className="absolute bottom-2 w-[90%] flex flex-wrap justify-center bottom-0" style={{marginTop:'20px'}}>
               {!isLoggedIn ? (
                 <>
                   <button className="btn btn-green">

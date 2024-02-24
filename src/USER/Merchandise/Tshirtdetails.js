@@ -18,7 +18,7 @@ const Tshirtdetails = () => {
   };
 
   return (
-    <section id="merchandise" className="merchandise">
+    <section id="merchandise" className="merchandise" style={{minHeight:'90vh'}}>
       <div className="single-tshirt-image">
         <img src={t1} id="MainImg" alt="" />
 

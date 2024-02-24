@@ -26,12 +26,12 @@ const FallingText = () => {
         <span className="w7">4</span>
       </div>
       <div className="tagline">
-        <h2>The cultural Kaleidoscope</h2>
+        <h2 className='main_slogan'>The cultural Kaleidoscope</h2>
       </div>
 
     </div>
     <div className="regbutton">
-      <button className="button-49" role="button" onClick={handleClick}>{isLoggedIn?`PROFILE`:`REGISTER/LOGIN`}</button>
+      <button className="button-49" role="button" onClick={handleClick}>{isLoggedIn?`VIEW PROFILE`:`REGISTER/LOGIN`}</button>
 
     </div>
     </div>
