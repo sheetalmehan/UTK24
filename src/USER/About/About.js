@@ -12,7 +12,7 @@ const AboutUsSection = () => {
 
           <div className="ultimateImg" style={{ marginTop: '0px' }}>
             <video id="aftermovie3" className="img-fluid crousel_video_mdn" controls autoPlay muted loop controlsList="nodownload">
-              <source src="https://res.cloudinary.com/dy9scmebl/video/upload/v1678509103/videos/UTKANSH_19_Official_Aftermovie_NIT_Jalandhar_1_etfojm_uklab2.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dijzvijky/video/upload/v1681062129/homepagevideo/UTKANSH_19_Official_Aftermovie_NIT_Jalandhar_1_xahn1s.mp4" type="video/mp4" />
             </video>
           </div>
 

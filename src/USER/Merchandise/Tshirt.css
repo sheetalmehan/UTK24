@@ -14,6 +14,9 @@
 .Merchandise{
     text-align: center;
 }
+.column{
+    margin: 50px;
+}
 @media (max-width: 947px){
     .row232{
 

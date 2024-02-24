@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeartO, faFacebook, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import { Link } from 'react-router-dom';
 
 
 
@@ -21,7 +22,7 @@ const Footer = () => {
       {/* <div class="container"> */}
         <div className="row footer_bottom justify-content-center">
           <p className="">
-            Made with <FontAwesomeIcon icon={faHeart} /> by <a href="">WEB AND APP TEAM UTKANSH</a>
+            Made with <FontAwesomeIcon icon={faHeart} /> by <Link to ='/Developers'>WEB AND APP TEAM UTKANSH</Link>
             <br></br> Copyright &copy; Utkansh
             <script>document.write(new Date().getFullYear());</script>
           </p>
