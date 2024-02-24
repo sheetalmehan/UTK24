@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { BsCollectionPlayFill, BsTrash } from "react-icons/bs";
 import { MdOutlineModeEdit, MdOutlineDownload } from "react-icons/md";
-import { MdGppGood,MdPeople,MdOutlineDetails, MdGppBad } from "react-icons/md";
+import { MdGppGood, MdPeople, MdOutlineDetails, MdGppBad } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteEvent, getAllEvent } from "../../Redux/eventSlice";
@@ -14,7 +14,7 @@ const UserDashboard = () => {
 
 
   const userData = useSelector((state) => state?.auth?.data);
-console.log('a',userData);
+  console.log('a', userData);
   // getting the courses data from redux toolkit store
   const myEvents = useSelector((state) => state.event.eventsData);
   console.log("myEvents", myEvents);
@@ -42,23 +42,28 @@ console.log('a',userData);
   return (
 
     <div className="min-h-[90vh] pt-5 flex flex-col flex-wrap gap-10 text-white" style={{ minHeight: '90vh' }}>
-      <h1 className="text-center text-3xl font-semibold text-yellow-500" style={{ marginTop: '50px' }}>
+      {myEvents.length > 0&& <h1 className="text-center text-3xl font-semibold text-yellow-500" style={{ marginTop: '50px' }}>
         Event Dashboard
-      </h1>
+      </h1>}
+      {myEvents.length < 1 && <h1 className="text-center text-3xl font-semibold text" style={{ marginTop: '50px' }}>
+        Not  Yet Participated In any Event..
+      </h1>}
 
       {/* creating the records card and chart for sales and user details */}
 
       {/* CRUD courses section */}
       <div className="mx-[10%] w-[80%] self-center flex flex-col items-center justify-center gap-10 mb-10">
+
+
         <div className="flex w-full items-center justify-between">
-          <h1 className="text-center text-3xl font-semibold">
+          {myEvents.length > 0 && <h1 className="text-center text-3xl font-semibold">
             Event Overview
-          </h1>
+          </h1>}
 
 
         </div>
 
-        <table className="table overflow-x-scroll" >
+        {myEvents.length > 0 && <table className="table overflow-x-scroll" >
           <thead>
             <tr >
               <th>S No.</th>
@@ -94,32 +99,32 @@ console.log('a',userData);
 
                   <td >
                     {/* to edit the course */}
-                   
-                      <MdOutlineDetails  onClick={() =>
-                        navigate("/event/details", {
-                          state: {
-                            initialEventData: {
-                              newEvent: false,
-                              ...element,
-                            },
+
+                    <MdOutlineDetails onClick={() =>
+                      navigate("/event/details", {
+                        state: {
+                          initialEventData: {
+                            newEvent: false,
+                            ...element,
                           },
-                        })
-                      }/>
-                    
+                        },
+                      })
+                    } />
+
                   </td>
 
 
 
 
                   <td>
-                   
-                      <MdPeople  onClick={() =>
-                        navigate("/user/displaycontactperson", {
-                          state: { ...element },
-                        })
-                      }/>
 
-                  
+                    <MdPeople onClick={() =>
+                      navigate("/user/displaycontactperson", {
+                        state: { ...element },
+                      })
+                    } />
+
+
 
 
 
@@ -129,7 +134,7 @@ console.log('a',userData);
 
 
                   <td>
-                  {element.participant.some(obj => (obj.enrolledby === userData._id) && (obj.isverified === true)) ? 'Verified' : 'Unverified'}
+                    {element.participant.some(obj => (obj.enrolledby === userData._id) && (obj.isverified === true)) ? 'Verified' : 'Unverified'}
 
 
                     {/* to CRUD the lectures */}
@@ -147,7 +152,7 @@ console.log('a',userData);
 
 
                   <td>
-{/* 
+                    {/* 
                     <button
                       onClick={() =>
                         navigate("/event/displayUnverifiedparticipants", {
@@ -156,11 +161,11 @@ console.log('a',userData);
                       }
                       className="bg-none hover:bg-green-600 transition-all ease-in-out duration-30 text-xl py-2 px-4 rounded-md font-bold color-black"
                     > */}
-                      <MdOutlineDownload onClick={() =>
-                        navigate("/event/displayUnverifiedparticipants", {
-                          state: { ...element },
-                        })
-                      }/>
+                    <MdOutlineDownload onClick={() =>
+                      navigate("/event/displayUnverifiedparticipants", {
+                        state: { ...element },
+                      })
+                    } />
                     {/* </button> */}
                   </td>
                 </tr>
@@ -169,7 +174,7 @@ console.log('a',userData);
               );
             })}
           </tbody>
-        </table>
+        </table>}
       </div>
     </div>
 
