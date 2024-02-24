@@ -25,11 +25,11 @@ class ProNightSection extends React.Component {
                     </video>
                     {/* <h1 className="pronighthome">ProNight</h1> */}
 
-                    <button className='revelbutton1' onClick={this.handleClick}><h5 className="main_pro main_text">Live Band</h5></button >
-                    <button className='revelbutton2' onClick={this.handleClick}><h5 className="main_pro main_text">Kavi Sammelan</h5></button>
-                    <button className='revelbutton3' onClick={this.handleClick}><h5 className="main_pro main_text">Bollywood Dance Music</h5></button>
-                    <button className='revelbutton4' onClick={this.handleClick}><h5 className="main_pro main_text">Faishon Show</h5></button>
-                    <button className='revelbutton5' onClick={this.handleClick}><h5 className="main_pro main_text">Star Night</h5></button>
+                    <button className='revelbutton1' onClick={this.handleClick}><h5 className="main_pro main_text">Live<br></br> Band</h5></button >
+                    <button className='revelbutton2' onClick={this.handleClick}><h5 className="main_pro main_text">Kavi <br></br> Sammelan</h5></button>
+                    <button className='revelbutton3' onClick={this.handleClick}><h5 className="main_pro main_text">Bollywood<br></br>  Dance Music</h5></button>
+                    <button className='revelbutton4' onClick={this.handleClick}><h5 className="main_pro main_text">Faishon<br></br> Show</h5></button>
+                    <button className='revelbutton5' onClick={this.handleClick}><h5 className="main_pro main_text">Star<br></br> Night</h5></button>
                     {/* </div> */}</div > 
             </>
         );
