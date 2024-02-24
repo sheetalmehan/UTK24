@@ -38,7 +38,7 @@ export default function Sanskriti() {
 
 
     return (
-        <div>
+        <div className='ALLEVENT'>
 
 
             <section className="our-schedule-area">

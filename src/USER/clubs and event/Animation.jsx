@@ -29,7 +29,7 @@ export default function Animation() {
                 eventId: '65d5e550d6dab049c797fe5c',
                 minParticipants: 1,
                 maxParticipants: 100,
-                amount:0,
+                amount: 0,
             });
         }
 
@@ -39,7 +39,7 @@ export default function Animation() {
         navigate("/event/registerinevent", { state: { ...eventdetails } });
     };
 
-    return (<div>
+    return (<div className='ALLEVENT'>
 
         {/* Our Schedule Area Start */}
         <section className="our-schedule-area">

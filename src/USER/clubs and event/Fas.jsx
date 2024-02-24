@@ -119,7 +119,7 @@ export default function Fas() {
     };
 
     return (
-        <div>
+        <div className='ALLEVENT'>
 
             <section className="our-schedule-area">
                 <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">FAS</h1>

@@ -1,6 +1,16 @@
-import React from 'react';
+// import React from 'react';
 import './About.css'
+import React, { useEffect } from 'react';
+
+import VanillaTilt from '../members/Vanillatilt.js';
 const AboutUsSection = () => {
+
+  useEffect(() => {
+    VanillaTilt.init(document.querySelectorAll(".ultimateImg"), {
+        max: 7,
+        speed: 1000
+    });
+}, []);
   return (
     <section>
       <div className="">
@@ -12,7 +22,7 @@ const AboutUsSection = () => {
 
           <div className="ultimateImg" style={{ marginTop: '0px' }}>
             <video id="aftermovie3" className="img-fluid crousel_video_mdn" controls autoPlay muted loop controlsList="nodownload">
-              <source src="https://res.cloudinary.com/dijzvijky/video/upload/v1681062129/homepagevideo/UTKANSH_19_Official_Aftermovie_NIT_Jalandhar_1_xahn1s.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dijzvijky/video/upload/v1708777878/trailer_3_1_n4uzct.mp4" type="video/mp4" />
             </video>
           </div>
 

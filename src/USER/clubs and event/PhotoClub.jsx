@@ -73,7 +73,7 @@ export default function PhotoClub() {
     };
 
     return (
-        <div>
+        <div className='ALLEVENT'>
 
             {/* Our Schedule Area Start */}
             <section className="our-schedule-area">

@@ -87,7 +87,7 @@ const Drama = () => {
 
 
     return (
-        <div>
+        <div className='ALLEVENT'>
 
 
 

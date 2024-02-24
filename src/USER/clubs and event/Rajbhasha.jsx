@@ -75,7 +75,7 @@ export default function Rajbhasha() {
     };
 
     return (
-        <div>
+        <div className='ALLEVENT'>
             {/* Our Schedule Area Start */}
             <section className="our-schedule-area">
                 <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Rajbhasha Samiti</h1>

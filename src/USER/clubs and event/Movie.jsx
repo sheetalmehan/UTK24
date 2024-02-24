@@ -58,7 +58,7 @@ export default function Movie() {
     };
 
     return (
-        <div>
+        <div className='ALLEVENT'>
 
             {/* Our Schedule Area Start */}
             <section className="our-schedule-area">

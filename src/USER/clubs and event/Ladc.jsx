@@ -59,7 +59,7 @@ export default function Ladc() {
 
 
     return (
-        <div>
+        <div className='ALLEVENT'>
             {/* Our Schedule Area Start */}
             <section className="our-schedule-area">
                   <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Literary and Debating Club</h1>

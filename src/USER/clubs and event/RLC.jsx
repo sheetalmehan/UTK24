@@ -50,7 +50,7 @@ export default function RLC() {
     };
 
     return (
-        <div>
+        <div className='ALLEVENT'>
             {/* Our Schedule Area Start */}
             <section className="our-schedule-area">
                 <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Regional Language Club</h1>

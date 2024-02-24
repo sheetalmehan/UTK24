@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import './member.css';
+
 import VanillaTilt from './Vanillatilt.js'; // Import the default export from VanillaTilt.js
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faYoutube, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-
+import './member.css';
 
 const Developers = () => {
     useEffect(() => {
@@ -24,7 +24,7 @@ const Developers = () => {
                 <div className="cont">
                     <div className="card4545 card1">
                         <h3>Tanya Pahuja</h3>
-                        <h3>CSE 4th Year</h3>
+                        <h3>ICE 4th Year</h3>
                         <h4>Web Dev Head</h4>
                     
 
