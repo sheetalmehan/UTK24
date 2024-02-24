@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import './pronight.css';
-import videoFile from './fast_clip_1.mp4'; // Import the video file
 import arrow from './arrow-down-double-line.svg';
 
 export default function Pronight() {
