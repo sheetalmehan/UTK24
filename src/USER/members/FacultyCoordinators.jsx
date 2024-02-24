@@ -25,17 +25,17 @@ const FacultyCoordinators = () => {
                             <img src="https://v1.nitj.ac.in/images/admin_page/Director/Director.jpg" alt="director" />
                         </span>
                         <div className="content">
-                            <h2>01</h2>
+                            {/* <h2>01</h2> */}
                             <div>
                                 {/* <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a> */}
                                 <a href="https://departments.nitj.ac.in/dept/ece/Faculty/6430446f38bff038a7808ab6" target="_blank">
-                                    <FontAwesomeIcon icon={faUser} size="2x" style={{ color: 'black' }} />
+                                <FontAwesomeIcon icon={faUser} size="3x" style={{ color: 'black' }} />
                                 </a>
-                                {/* <a href="https://github.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
-                                </a> */}
+                               
+
                             </div>
+                            <h7>Profile</h7>
                         </div>
                     </div>
 
@@ -54,17 +54,17 @@ const FacultyCoordinators = () => {
                             <img src="https://lh5.googleusercontent.com/-TCCtWppa9GY/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reHGIkUvU97e2PGpkPi2ULDvnCXHw/mo/photo.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>02</h2>
+                            {/* <h2>02</h2> */}
                             <div>
                                 {/* <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a> */}
                                 <a href="https://departments.nitj.ac.in/dept/ipe/Faculty/6430445738bff038a780609d" target="_blank">
-                                    <FontAwesomeIcon icon={faUser} size="2x" style={{ color: 'black' }} />
+                                <FontAwesomeIcon icon={faUser} size="3x" style={{ color: 'black' }} />
                                 </a>
-                                {/* <a href="https://github.com/" target="_blank">
-                                    <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
-                                </a> */}
+                               
+
                             </div>
+                            <h7>Profile</h7>
                         </div>
                     </div>
 
@@ -75,14 +75,16 @@ const FacultyCoordinators = () => {
                             <img src="https://www.nitj.ac.in/images/faculty/18030588474.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>03</h2>
+                            {/* <h2>03</h2> */}
                             <div>
 
                                 <a href="https://departments.nitj.ac.in/dept/cy/Faculty/6430445238bff038a7805070" target="_blank">
-                                    <FontAwesomeIcon icon={faUser} size="2x" style={{ color: 'black' }} />
+                                <FontAwesomeIcon icon={faUser} size="3x" style={{ color: 'black' }} />
                                 </a>
+                               
 
                             </div>
+                            <h7>Profile</h7>
                         </div>
                     </div>
 
@@ -98,20 +100,20 @@ const FacultyCoordinators = () => {
                         <h3>Dr Indu Saini</h3>
                         <h4>Chair person</h4>
                         <span>
-                            <img src="https://www.nitj.ac.in/images/faculty/18011954316.png" alt="" />
+                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708782165/18011954316_ubz5aj.png" alt="" />
                         </span>
                         <div className="content">
-                            <h2>04</h2>
+                            {/* <h2>04</h2> */}
                             <div>
                                 {/* <a href="https://www.instagram.com/" target="_blank">
                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a> */}
                                 <a href="https://departments.nitj.ac.in/dept/ece/Faculty/6430445538bff038a7805caf" target="_blank">
-                                    <FontAwesomeIcon icon={faUser} size="2x" style={{ color: 'black' }} />
+                                <FontAwesomeIcon icon={faUser} size="3x" style={{ color: 'black' }} />
                                 </a>
-                                {/* <a href="https://github.com/" target="_blank">
-                    <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'black' }} />
-                </a> */}
+                               
+
                             </div>
+                            <h7>Profile</h7>
                         </div>
                     </div>
 
@@ -122,14 +124,16 @@ const FacultyCoordinators = () => {
                             <img src="https://www.nitj.ac.in/images/faculty/18020663191.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>05</h2>
+                            {/* <h2>05</h2> */}
                             <div>
 
                                 <a href="https://departments.nitj.ac.in/dept/ice/Faculty/6430446838bff038a7807deb" target="_blank">
-                                    <FontAwesomeIcon icon={faUser} size="2x" style={{ color: 'black' }} />
+                                <FontAwesomeIcon icon={faUser} size="3x" style={{ color: 'black' }} />
                                 </a>
+                               
 
                             </div>
+                            <h7>Profile</h7>
                         </div>
                     </div>
 
@@ -141,14 +145,17 @@ const FacultyCoordinators = () => {
                             <img src="https://v1.nitj.ac.in/nitj_files/links/Photo_69247.jpeg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>06</h2>
+                            {/* <h2>06</h2> */}
                             <div>
 
                                 <a href="https://departments.nitj.ac.in/dept/ipe/Faculty/6430446d38bff038a780895c" target="_blank">
-                                    <FontAwesomeIcon icon={faUser} size="2x" style={{ color: 'black' }} />
+                                    <FontAwesomeIcon icon={faUser} size="3x" style={{ color: 'black' }} />
                                 </a>
+                               
 
                             </div>
+                            <h7>Profile</h7>
+                            
                         </div>
                     </div>
 
