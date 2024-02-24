@@ -9,7 +9,7 @@ const Merchandise = () => {
         <div className='outer' style={{minHeight:'90vh'}}>
             <h1 className="Merchandise">Merchandise</h1>
             <div className="ram ">
-                <div className="column">
+                <div className="columnY">
                     <figure className="featured-image align-center ">
                         <img src={t2} width="200px" style={{height:"250px"}} alt="Utkansh Tshirt Black" />
                     </figure>
@@ -21,7 +21,7 @@ const Merchandise = () => {
                         <Link to="/merchandise/tshirtdetails/1" style={{ color: 'blue' }}>Order Now</Link>
                     </h2>
                 </div>
-                <div className="column">
+                <div className="columnY">
                     <figure className="featured-image ">
                         <img src={t6} width="200px" style={{height:"250px"}} alt="Utkansh Tshirt Gray" />
                     </figure>

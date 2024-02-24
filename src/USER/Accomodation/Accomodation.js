@@ -23,7 +23,7 @@ const AccomodationPage = () => {
   }
 
   return (
-    <div className='accomodation' style={{minHeight:'100vh'}}>
+    <div className='accomodation' style={{minHeight:'90vh'}}>
       <div style={{minHeight:'100px'}}></div>
       <h2 className="titl" style={{ textAlign: 'center',  fontSize: '3.6rem', zIndex: 100 }}>
         Accomodation

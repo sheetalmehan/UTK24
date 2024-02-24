@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
             <hr style={{borderColor:'white'}}></hr>
             <div className="hidden-div">
               <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/" >Home</Link></li>
-              <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/Gallery" >Gallery</Link></li>
+              {/* <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/Gallery" >Gallery</Link></li> */}
               <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/clubsandevent" >Events</Link></li>
               <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/megaevent" >Mega Events</Link></li>
               <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/merchandise" >Merchandise</Link></li>

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faMapMarkerAlt, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBuilding, faEnvelope, faMapMarkerAlt, faUser, faUserGroup } from '@fortawesome/free-solid-svg-icons';
 import axiosInstance from '../../Helper/axiosInstance';
 import toast from 'react-hot-toast';
 import { useLocation } from 'react-router-dom';
+import { faTeamspeak } from '@fortawesome/free-brands-svg-icons';
 
 const ContactSection = () => {
 
@@ -73,9 +74,9 @@ const ContactSection = () => {
 
 
 
-                    <FontAwesomeIcon icon={faUser} />
+                    <FontAwesomeIcon icon={faUserGroup} />
                     <div className="info">
-                      <div className="head">Name</div>
+                      {/* <div className="head">Name</div> */}
                       <div className="sub-title">Team Utkansh</div>
                     </div>
                   </div>
