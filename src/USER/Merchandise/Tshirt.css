@@ -1,20 +1,21 @@
-.ram{
+.ram {
 
     display: flex;
     flex-direction: row;
- flex-wrap: wrap;
-     justify-content: center;
-    text-align:center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
-.outer{
+
+.outer {
 
     padding-top: 8%;
-   
-    
-        background: linear-gradient(-45deg, #053446,  #036333, #03475d, #02362a);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-    
+
+
+    background: linear-gradient(-45deg, #071920, #051d11, #071a20, #0b1e19);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
 
     @keyframes gradient {
         0% {
@@ -30,22 +31,28 @@
         }
 
 
+    }
 }
-}
-.Merchandise{
+
+.Merchandise {
     text-align: center;
+
+    
 }
-.columnY{
+
+.columnY {
     margin: 50px;
 }
-@media (max-width: 947px){
-    .row232{
 
-     
+@media (max-width: 947px) {
+    .row232 {
+
+
         flex-direction: column;
-    
+
     }
-    .outer{
+
+    .outer {
 
         padding-top: 18%;
         /* padding-bottom: 3%; */
