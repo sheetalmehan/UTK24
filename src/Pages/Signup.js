@@ -116,7 +116,7 @@ const Signup = () => {
 
   return (
     // <Layout>
-    <div className="flex items-center justify-center h-[100vh]">
+    <div className="flex items-center justify-center h-[130vh]">
       <form
         onSubmit={createNewAccount}
         className="flex flex-col justify-center gap-3 rounded-lg p-4 text-white w-96 shadow-[0_0_10px_black]"
@@ -223,7 +223,7 @@ const Signup = () => {
 
         <p className="text-center">
           Already have an account ?{" "}
-          <Link to={"/login"} className="link text-accent cursor-pointer">
+          <Link to={"/login"} className=" text-accent cursor-pointer">
             Login
           </Link>
         </p>
