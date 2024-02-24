@@ -17,8 +17,9 @@ export default function Panche() {
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5b908a8d0fcbeb3c7c1d3',
         minParticipants: 2,
-        maxParticipants: 25
-
+        maxParticipants: 25,
+        amount: 2500,
+        perTeam:true,
     });
 
 

@@ -21,7 +21,8 @@ export default function Fas() {
     const [eventdetails, setEventdetails] = useState({
         eventId: '65cf977c762805baf9ec2e1c',
         minParticipants: 1,
-        maxParticipants: 2
+        maxParticipants: 2,
+        amount:0,
 
     });
 
@@ -33,70 +34,81 @@ export default function Fas() {
             setEventdetails({
                 eventId: '65cf977c762805baf9ec2e1c',
                 minParticipants: 1,
-                maxParticipants: 2
+                maxParticipants: 2,
+                amount:0,
             });
         }
         if (tabId === "step-two") {
             setEventdetails({
                 eventId: '65d5affcf0fa8ef075fb78ae',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:50,
             });
         }
         if (tabId === "step-three") {
             setEventdetails({
                 eventId: '65d5b11666590253933c777f',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:50,
             });
         }
         if (tabId === "step-four") {
             setEventdetails({
                 eventId: '65d5b27d66590253933c778e',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:50,
             });
         }
         if (tabId === "step-five") {
             setEventdetails({
                 eventId: '65d5adc8a74298259eff0cc6',
                 minParticipants: 3,
-                maxParticipants: 3
+                maxParticipants: 3,
+                amount: 100,
+                perTeam:true,
             });
         }
         if (tabId === "step-six") {
             setEventdetails({
                 eventId: '65d5b17066590253933c7782',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:50,
             });
         }
         if (tabId === "step-seven") {
             setEventdetails({
                 eventId: '65d5b1ec66590253933c7788',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:50,
             });
         }
         if (tabId === "step-eight") {
             setEventdetails({
                 eventId: '65d5b1bc66590253933c7785',
                 minParticipants: 2,
-                maxParticipants: 2
+                maxParticipants: 2,
+                amount:100,
             });
         }
         if (tabId === "step-nine") {
             setEventdetails({
                 eventId: '65d5b23166590253933c778b',
                 minParticipants: 1,
-                maxParticipants: 2
+                maxParticipants: 2,
+                amount:100,
             });
         }
         if (tabId === "step-ten") {
             setEventdetails({
                 eventId: '65d5b29766590253933c7791',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:50,
             });
         }
 

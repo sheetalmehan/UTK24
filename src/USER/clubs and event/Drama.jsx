@@ -17,8 +17,9 @@ const Drama = () => {
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d396a5858e4145844229',
         minParticipants: 5,
-        maxParticipants: 25
-
+        maxParticipants: 25,
+        amount: 1500,
+        perTeam: true,
     });
 
 
@@ -29,42 +30,51 @@ const Drama = () => {
             setEventdetails({
                 eventId: '65d5d396a5858e4145844229',
                 minParticipants: 5,
-                maxParticipants: 25
+                maxParticipants: 25,
+                amount: 1500,
+                perTeam:true,
             });
         }
         if (tabId === "step-two") {
             setEventdetails({
                 eventId: '65d5d329a5858e4145844224',
                 minParticipants: 4,
-                maxParticipants: 20
+                maxParticipants: 20,
+                amount: 1500,
+                perTeam: true,
             });
         }
         if (tabId === "step-three") {
             setEventdetails({
                 eventId: '65d5d4b0a5858e4145844230',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount: 1500,
             });
         }
         if (tabId === "step-four") {
             setEventdetails({
                 eventId: '65d5b27d66590253933c778e',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount: 1500,
             });
         }
         if (tabId === "step-five") {
             setEventdetails({
                 eventId: '65d5adc8a74298259eff0cc6',
                 minParticipants: 3,
-                maxParticipants: 3
+                maxParticipants: 3,
+                amount: 1500,
             });
         }
         if (tabId === "step-six") {
             setEventdetails({
                 eventId: '65d5d3cda5858e414584422c',
                 minParticipants: 2,
-                maxParticipants: 5
+                maxParticipants: 5,
+                amount: 100,
+                perTeam: true,
             });
         }
 

@@ -10,12 +10,13 @@ import '../css/div_comming_css.css'
 export default function Quest() {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('step-1');
-   
+
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d884a5858e414584425a',
         minParticipants: 1,
-        maxParticipants: 3
+        maxParticipants: 3,
+        amount: 100,
 
     });
 
@@ -27,17 +28,19 @@ export default function Quest() {
             setEventdetails({
                 eventId: '65d5d884a5858e414584425a',
                 minParticipants: 1,
-                maxParticipants: 3
+                maxParticipants: 3,
+                amount: 100,
             });
         }
         if (tabId === "step-2") {
             setEventdetails({
                 eventId: '65d5d89aa5858e414584425d',
                 minParticipants: 1,
-                maxParticipants: 3
+                maxParticipants: 3,
+                amount: 100,
             });
         }
-       
+
 
     };
     const handleClick = () => {
@@ -113,7 +116,7 @@ export default function Quest() {
                                                                 <span style={{ color: 'white' }}>Date: 8<sup>th</sup> March</span><br />
                                                                 <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                                 </span><br /><br />
-                                                                <span style={{ color: 'white' }}>Entry Fee: 100/- per person (for external students.)<br/> * Free for NITJ students.<br /></span> <br /><br />
+                                                                <span style={{ color: 'white' }}>Entry Fee: 100/- per person (for external students.)<br /> * Free for NITJ students.<br /></span> <br /><br />
                                                             </p>
                                                         </div>
                                                     </div>
@@ -176,7 +179,7 @@ export default function Quest() {
                                                                 <span style={{ color: 'white' }}>Date: 10<sup>th</sup> March</span><br />
                                                                 <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                                 </span><br /><br />
-                                                                <span style={{ color: 'white' }}>Entry Fee: 100/- per person(external students)<br/>*Free for NITJ Students.<br /></span> <br /><br />
+                                                                <span style={{ color: 'white' }}>Entry Fee: 100/- per person(external students)<br />*Free for NITJ Students.<br /></span> <br /><br />
                                                                 <br />
                                                             </p>
                                                         </div>

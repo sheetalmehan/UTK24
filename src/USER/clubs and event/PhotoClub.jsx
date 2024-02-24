@@ -16,7 +16,8 @@ export default function PhotoClub() {
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5b834a8d0fcbeb3c7c1ca',
         minParticipants: 1,
-        maxParticipants: 2
+        maxParticipants: 2,
+        amount:0,
 
     });
 
@@ -28,35 +29,40 @@ export default function PhotoClub() {
             setEventdetails({
                 eventId: '65d5b834a8d0fcbeb3c7c1ca',
                 minParticipants: 1,
-                maxParticipants: 2
+                maxParticipants: 2,
+                amount:0,
             });
         }
         if (tabId === "step-2") {
             setEventdetails({
                 eventId: '65d5b7b9a8d0fcbeb3c7c1c4',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:0,
             });
         }
         if (tabId === "step-3") {
             setEventdetails({
                 eventId: '65d5b736a8d0fcbeb3c7c1c0',
                 minParticipants: 3,
-                maxParticipants: 5
+                maxParticipants: 5,
+                amount:0,
             });
         }
         if (tabId === "step-four") {
             setEventdetails({
                 eventId: '65d5b27d66590253933c778e',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:0,
             });
         }
         if (tabId === "step-five") {
             setEventdetails({
                 eventId: '65d5b7eea8d0fcbeb3c7c1c7',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:49,
             });
         }
 

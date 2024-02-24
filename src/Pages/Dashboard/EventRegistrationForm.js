@@ -21,7 +21,7 @@ function EventRegistrationForm() {
     });
     const [formErrors, setFormErrors] = useState({});
     const [popup, setPopup] = useState(false);
-    
+
     useEffect(() => {
         if (eventId) {
             setFormData(prevState => ({
@@ -30,7 +30,7 @@ function EventRegistrationForm() {
             }));
         }
     }, [eventId]);
-    
+
     const handleChange = (e, index) => {
         const { name, value } = e.target;
         setFormData(prevFormData => {
@@ -84,9 +84,9 @@ function EventRegistrationForm() {
         });
         if (Object.keys(errors).length === 0) {
             try {
-                console.log("formData",formData);
+                console.log("formData", formData);
                 const response = await dispatch(addEventParticipants(formData));
-                console.log("response",response);
+                console.log("response", response);
                 if (response.payload.success) {
                     // toast.success('Form submitted successfully');
                     setFormData({
@@ -96,7 +96,7 @@ function EventRegistrationForm() {
                         participants: [{ participantName: '', participantEmail: '', participantPhone: '' }],
                     });
                     setFormErrors({});
-                    
+
                 } else {
                     toast.error(response.data.message);
                 }
@@ -143,7 +143,7 @@ function EventRegistrationForm() {
                             </div>
                         </div>
 
-                        {popup && <QRPopup setPopup={setPopup} amount={location.state.amount} />}
+                        {popup && <QRPopup setPopup={setPopup} amount={location.state.amount * ((location.state?.perTeam) ? 1 : formData?.participants?.length)} />}
                         <div className="card-body">
                             <form className="needs-validation container mx-auto" noValidate>
                                 {formData.participants.map((member, index) => (

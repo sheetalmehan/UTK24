@@ -16,7 +16,8 @@ export default function Movie() {
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5b55366590253933c77ac',
         minParticipants: 1,
-        maxParticipants: 10
+        maxParticipants: 10,
+        amount:250,
 
     });
 
@@ -28,21 +29,24 @@ export default function Movie() {
             setEventdetails({
                 eventId: '65d5b55366590253933c77ac',
                 minParticipants: 1,
-                maxParticipants: 10
+                maxParticipants: 10,
+                amount:250,
             });
         }
         if (tabId === "step-2") {
             setEventdetails({
                 eventId: '65d5b35766590253933c779b',
                 minParticipants: 3,
-                maxParticipants: 5
+                maxParticipants: 5,
+                amount:200,
             });
         }
         if (tabId === "step-3") {
             setEventdetails({
                 eventId: '65d5b32a66590253933c7798',
                 minParticipants: 3,
-                maxParticipants: 5
+                maxParticipants: 5,
+                amount:200,
             });
         }
 

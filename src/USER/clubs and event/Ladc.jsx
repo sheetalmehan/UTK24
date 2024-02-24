@@ -16,7 +16,8 @@ export default function Ladc() {
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d7f3a5858e4145844251',
         minParticipants: 1,
-        maxParticipants: 1
+        maxParticipants: 1,
+        amount:0,
 
     });
 
@@ -28,21 +29,24 @@ export default function Ladc() {
             setEventdetails({
                 eventId: '65d5d7f3a5858e4145844251',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:0,
             });
         }
         if (tabId === "step-2") {
             setEventdetails({
                 eventId: '65d5d80ba5858e4145844254',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:0,
             });
         }
         if (tabId === "step-3") {
             setEventdetails({
                 eventId: '65d5d841a5858e4145844257',
                 minParticipants: 3,
-                maxParticipants: 3
+                maxParticipants: 3,
+                amount:200,
             });
         }
        

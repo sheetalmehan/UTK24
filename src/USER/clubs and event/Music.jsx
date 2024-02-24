@@ -19,7 +19,8 @@ export default function Music() {
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d799a5858e414584424b',
         minParticipants: 1,
-        maxParticipants: 1
+        maxParticipants: 1,
+        amount:200,
 
     });
 
@@ -31,14 +32,17 @@ export default function Music() {
             setEventdetails({
                 eventId: '65d5d799a5858e414584424b',
                 minParticipants: 1,
-                maxParticipants: 1
+                maxParticipants: 1,
+                amount:200,
             });
         }
         if (tabId === "step-2") {
             setEventdetails({
                 eventId: '65d5d7aaa5858e414584424e',
                 minParticipants: 1,
-                maxParticipants: 10
+                maxParticipants: 10,
+                amount: 1500,
+                perTeam:true,
             });
         }
        
