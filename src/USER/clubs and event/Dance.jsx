@@ -19,6 +19,7 @@ const Dance = () => {
         minParticipants: 1,
         maxParticipants: 1,
         amount: 200,
+        eventTitle: 'Beat The Street',
 
     });
 
@@ -32,6 +33,8 @@ const Dance = () => {
                 minParticipants: 1,
                 maxParticipants: 1,
                 amount: 200,
+                eventTitle: 'Beat The Street',
+
             });
         }
         if (tabId === "step-two") {
@@ -40,6 +43,8 @@ const Dance = () => {
                 minParticipants: 2,
                 maxParticipants: 2,
                 amount: 200,
+                eventTitle: 'Duet Dance',
+
             });
         }
         if (tabId === "step-three") {
@@ -48,6 +53,8 @@ const Dance = () => {
                 minParticipants: 5,
                 maxParticipants: 100,
                 amount: 120,
+                eventTitle: `Shut Up 'N' Dance`,
+
             });
         }
 

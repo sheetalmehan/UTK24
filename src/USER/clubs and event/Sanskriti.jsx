@@ -13,6 +13,8 @@ export default function Sanskriti() {
         maxParticipants: 4,
         amount: 500,
         perTeam: true,
+                eventTitle: 'Cultural Exhibition',
+
     });
 
 
@@ -26,6 +28,8 @@ export default function Sanskriti() {
                 maxParticipants: 4,
                 amount: 500,
                 perTeam: true,
+                eventTitle: 'Cultural Exhibition',
+
             });
         }
 

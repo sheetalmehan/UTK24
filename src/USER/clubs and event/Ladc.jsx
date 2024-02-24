@@ -11,13 +11,16 @@ import '../css/div_comming_css.css'
 export default function Ladc() {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('step-1');
-   
+
 
     const [eventdetails, setEventdetails] = useState({
         eventId: '65d5d7f3a5858e4145844251',
         minParticipants: 1,
         maxParticipants: 1,
-        amount:0,
+        amount: 0,
+
+        eventTitle: 'HAIKU',
+
 
     });
 
@@ -30,7 +33,9 @@ export default function Ladc() {
                 eventId: '65d5d7f3a5858e4145844251',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:0,
+                amount: 0,
+                eventTitle: 'HAIKU',
+
             });
         }
         if (tabId === "step-2") {
@@ -38,7 +43,9 @@ export default function Ladc() {
                 eventId: '65d5d80ba5858e4145844254',
                 minParticipants: 1,
                 maxParticipants: 1,
-                amount:0,
+                amount: 0,
+                eventTitle: 'OPEN MIC',
+
             });
         }
         if (tabId === "step-3") {
@@ -46,10 +53,12 @@ export default function Ladc() {
                 eventId: '65d5d841a5858e4145844257',
                 minParticipants: 3,
                 maxParticipants: 3,
-                amount:200,
+                amount: 200,
+                eventTitle: 'VOXWARS',
+
             });
         }
-       
+
 
     };
     const handleClick = () => {
@@ -62,8 +71,8 @@ export default function Ladc() {
         <div className='ALLEVENT'>
             {/* Our Schedule Area Start */}
             <section className="our-schedule-area">
-                  <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Literary and Debating Club</h1>
-          
+                <h1 style={{ marginTop: '', paddingBottom: '' }} className="text-center">Literary and Debating Club</h1>
+
                 <div className="container">
                     <div className="row">
                         <div className="col-12 ">
@@ -107,7 +116,7 @@ export default function Ladc() {
                             </div>
                             {/* Tab Content */}
                             <div className="tab-content" id="conferScheduleTabContent">
-                                {activeTab==='step-1' &&<div aria-labelledby="monday-tab" className="tab-pane fade show active" id="step-one" role="tabpanel">
+                                {activeTab === 'step-1' && <div aria-labelledby="monday-tab" className="tab-pane fade show active" id="step-one" role="tabpanel">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -149,7 +158,7 @@ export default function Ladc() {
                                                     </div>
                                                     {/* Single Schedule Info */}
                                                     {/* Schedule Btn */}
-                                                    <a className="btn confer-btn" id="ladc0" name="HAIKU"  onClick={handleClick}>Register
+                                                    <a className="btn confer-btn" id="ladc0" name="HAIKU" onClick={handleClick}>Register
                                                     </a>
                                                 </div>
                                             </div>
@@ -158,7 +167,7 @@ export default function Ladc() {
                                     </div>
                                 </div>}
 
-                                {activeTab==='step-2' &&<div aria-labelledby="tuesday-tab" className="tab-pane fade show active" id="step-two" role="tabpanel">
+                                {activeTab === 'step-2' && <div aria-labelledby="tuesday-tab" className="tab-pane fade show active" id="step-two" role="tabpanel">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -181,9 +190,9 @@ export default function Ladc() {
                                                             </p>
                                                             <h6 style={{ color: 'white' }}>Rules:</h6>
                                                             <p>
-                                                               <li> A total of 5 minutes per speaker will be allotted.</li>
-                                                               <li> Literary-related stuff, such as poetry, college-related anecdotes, storytelling, and jokes, is allowed, but no singing.</li>
-                                                               <li> It's not a competition but a reward-based event</li>
+                                                                <li> A total of 5 minutes per speaker will be allotted.</li>
+                                                                <li> Literary-related stuff, such as poetry, college-related anecdotes, storytelling, and jokes, is allowed, but no singing.</li>
+                                                                <li> It's not a competition but a reward-based event</li>
                                                             </p>
                                                             <br />
                                                             <p style={{ color: 'white' }}>
@@ -208,7 +217,7 @@ export default function Ladc() {
                                     </div>
                                 </div>}
 
-                                {activeTab==='step-3' &&<div aria-labelledby="wednesday-tab" className="tab-pane fade show active" id="step-three" role="tabpanel">
+                                {activeTab === 'step-3' && <div aria-labelledby="wednesday-tab" className="tab-pane fade show active" id="step-three" role="tabpanel">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -251,7 +260,7 @@ export default function Ladc() {
                                                                 Date: 8-9<sup>th</sup> March<br />
                                                                 <span style={{ color: 'white' }}>Reach 1 day prior to your event.
                                                                 </span><br /><br />
-                                                                <span style={{ color: 'white' }}>Entry Fee: 200/- per person(for external students)<br/>*Free for NITJ Students. </span> <br /><br />
+                                                                <span style={{ color: 'white' }}>Entry Fee: 200/- per person(for external students)<br />*Free for NITJ Students. </span> <br /><br />
                                                             </p><br /><br />
                                                             <p />
                                                         </div>
@@ -265,7 +274,7 @@ export default function Ladc() {
                                         </div>
                                     </div>
                                 </div>}
-                                {activeTab==='step-4' &&<div aria-labelledby="monday-tab" className="tab-pane fade  show active" id="step-four" role="tabpanel">
+                                {activeTab === 'step-4' && <div aria-labelledby="monday-tab" className="tab-pane fade  show active" id="step-four" role="tabpanel">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -317,7 +326,7 @@ export default function Ladc() {
                                         </div>
                                     </div>
                                 </div>}
-                                {activeTab==='step-5' &&<div aria-labelledby="monday-tab" className="tab-pane fade show active" id="step-five" role="tabpanel">
+                                {activeTab === 'step-5' && <div aria-labelledby="monday-tab" className="tab-pane fade show active" id="step-five" role="tabpanel">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
@@ -386,7 +395,7 @@ export default function Ladc() {
                                         </div>
                                     </div>
                                 </div>}
-                                {activeTab==='step-6' &&<div aria-labelledby="monday-tab" className="tab-pane fade show active" id="step-six" role="tabpanel">
+                                {activeTab === 'step-6' && <div aria-labelledby="monday-tab" className="tab-pane fade show active" id="step-six" role="tabpanel">
                                     {/* Single Tab Content */}
                                     <div className="single-tab-content">
                                         <div className="row">
