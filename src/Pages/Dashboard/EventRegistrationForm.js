@@ -113,9 +113,9 @@ function EventRegistrationForm() {
                 <div className="col-sm-8 col-md-9 col-lg-12 mx-auto">
                     <div className="card card-signin my-5" id="user_container">
                         <div className="card-body">
-                            <h1 className="card-title text-center" id="titleForEvent">Event Name:{location.state.eventTitle}</h1>
+                            {/* <h1 className="card-title text-center" id="titleForEvent">Event Name:{location.state.eventTitle}</h1> */}
                             <h3 className="text-center" style={{color:'Black',font:'Times New Roman'}} id="">Registration is going to start Very Soon.....</h3>
-                            <div className="container">
+                            {/* <div className="container">
                                 <div className="row">
                                     <div className="col-md-6 col-lg-4 mb-3">
                                         <label htmlFor="teamName" className="form-label">Team Name</label>
@@ -133,10 +133,10 @@ function EventRegistrationForm() {
                                          {formErrors.college && <div className="invalid-feedback">{formErrors.college}</div>}
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
-                        {popup && <QRPopup setPopup={setPopup} amount={location.state.amount * ((location.state.perTeam) ? 1 : formData.participants.length)} />}
-                        <div className="card-body">
+                        {/* {popup && <QRPopup setPopup={setPopup} amount={location.state.amount * ((location.state.perTeam) ? 1 : formData.participants.length)} />} */}
+                        {/* <div className="card-body">
                             {formData.participants.map((member, index) => (
                                 <div key={index} className="mb-4">
                                     <h3 style={{ color: 'grey', textAlign: 'center', marginBottom: '1rem',color:'black' }}>Details of Member {index + 1}</h3>
@@ -178,7 +178,7 @@ function EventRegistrationForm() {
                                     <button className="btn btn-success w-100" type="button" onClick={registerToEvent}>Submit</button>
                                 </div>
                             </div>
-                        </div> 
+                        </div>  */}
                     </div>
                 </div>
             </div>
