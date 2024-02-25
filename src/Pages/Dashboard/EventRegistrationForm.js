@@ -113,7 +113,7 @@ function EventRegistrationForm() {
                 <div className="col-sm-8 col-md-9 col-lg-12 mx-auto">
                     <div className="card card-signin my-5" id="user_container">
                         <div className="card-body">
-                            <h1 className="card-title text-center" id="titleForEvent">{location.state.eventTitle}</h1>
+                            <h1 className="card-title text-center" id="titleForEvent">Event Name:{location.state.eventTitle}</h1>
                             <h3 className="text-center" style={{color:'Black',font:'Times New Roman'}} id="">Registration is going to start Very Soon.....</h3>
                             <div className="container">
                                 <div className="row">
@@ -127,6 +127,11 @@ function EventRegistrationForm() {
                                         <input type="text" className={`form-control ${formErrors.college ? 'is-invalid' : ''}`} id="college" name="college" value={formData.college} onChange={handleChange} required />
                                         {formErrors.college && <div className="invalid-feedback">{formErrors.college}</div>}
                                     </div>
+                                    <div className="col-md-6 col-lg-4 mb-3">
+                                        <label htmlFor="college" className="form-label">Minimum Members Required:{ location.state.minParticipants}</label>
+                                        <label htmlFor="college" className="form-label">Maximum Members Allowed:{ location.state.maxParticipants<100 ?location.state.maxParticipants:'No Limit'}</label>
+                                         {formErrors.college && <div className="invalid-feedback">{formErrors.college}</div>}
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +139,7 @@ function EventRegistrationForm() {
                         <div className="card-body">
                             {formData.participants.map((member, index) => (
                                 <div key={index} className="mb-4">
-                                    <h2 style={{ color: 'grey', textAlign: 'center', marginBottom: '1rem' }}>Details of Member {index + 1}</h2>
+                                    <h3 style={{ color: 'grey', textAlign: 'center', marginBottom: '1rem',color:'black' }}>Details of Member {index + 1}</h3>
                                     <div className="row">
                                         <div className="col-md-4 mb-3">
                                             <label htmlFor={`participantName${index}`} className="form-label">Full Name</label>
@@ -162,15 +167,15 @@ function EventRegistrationForm() {
                                     <button className="btn btn-danger w-100 mb-2" type="button" onClick={deleteLastMember} disabled={formData.participants.length <= 1}>Delete Last Member</button>
                                 </div>
                                 <div className="col-md-4 mb-3">
-                                    <button className="btn btn-success w-100 mb-2" type="button" onClick={() => setPopup(true)} style={{ zIndex: '0' }}>Open QR</button>
+                                    <button className="btn btn-primary w-100 mb-2" type="button" onClick={() => setPopup(true)} style={{ zIndex: '0' }}>Make Payment</button>
                                 </div>
-                                <label htmlFor="paymentReferenceNumber" className="form-label">Enter Payment Ref. No./UTR No</label>
+                                <label htmlFor="paymentReferenceNumber" className="form-label">Enter Payment Ref. No./UTR No /(Nit Jalandhar Student Has To Fill Their Roll No..)</label>
                                 <div className="input-group" style={{width:'95%',margin:'10px',borderRadius:'10px'}}>
                                     <input style={{borderRadius:'10px'}} type="text" className={`form-control ${formErrors.paymentReferenceNumber ? 'is-invalid' : ''}`} id="paymentReferenceNumber" name="paymentReferenceNumber" value={formData.paymentReferenceNumber} onChange={handleChange} required />
                                 </div>
                                 {formErrors.paymentReferenceNumber && <div className="invalid-feedback">{formErrors.paymentReferenceNumber}</div>}
                                 <div className="col-md-4 mb-3">
-                                    <button className="btn btn-primary w-100" type="button" onClick={registerToEvent}>Submit</button>
+                                    <button className="btn btn-success w-100" type="button" onClick={registerToEvent}>Submit</button>
                                 </div>
                             </div>
                         </div> 
