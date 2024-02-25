@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import QRPopup from '../QRCode';
-import {  useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 // import { useDispatch } from "react-redux";
 import axiosInstance from '../../Helper/axiosInstance';
 
 function AccomodationRegistrationForm() {
     const navigate = useNavigate();
-   
+
     // const dispatch = useDispatch();
     const { planId } = useParams();
     const [formData, setFormData] = useState({
@@ -109,33 +109,23 @@ function AccomodationRegistrationForm() {
     };
 
     return (
-        <div className="container" style={{ paddingTop: '100px' , minHeight: '90vh' }}>
-              <h3 className="text-center" style={{color:'White',font:'Times New Roman'}} id="">Booking is going to start Very Soon.....</h3>
-                          
-            {/* <div className="row">
+        <div className="container" style={{ paddingTop: '100px', minHeight: '90vh' }}>
+            <h3 className="text-center" style={{ color: 'White', font: 'Times New Roman' }} id="">Booking is going to start Very Soon.....</h3>
+
+            <div className="row">
                 <div className="col-sm-8 col-md-9 col-lg-12 mx-auto">
                     <div className="card card-signin my-5" id="user_container">
                         <div className="card-body">
                             <h1 className="card-title text-center" id="titleForEvent">Event Title</h1>
                             <div className="container">
                                 <div className="row">
-                                   
+
                                     <div className="col-md-6 col-lg-4 mb-3">
                                         <label htmlFor="college" className="form-label">College Name</label>
                                         <input type="text" className={`form-control ${formErrors.college ? 'is-invalid' : ''}`} id="college" name="college" value={formData.college} onChange={handleChange} required />
                                         {formErrors.college && <div className="invalid-feedback">{formErrors.college}</div>}
                                     </div>
-                                    <div className="col-md-6 col-lg-4 mb-3">
-                                        <label htmlFor="paymentReferenceNumber" className="form-label">Payment Ref. No.</label>
-                                        <div className="input-group">
-                                            <input type="text" className={`form-control ${formErrors.paymentReferenceNumber ? 'is-invalid' : ''}`} id="paymentReferenceNumber" name="paymentReferenceNumber" value={formData.paymentReferenceNumber} onChange={handleChange} required />
-                                            <button className="btn btn-success" type="button" onClick={() => setPopup(true)} style={{ zIndex: '0' }}>Open QR</button>
-                                        </div>
-                                        {formErrors.paymentReferenceNumber && <div className="invalid-feedback">{formErrors.paymentReferenceNumber}</div>}
-                                        <div className="mt-3">
-                                            <button className="btn btn-success w-100 d-md-none mb-3" type="button" onClick={() => setPopup(true)}>Open QR</button>
-                                        </div>
-                                    </div>
+
                                     <div className="col-md-6 col-lg-4 mb-3">
                                         <label htmlFor="numberOfPersons" className="form-label">Number of Members</label>
                                         <input type="number" className={`form-control ${formErrors.numberOfPersons ? 'is-invalid' : ''}`} id="numberOfPersons" name="numberOfPersons" value={formData.numberOfPersons} onChange={handleChange} required />
@@ -152,7 +142,7 @@ function AccomodationRegistrationForm() {
 
                         {popup && <QRPopup setPopup={setPopup} />}
                         <div className="card-body">
-                            <form className="needs-validation container mx-auto" noValidate>
+                            {/* <form className="needs-validation container mx-auto" noValidate> */}
                                 {formData.persons.map((member, index) => (
                                     <div key={index} className="mb-4">
                                         <h2 style={{ color: 'grey', textAlign: 'center', marginBottom: '1rem' }}>Details of Member {index + 1}</h2>
@@ -182,15 +172,30 @@ function AccomodationRegistrationForm() {
                                     <div className="col-md-4 mb-3">
                                         <button className="btn btn-secondary w-100 mb-2" type="button" onClick={deleteLastMember} disabled={formData.persons.length <= 1}>Delete Last Member</button>
                                     </div>
+                                    {/* <div className="mt-3">
+                                        <button className="btn btn-success w-100 d-md-none mb-3" type="button" onClick={() => setPopup(true)}>Open QR</button>
+                                    </div> */}
+
+                                    <div className="col-md-4 mb-3">
+                                        
+                                            <button className="btn btn-success w-100  mb-3" type="button" onClick={() => setPopup(true)} style={{ zIndex: '0' }}>Open QR</button>
+                                      
+
+                                    </div>
+                                    
+                                    <label htmlFor="paymentReferenceNumber" className="form-label">Payment Ref. No.</label>
+                                    <input type="text" style={{width:'94%', marginBottom:'15px'}} className={`form-control ${formErrors.paymentReferenceNumber ? 'is-invalid' : ''}`} id="paymentReferenceNumber" name="paymentReferenceNumber" value={formData.paymentReferenceNumber} onChange={handleChange} required />
+                                           
+
                                     <div className="col-md-4 mb-3">
                                         <button className="btn btn-danger w-100" type="button" onClick={registerAccommodation}>Submit</button>
                                     </div>
                                 </div>
-                            </form>
+                            {/* </form> */}
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     );
 }

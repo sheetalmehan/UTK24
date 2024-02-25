@@ -33,6 +33,7 @@ const MyBookings = () => {
                             {(allBookings.length > 0) && `My Bookings`}
                         </h1>
                     </div>
+                    <div  className='table_wrapper'>
                     {(allBookings.length > 0) && <table className="table overflow-x-scroll" >
                         <thead>
                             <tr>
@@ -67,6 +68,7 @@ const MyBookings = () => {
                             })}
                         </tbody>
                     </table>}
+                    </div>
                     <h1 className="text-center text-3xl font-semibold">{(allBookings.length < 1) && `No Bookings Yet.`}</h1>
                 </div>
             </div>

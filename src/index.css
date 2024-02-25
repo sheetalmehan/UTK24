@@ -55,3 +55,53 @@ a {
    padding-bottom: 0.5rem;
    color: currentColor;
 }
+@font-face {
+   font-family:'Castlefire';
+   src: url(./Fonts/castlefire/Castlefire.ttf);
+}
+
+@font-face {
+   font-family:'Times New Roman', Times, serif ;
+   src: url(./Fonts/nu_creactivo_2008/N_FC_Creactivo_2008.ttf);
+}
+h1{
+
+   font-family:Castlefire ;
+}
+.table :where(thead, tfoot) :where(th, td) {
+   --tw-bg-opacity: 1;
+   background-color: transparent;
+   font-size: 0.75rem;
+   line-height: 1rem;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+.table :where(tbody th, tbody td) {
+   --tw-bg-opacity: 1;
+   background-color: transparent;
+   
+}
+@media (max-width: 947px) {
+   .table {
+      --tw-bg-opacity: 1;
+      background:linear-gradient(-45deg, #033036, #046a6e, #065751, #054839);
+      font-size: 10px;
+      /* line-height: 1rem;
+      font-weight: 100; */
+      text-transform: uppercase;
+   }
+   .th{
+      font-size: 10px;
+   }
+   .td{
+      font:1px
+   }
+   .table_wrapper{
+
+   width:100%;
+   overflow:scroll;
+   margin: 0px;
+   }
+
+}
+

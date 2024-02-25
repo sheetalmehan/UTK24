@@ -32,6 +32,7 @@ const MyOrders = () => {
                     </h1>
                 </div>
                 <h1 className="text-center text-3xl font-semibold">{(allOrders.length < 1) && `No Order Yet.`}</h1>
+                <div  className='table_wrapper'>
                 {(allOrders.length > 0) && <table className="table overflow-x-scroll" >
                     <thead>
                         <tr>
@@ -61,6 +62,7 @@ const MyOrders = () => {
                         })}
                     </tbody>
                 </table>}
+                </div>
             </div>
         </div>
     );

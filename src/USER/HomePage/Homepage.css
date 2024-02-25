@@ -12,7 +12,7 @@ body {
 
 .homepage {
     position: relative;
-    /* background */
+    background: transparent;
 }
 
 .background-video {
