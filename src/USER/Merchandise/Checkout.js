@@ -92,10 +92,10 @@ const MerchandiseForm = () => {
 
     return (
 
-        <div className="containercontact">
-         {/* <div className="container" style={{ paddingTop: '100px' , minHeight: '90vh' }}> */}
-            {/* <h3 className="text-center" style={{ color: 'White', font: 'Times New Roman' }} id="">Booking  is going to start Very Soon.....</h3> */}
-
+        // <div className="containercontact">
+        <div className="container" style={{ paddingTop: '100px', minHeight: '90vh' }}>
+            <h3 className="text-center" style={{ color: 'White', font: 'Times New Roman' }} id="">Booking  is going to start Very Soon.....</h3>
+            {/* 
             <div className="left-section">
                 <form id="personal-form" onChange={handleInputChange}>
                     <h2 style={{ color: 'rgb(71, 71, 71)', marginBottom: '20px' }}>Personal Details</h2>
@@ -113,8 +113,8 @@ const MerchandiseForm = () => {
                     <input type="text" id="hostel" name="hostelName" onChange={handleChange} value={formData.hostelName} required />
                     <p id="personal-message"></p>
                 </form>
-            </div>
-            <div className="right-section">
+            </div> */}
+            {/* <div className="right-section">
                 <div className="upper-section">
                     <form id="tshirt-form" onChange={handleInputChange}>
                         <h2 style={{ color: 'rgb(71, 71, 71)', marginBottom: '20px' }}>T-Shirt Details</h2>
@@ -152,7 +152,7 @@ const MerchandiseForm = () => {
                     </button>
                 </div>
 
-            </div>
+            </div> */}
         </div>
     );
 };

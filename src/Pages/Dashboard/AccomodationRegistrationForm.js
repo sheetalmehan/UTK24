@@ -112,7 +112,7 @@ function AccomodationRegistrationForm() {
         <div className="container" style={{ paddingTop: '100px', minHeight: '90vh' }}>
             <h3 className="text-center" style={{ color: 'White', font: 'Times New Roman' }} id="">Booking is going to start Very Soon.....</h3>
 
-            <div className="row">
+            {/* <div className="row">
                 <div className="col-sm-8 col-md-9 col-lg-12 mx-auto">
                     <div className="card card-signin my-5" id="user_container">
                         <div className="card-body">
@@ -142,7 +142,6 @@ function AccomodationRegistrationForm() {
 
                         {popup && <QRPopup setPopup={setPopup} />}
                         <div className="card-body">
-                            {/* <form className="needs-validation container mx-auto" noValidate> */}
                                 {formData.persons.map((member, index) => (
                                     <div key={index} className="mb-4">
                                         <h2 style={{ color: 'grey', textAlign: 'center', marginBottom: '1rem' }}>Details of Member {index + 1}</h2>
@@ -172,9 +171,7 @@ function AccomodationRegistrationForm() {
                                     <div className="col-md-4 mb-3">
                                         <button className="btn btn-secondary w-100 mb-2" type="button" onClick={deleteLastMember} disabled={formData.persons.length <= 1}>Delete Last Member</button>
                                     </div>
-                                    {/* <div className="mt-3">
-                                        <button className="btn btn-success w-100 d-md-none mb-3" type="button" onClick={() => setPopup(true)}>Open QR</button>
-                                    </div> */}
+                                 
 
                                     <div className="col-md-4 mb-3">
                                         
@@ -191,11 +188,10 @@ function AccomodationRegistrationForm() {
                                         <button className="btn btn-danger w-100" type="button" onClick={registerAccommodation}>Submit</button>
                                     </div>
                                 </div>
-                            {/* </form> */}
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

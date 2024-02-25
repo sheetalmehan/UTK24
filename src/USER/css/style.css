@@ -16,6 +16,9 @@ body {
 
     overflow-y: scroll;
 }
+input{
+  background: rgb(51, 48, 48);
+}
 .register {
   position: absolute;
   top: 3vh;
