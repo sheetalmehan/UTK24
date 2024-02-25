@@ -63,7 +63,7 @@ const BhangraClub = () => {
                             <div className="schedule-tab">
                                 <ul className="nav nav-tabs wow fadeInUp" data-wow-delay="300ms" id="conferScheduleTab" role="tablist">
                                     <li className="nav-item">
-                                        <a className="nav-link active" id="tab-one" data-toggle="tab" href="#step-one" role="tab"
+                                        <a className="nav-link active" id="tab-one" data-toggle="tab"  role="tab"
                                             aria-controls="step-one" aria-expanded="true">BHANGRA FIESTA </a>
                                     </li>
                                 </ul>

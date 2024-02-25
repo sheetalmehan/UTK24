@@ -101,29 +101,29 @@ export default function Rajbhasha() {
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-1')}
 
-                                            className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} id="tab-onr" data-toggle="tab" href="#step-one" role="tab" aria-controls="step-one" aria-expanded="true"> MEHFIL </a>
+                                            className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} id="tab-onr" data-toggle="tab"  role="tab" aria-controls="step-one" aria-expanded="true"> MEHFIL </a>
                                     </li>
                                     {/* Nav Item */}
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-2')}
 
-                                            className={`nav-link ${activeTab === 'step-2' ? 'active' : ''}`} id="tab-two" data-toggle="tab" href="#step-two" role="tab" aria-controls="step-two" aria-expanded="true">PRAGHYANSH </a>
+                                            className={`nav-link ${activeTab === 'step-2' ? 'active' : ''}`} id="tab-two" data-toggle="tab"  role="tab" aria-controls="step-two" aria-expanded="true">PRAGHYANSH </a>
                                     </li>
                                     {/* Nav Item */}
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-3')}
 
-                                            className={`nav-link ${activeTab === 'step-3' ? 'active' : ''}`} id="tab-three" data-toggle="tab" href="#step-three" role="tab" aria-controls="step-three" aria-expanded="true">PATROKAR BABU</a>
+                                            className={`nav-link ${activeTab === 'step-3' ? 'active' : ''}`} id="tab-three" data-toggle="tab"  role="tab" aria-controls="step-three" aria-expanded="true">PATROKAR BABU</a>
                                     </li>
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-4')}
 
-                                            className={`nav-link ${activeTab === 'step-4' ? 'active' : ''}`} id="tab-four" data-toggle="tab" href="#step-four" role="tab" aria-controls="step-three" aria-expanded="true">FILMY SANGRAM</a>
+                                            className={`nav-link ${activeTab === 'step-4' ? 'active' : ''}`} id="tab-four" data-toggle="tab"  role="tab" aria-controls="step-three" aria-expanded="true">FILMY SANGRAM</a>
                                     </li>
-                                    <li className="nav-item">
+                                    <li className="nav-item" style={{ paddingTop: '10px' }}>
                                         <a onClick={() => handleTabClick('step-5')}
 
-                                            className={`nav-link ${activeTab === 'step-5' ? 'active' : ''}`} id="tab-five" data-toggle="tab" href="#step-five" role="tab" aria-controls="step-three" aria-expanded="true">JASHN-E-UTKANSH</a>
+                                            className={`nav-link ${activeTab === 'step-5' ? 'active' : ''}`} id="tab-five" data-toggle="tab"  role="tab" aria-controls="step-three" aria-expanded="true">JASHN-E-UTKANSH</a>
                                     </li>
                                     {/* <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-6')}

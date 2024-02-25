@@ -71,13 +71,13 @@ export default function Quest() {
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-1')}
 
-                                            className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} id="tab-onr" data-toggle="tab" href="#step-one" role="tab" aria-controls="step-one" aria-expanded="true"> COGNITO </a>
+                                            className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} id="tab-onr" data-toggle="tab"  role="tab" aria-controls="step-one" aria-expanded="true"> COGNITO </a>
                                     </li>
                                     {/* Nav Item */}
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-2')}
 
-                                            className={`nav-link ${activeTab === 'step-2' ? 'active' : ''}`} id="tab-two" data-toggle="tab" href="#step-two" role="tab" aria-controls="step-two" aria-expanded="true">MONEY GPT </a>
+                                            className={`nav-link ${activeTab === 'step-2' ? 'active' : ''}`} id="tab-two" data-toggle="tab"  role="tab" aria-controls="step-two" aria-expanded="true">MONEY GPT </a>
                                     </li>
                                 </ul>
                             </div>

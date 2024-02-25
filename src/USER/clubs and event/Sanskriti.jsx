@@ -55,7 +55,7 @@ export default function Sanskriti() {
                                 {/* Nav Tabs */}
                                 <ul className="nav nav-tabs wow fadeInUp" data-wow-delay="300ms" id="conferScheduleTab" role="tablist">
                                     <li className="nav-item">
-                                        <a className="nav-link active" id="tab-one" data-toggle="tab" href="#step-one" role="tab" aria-controls="step-one" aria-expanded="true">Cultural Exhibition </a>
+                                        <a className="nav-link active" id="tab-one" data-toggle="tab"  role="tab" aria-controls="step-one" aria-expanded="true">Cultural Exhibition </a>
                                     </li>
                                     {/* Nav Item */}
                                 </ul>

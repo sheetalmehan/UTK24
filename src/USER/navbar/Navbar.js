@@ -41,7 +41,7 @@ const Navbar = () => {
                     <img className="mainlogo" onClick={handleLogoClick} src={logoImage} alt="Logo" />
                 </div>
                 <ul className={'menu lafda'} style={{ marginRight: '45px' }}>
-                    <li><Link style={{ textDecoration: 'none' }} to="/" className="menu-btn">Home</Link></li>
+                    <li><Link style={{ textDecoration: 'none',color: '#fff' }} to="/" className="menu-btn">Home</Link></li>
                     {/* <li><Link style={{ textDecoration: 'none' }} to="/Gallery" className="menu-btn">Gallery</Link></li> */}
                     <li><Link style={{ textDecoration: 'none' }} to="/clubsandevent" className="menu-btn">Events</Link></li>
                     <li><Link style={{ textDecoration: 'none' }} to="/megaevent" className="menu-btn">Mega Events</Link></li>

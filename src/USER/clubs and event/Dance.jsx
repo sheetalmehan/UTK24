@@ -176,14 +176,13 @@ const Dance = () => {
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                        {/* Schedule Btn */}
+                                                       
                                                         <a onClick={handleClick} className="btn confer-btn">Register </a>
-                                                        {/* <p><br />On Spot Registration!</p> */}
-                                                        {/* <a name="Face-Off" id="da0" className="btn confer-btn">Register </a> */}
+                                                      
                                                     </div>
                                                 </div>
 
-                                                {/* More Schedule Btn */}
+                                               
 
                                             </div>
                                         </div>

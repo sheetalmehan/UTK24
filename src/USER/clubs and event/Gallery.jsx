@@ -43,7 +43,8 @@ export default function Gallery() {
             next.removeEventListener('click', nextClickHandler);
             prev.removeEventListener('click', prevClickHandler);
         };
-    }, []); // Empty dependency array ensures this effect runs only once after the component is mounted
+    }, []);
+     // Empty dependency array ensures this effect runs only once after the component is mounted
 
     return (
         // <div className='ALLEVENT'>
