@@ -94,7 +94,7 @@ function EventRegistrationForm() {
                         participants: [{ participantName: '', participantEmail: '', participantPhone: '' }],
                     });
                     setFormErrors({});
-                    navigate('/clubsandevent')
+                    navigate(-1);
                 } else {
                     toast.error(response.data.message);
                 }
