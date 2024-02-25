@@ -205,7 +205,7 @@ const Drama = () => {
                                         </a>
                                     </li> */}
 
-                                    <li className="nav-item" style={{ paddingTop: '10px' }}
+                                    <li className="nav-item" 
                                     // style={{ paddingTop: '10px' }}
                                     >
                                         <a

@@ -18,7 +18,9 @@ body {
    margin: auto;
    font-size: 18px;
 }
-
+h1,h2{
+   font-family: bodyFont;
+}
 .lafda {
    flex-direction: row;
 }
