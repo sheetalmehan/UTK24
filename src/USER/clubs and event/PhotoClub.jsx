@@ -99,21 +99,21 @@ export default function PhotoClub() {
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-1')}
 
-                                            className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} id="tab-onr" data-toggle="tab" href="#step-one" role="tab" aria-controls="step-one" aria-expanded="true">DRISHYA
+                                            className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} id="tab-onr" data-toggle="tab"  role="tab" aria-controls="step-one" aria-expanded="true">DRISHYA
                                         </a>
                                     </li>
                                     {/* Nav Item */}
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-2')}
 
-                                            className={`nav-link ${activeTab === 'step-2' ? 'active' : ''}`} id="tab-two" data-toggle="tab" href="#step-two" role="tab" aria-controls="step-two" aria-expanded="true"> NAZARIYA
+                                            className={`nav-link ${activeTab === 'step-2' ? 'active' : ''}`} id="tab-two" data-toggle="tab"  role="tab" aria-controls="step-two" aria-expanded="true"> NAZARIYA
                                         </a>
                                     </li>
                                     {/* Nav Item */}
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-3')}
 
-                                            className={`nav-link ${activeTab === 'step-3' ? 'active' : ''}`} id="tab-three" data-toggle="tab" href="#step-three" role="tab" aria-controls="step-three" aria-expanded="true">SNAP TREASURE
+                                            className={`nav-link ${activeTab === 'step-3' ? 'active' : ''}`} id="tab-three" data-toggle="tab"  role="tab" aria-controls="step-three" aria-expanded="true">SNAP TREASURE
                                         </a>
                                     </li>
                                     {/* Nav Item */}
@@ -121,7 +121,7 @@ export default function PhotoClub() {
                                     <li className="nav-item ">
                                         <a onClick={() => handleTabClick('step-5')}
 
-                                            className={`nav-link ${activeTab === 'step-5' ? 'active' : ''}`} id="tab-five" data-toggle="tab" href="#step-five" role="tab" aria-controls="step-five" aria-expanded="true"> Weekend Dairy (CINEPULSE)
+                                            className={`nav-link ${activeTab === 'step-5' ? 'active' : ''}`} id="tab-five" data-toggle="tab"  role="tab" aria-controls="step-five" aria-expanded="true"> Weekend Dairy (CINEPULSE)
                                         </a>
                                     </li>
                                 </ul>

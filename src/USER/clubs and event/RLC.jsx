@@ -70,7 +70,7 @@ export default function RLC() {
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-1')}
 
-                                            className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} id="tab-onr" data-toggle="tab" href="#step-one" role="tab" aria-controls="step-one" aria-expanded="true"> FOLK SINGING </a>
+                                            className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} id="tab-onr" data-toggle="tab"  role="tab" aria-controls="step-one" aria-expanded="true"> FOLK SINGING </a>
                                     </li>
                                     {/* Nav Item */}
                                     {/* <li className="nav-item">

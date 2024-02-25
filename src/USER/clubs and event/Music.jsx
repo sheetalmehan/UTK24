@@ -77,13 +77,13 @@ export default function Music() {
                                 <li className="nav-item">
                                     <a aria-controls="step-one" aria-expanded="true" onClick={() => handleTabClick('step-1')}
 
-                                        className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} data-toggle="tab" href="#step-one" id="tab-onr" role="tab"> THE VOICE </a>
+                                        className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} data-toggle="tab"  id="tab-onr" role="tab"> THE VOICE </a>
                                 </li>
                                 {/* Nav Item */}
                                 <li className="nav-item">
                                     <a aria-controls="step-two" aria-expanded="true" onClick={() => handleTabClick('step-2')}
 
-                                        className={`nav-link ${activeTab === 'step-2' ? 'active' : ''}`} data-toggle="tab" href="#step-two" id="tab-two" role="tab"> MEGA SONIC </a>
+                                        className={`nav-link ${activeTab === 'step-2' ? 'active' : ''}`} data-toggle="tab"  id="tab-two" role="tab"> MEGA SONIC </a>
                                 </li>
                             </ul>
                         </div>

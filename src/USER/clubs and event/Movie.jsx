@@ -83,19 +83,19 @@ export default function Movie() {
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-1')}
 
-                                            className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} id="tab-one" data-toggle="tab" href="#step-one" role="tab" aria-controls="step-one" aria-expanded="true"> FILM MAKING </a>
+                                            className={`nav-link ${activeTab === 'step-1' ? 'active' : ''}`} id="tab-one" data-toggle="tab"  role="tab" aria-controls="step-one" aria-expanded="true"> FILM MAKING </a>
                                     </li>
                                     {/* Nav Item */}
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-2')}
 
-                                            className={`nav-link ${activeTab === 'step-2' ? 'active' : ''}`} id="tab-two" data-toggle="tab" href="#step-two" role="tab" aria-controls="step-two" aria-expanded="true">MAD-ADS </a>
+                                            className={`nav-link ${activeTab === 'step-2' ? 'active' : ''}`} id="tab-two" data-toggle="tab"  role="tab" aria-controls="step-two" aria-expanded="true">MAD-ADS </a>
                                     </li>
 
                                     <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-3')}
 
-                                            className={`nav-link ${activeTab === 'step-3' ? 'active' : ''}`} id="tab-three" data-toggle="tab" href="#step-three" role="tab" aria-controls="step-three" aria-expanded="true">CREATIVE CHAOS</a>
+                                            className={`nav-link ${activeTab === 'step-3' ? 'active' : ''}`} id="tab-three" data-toggle="tab"  role="tab" aria-controls="step-three" aria-expanded="true">CREATIVE CHAOS</a>
                                     </li>
                                 </ul>
                             </div>

@@ -122,7 +122,7 @@ const Drama = () => {
                                             className={`nav-link ${activeTab === 'step-one' ? 'active' : ''}`}
 
                                             data-toggle="tab"
-                                            href="#step-one"
+                                            
                                             id="tab-onr"
                                             role="tab"
                                             onClick={() => handleTabClick('step-one')}
@@ -139,7 +139,7 @@ const Drama = () => {
                                             className={`nav-link ${activeTab === 'step-two' ? 'active' : ''}`}
 
                                             data-toggle="tab"
-                                            href="#step-two"
+                                            
                                             id="tab-two"
                                             role="tab"
                                             onClick={() => handleTabClick('step-two')}
@@ -156,7 +156,7 @@ const Drama = () => {
                                             className={`nav-link ${activeTab === 'step-three' ? 'active' : ''}`}
 
                                             data-toggle="tab"
-                                            href="#step-three"
+                                            
                                             id="tab-three"
                                             role="tab"
                                             onClick={() => handleTabClick('step-three')}
@@ -205,7 +205,7 @@ const Drama = () => {
                                         </a>
                                     </li> */}
 
-                                    <li className="nav-item"
+                                    <li className="nav-item" style={{ paddingTop: '10px' }}
                                     // style={{ paddingTop: '10px' }}
                                     >
                                         <a
@@ -214,7 +214,7 @@ const Drama = () => {
                                             className={`nav-link ${activeTab === 'step-six' ? 'active' : ''}`}
 
                                             data-toggle="tab"
-                                            href="#step-six"
+                                            
                                             id="tab-7"
                                             role="tab"
                                             onClick={() => handleTabClick('step-six')}
