@@ -181,37 +181,37 @@ export default function Fas() {
                                             id="tab-four" data-toggle="tab" role="tab" aria-controls="step-four" aria-expanded="true">LETTART</a>
                                     </li>
                                     {/* Nav Item */}
-                                    <li className="nav-item" style={{ paddingTop: '10px' }}>
+                                    <li className="nav-item" >
                                         <a
                                             onClick={() => handleTabClick('step-five')}
 
                                             className={`nav-link ${activeTab === 'step-five' ? 'active' : ''}`} id="tab-five" data-toggle="tab" role="tab" aria-controls="step-five" aria-expanded="true">RELAY ART CHALLENGE</a>
                                     </li>
-                                    <li className="nav-item" style={{ paddingTop: '10px' }}>
+                                    <li className="nav-item" >
                                         <a
                                             onClick={() => handleTabClick('step-six')}
 
                                             className={`nav-link ${activeTab === 'step-six' ? 'active' : ''}`} id="tab-6" data-toggle="tab"  role="tab" aria-controls="step-6" aria-expanded="true">PEBBLE PAINTING EXTRAVAGANZA</a>
                                     </li>
-                                    <li className="nav-item" style={{ paddingTop: '10px' }}>
+                                    <li className="nav-item" >
                                         <a
                                             onClick={() => handleTabClick('step-seven')}
 
                                             className={`nav-link ${activeTab === 'step-seven' ? 'active' : ''}`} id="tab-8" data-toggle="tab"  role="tab" aria-controls="step-8" aria-expanded="true">10-MIN CHALLENGE</a>
                                     </li>
-                                    <li className="nav-item" style={{ paddingTop: '10px' }}>
+                                    <li className="nav-item" >
                                         <a
                                             onClick={() => handleTabClick('step-eight')}
 
                                             className={`nav-link ${activeTab === 'step-eight' ? 'active' : ''}`} id="tab-9" data-toggle="tab"  role="tab" aria-controls="step-9" aria-expanded="true">ART BEYOND SIGHT</a>
                                     </li>
-                                    <li className="nav-item" style={{ paddingTop: '10px' }}>
+                                    <li className="nav-item" >
                                         <a
                                             onClick={() => handleTabClick('step-nine')}
 
                                             className={`nav-link ${activeTab === 'step-nine' ? 'active' : ''}`} id="tab-10" data-toggle="tab"  role="tab" aria-controls="step-10" aria-expanded="true"> HAND PAINTING</a>
                                     </li>
-                                    <li className="nav-item" style={{ paddingTop: '10px' }}>
+                                    <li className="nav-item" >
                                         <a
                                             onClick={() => handleTabClick('step-ten')}
 

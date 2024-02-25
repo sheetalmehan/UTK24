@@ -120,7 +120,7 @@ export default function Rajbhasha() {
 
                                             className={`nav-link ${activeTab === 'step-4' ? 'active' : ''}`} id="tab-four" data-toggle="tab"  role="tab" aria-controls="step-three" aria-expanded="true">FILMY SANGRAM</a>
                                     </li>
-                                    <li className="nav-item" style={{ paddingTop: '10px' }}>
+                                    <li className="nav-item">
                                         <a onClick={() => handleTabClick('step-5')}
 
                                             className={`nav-link ${activeTab === 'step-5' ? 'active' : ''}`} id="tab-five" data-toggle="tab"  role="tab" aria-controls="step-three" aria-expanded="true">JASHN-E-UTKANSH</a>

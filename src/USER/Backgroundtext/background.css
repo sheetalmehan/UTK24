@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Questrial&display=swap');
+@font-face {
+    font-family: mainFont;
+    src: url('../../Fonts/castlefire/Castlefire.ttf');
+}
+@font-face {
+    font-family: bodyFont;
+    src: url('../../Fonts/nu_creactivo_2008/N_FC_Creactivo_2008.ttf');
+}
+.titlp, .titl, .titla, h2, .Merchandise, h1, .nav-item .nav-link{
+    font-family: bodyFont !important;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -25,7 +37,7 @@
 
 .words span {
     display: inline-block;
-    font-family:'Cinzel Decorative', sans-serif;
+    font-family: mainFont, sans-serif !important;
     font-size: 11vw;
     font-weight: 700;
     color: white;
@@ -88,9 +100,9 @@
 @media (max-width: 947px) {
 
     .container56 {
-       
+
         height: 30vh;
-      
+
     }
 
 
@@ -98,17 +110,19 @@
         top: 20vh;
         font-size: 10px;
     }
+
     .words {
-       
+
         top: 60%;
         left: 50%;
         text-align: center;
-    
+
     }
-        .main_slogan {
-            font-size: 1.2rem;
-        }
-    
+
+    .main_slogan {
+        font-size: 1.2rem;
+    }
+
 }
 
 @keyframes fall {
