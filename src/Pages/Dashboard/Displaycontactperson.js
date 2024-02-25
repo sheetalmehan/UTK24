@@ -39,7 +39,7 @@ const Displaycontactperson = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col gap-10 items-center justify-center min-h-[95vh] py-10 text-white mx-[5%]">
+      <div className="flex flex-col gap-10 items-center justify-center min-h-[120vh] py-10 text-white mx-[5%]">
      
 
         <h1 className="text-center text-2xl font-semibold text-yellow-500">
@@ -92,17 +92,20 @@ const Displaycontactperson = () => {
             {clubcoordinator &&
               clubcoordinator.map((element, index) => {
                 return (
-                  <li className="space-y-2" key={element._id}>
+                  <li className="space-y-2" key={element._id} style={{margin:'auto'}}>
                     <p
                       className="cursor-pointer"
                       onClick={() => setCurrentVideoIndex(index)}
                     >
                       <span className="text-yellow-500">
                         {" "}
-                        Cordinator {index + 1} :{" "}
+                        Cordinator {index + 1} {" "}
                       </span>
-                      {element?.userid}
+                     <p>Name: {element?.userid}</p>
+                      <p> Phone No: {element?.phoneno}</p>
+                      <p> Email Id: {element?.emailid}</p>
                     </p>
+                    
                     {role === "ADMIN" && (
                       <button
                         onClick={() =>
