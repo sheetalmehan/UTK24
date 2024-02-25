@@ -129,17 +129,22 @@ const EventDetails = () => {
         onSubmit={handleFormSubmit}
         className="flex flex-col justify-center gap-5 rounded-lg p-4 text-white w-[700px]  my-10 shadow-[0_0_10px_black] relative"
       >
-        <Link
+        {/* <Link
           to={"/admin/dashboard"}
           className="absolute top-8 text-2xl link text-accent cursor-pointer"
         >
           <AiOutlineArrowLeft />
-        </Link>
+        </Link> */}
+        <p className=" text-accent cursor-pointer flex items-left justify-flexstart w-full gap-2">
+            {/* <AiOutlineArrowLeft /> Back to Profile */}
+            <AiOutlineArrowLeft onClick={() => navigate(-1)} />Go Back
+          </p>
 
-        <h1 className="text-center text-2xl font-bold">
+
+        <h3 className="text-center text-2xl font-bold">
           {/* {!initialEventData.newEvent ? "Update" : "Create new"}{" "} */}
           <span>Event Details</span>
-        </h1>
+        </h3>
 
         <main className="grid grid-cols-2 gap-x-10">
           {/* for Event basic details */}

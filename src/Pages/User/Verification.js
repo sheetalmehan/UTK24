@@ -43,7 +43,7 @@ const Verifyaccount = () => {
       >
         {/* forget password card */}
         <form className="flex flex-col justify-center gap-6 rounded-lg p-4 text-white w-80 h-[26rem] shadow-[0_0_10px_black]">
-          <h1 className="text-center text-2xl font-bold">Verify Account</h1>
+          <h3 className="text-center text-2xl font-bold">Verify Account</h3>
 
           <div className="flex flex-col gap-1">
             {/* <label className="text-lg font-semibold" htmlFor="email">

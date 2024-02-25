@@ -8,39 +8,23 @@ import { getUserData, updateProfile } from "../../Redux/authSlice";
 
 const EditProfile = () => {
   const dispatch = useDispatch();
-  const [previewImage, setImagePreview] = useState("");
+  // const [previewImage, setImagePreview] = useState("");
 
   const [data, setData] = useState({
     fullName: "",
-    avatar: undefined,
+    // avatar: undefined,
     userID: useSelector((state) => state?.auth?.data?._id),
   });
 
   // function to handle the image upload
-  const getImage = (event) => {
-    event.preventDefault();
-    // getting the image
-    const uploadedImage = event.target.files[0];
-
-    // if image exists then getting the url link of it
-    if (uploadedImage) {
-      setData({
-        ...data,
-        avatar: uploadedImage,
-      });
-      const fileReader = new FileReader();
-      fileReader.readAsDataURL(uploadedImage);
-      fileReader.addEventListener("load", function () {
-        setImagePreview(this.result);
-      });
-    }
-  };
+ 
 
   // function to set the name of user
   const setName = (event) => {
     const { name, value } = event.target;
     const newUserData = { ...data, [name]: value };
     setData(newUserData);
+    console.log("gvbhnj",data)
   };
 
   // function to handle the form submission
@@ -48,7 +32,7 @@ const EditProfile = () => {
     event.preventDefault();
 
     // checking for the empty field
-    if (!data.fullName || !data.avatar) {
+    if (!data.fullName ) {
       toast.error("All fields are mandatory");
       return;
     }
@@ -61,13 +45,13 @@ const EditProfile = () => {
 
     // creating the form data from the existing data
     const formData = new FormData();
-    formData.append("fullName", data.fullName);
-    formData.append("avatar", data.avatar);
-
-    const newUserData = [data.userID, formData];
-
+    // formData.append("fullName", data.fullName);
+    // formData.append("avatar", data.avatar);
+    // console.log("gvbhnjformData",formData)
+    // const newUserData = [data.userID, formData];
+    //  console.log("newUserData",newUserData[1]);
     // dispatching the api call using the thunk
-    await dispatch(updateProfile(newUserData));
+    await dispatch(updateProfile(data));
 
     // fetching the data to update
     await dispatch(getUserData());
@@ -80,28 +64,22 @@ const EditProfile = () => {
           onSubmit={handleFormSubmit}
           className="flex flex-col justify-center gap-5 rounded-lg p-4 text-white w-80 h-[26rem] shadow-[0_0_10px_black]"
         >
-          <h1 className="text-center text-2xl font-bold">Edit Profile Page</h1>
+          <h3 className="text-center text-2xl font-bold">Edit Profile Page</h3>
 
           {/* input for image file */}
           <label className="cursor-pointer" htmlFor="image_uploads">
-            {previewImage ? (
-              <img
-                className="w-28 h-28 rounded-full m-auto"
-                src={previewImage}
-                alt="preview image"
-              />
-            ) : (
+           
               <BsPersonCircle className="w-28 h-28 rounded-full m-auto" />
-            )}
+            
           </label>
-          <input
-            onChange={getImage}
+          {/* <input
+            // onChange={getImage}
             className="hidden"
             type="file"
             id="image_uploads"
             name="image_uploads"
             accept=".jpg, .jpeg, .png"
-          />
+          /> */}
 
           <div className="flex flex-col gap-1">
             <label className="text-lg font-semibold" htmlFor="fullName">
