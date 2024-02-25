@@ -135,10 +135,10 @@ const CreateEvent = () => {
           <AiOutlineArrowLeft />
         </Link>
 
-        <h1 className="text-center text-2xl font-bold">
+        <h3 className="text-center text-2xl font-bold">
           {!initialEventData.newEvent ? "Update" : "Create new"}{" "}
           <span>Event</span>
-        </h1>
+        </h3>
 
         <main className="grid grid-cols-2 gap-x-10">
           {/* for Event basic details */}

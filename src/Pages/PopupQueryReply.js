@@ -62,7 +62,7 @@ const PopupQueryReply = ({ queryId, setPopup,oldMessage="" }) => {
             <div className="popup-content">
 
                 <form onSubmit={handleFormSubmit} className="popup-form">
-                    <h1 className="popup-title">Reply to the Query</h1>
+                    <h3 className="popup-title">Reply to the Query</h3>
 
 
                     <div className="popup-input-group">

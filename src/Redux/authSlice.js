@@ -147,7 +147,8 @@ export const updateProfile = createAsyncThunk(
   "/user/update/profile",
   async (data) => {
     try {
-      let res = axiosInstance.put(`/user/update/${data[0]}`, data[1]);
+      console.log("auth",data);
+      let res = axiosInstance.put(`/user/update/${data.userID}`, data);
 
       toast.promise(res, {
         loading: "Updating...",
