@@ -9,13 +9,15 @@ body::-webkit-scrollbar{
     display: none;
 }
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: normal;
+ 
     color: hsl(0, 0%, 90%);
-    background-color: transparent;
+    z-index: -2;
+    background: linear-gradient(-45deg, #021a24, #071c12, #08151a, #051814);
 
     overflow-y: scroll;
+}
+input{
+  background: rgb(51, 48, 48);
 }
 .register {
   position: absolute;
@@ -84,12 +86,7 @@ text-decoration: none !important;
 }
 
 
-@font-face {
-    font-family: "mountains";
-    src: url(fonts/beyond_the_mountains.ttf);
-    src: url(fonts/beyond_the_mountains.otf);
-    font-weight: 400;
-}
+
 
 .d-col-n {
     position: relative;
@@ -285,7 +282,7 @@ text-decoration: none !important;
  
 }
 
-h1
+/* h1
 {
     font-family: mountains;
     letter-spacing: 3px;
@@ -297,7 +294,7 @@ h2
     font-family: 'Cinzel',mountains;
     letter-spacing: 3px;
     color: aliceblue;
-}
+} */
 
 
 /*------------------------------------------------------------

@@ -36,7 +36,7 @@ html {
 
 .navbarnav.sticky {
     /* padding: 15px 0; */
-    background: rgb(115, 124, 175);
+    background: linear-gradient(-45deg, #053446, #0d173c, #03475d, #02362a);
 }
 
 .navbarnav .max-widthnav {

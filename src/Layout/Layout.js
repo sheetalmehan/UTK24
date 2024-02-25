@@ -33,22 +33,22 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <div className="min-h-[90vh]">
-      <div className="drawer absolute z-50 right-0 w-fit">
+    <div className="min-h-[90vh]" >
+      <div className="drawer absolute z-50 right-0 w-fit" >
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content">
-          <label htmlFor="my-drawer" className="cursor-pointer relative" onClick={changeWidth} style={{ padding: '5px' }}>
-            <FontAwesomeIcon icon={faBars} style={{ marginRight: '18px', marginTop: '23px' }} />
+        <div className="drawer-content"  >
+          <label htmlFor="my-drawer" className="cursor-pointer" onClick={changeWidth} >
+            <FontAwesomeIcon icon={faBars} style={{ right: '2%', top: '5%', position: 'fixed' }} />
           </label>
         </div>
 
-        <div className="drawer-side w-0">
+        <div className="drawer-side w-0" >
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
 
-          <ul className="menu p-4 w-48 sm:w-80 bg-base-100 text-base-content relative margin_km_kro" style={{overflow:'visible'}}>
+          <ul className="menu p-4 w-48 sm:w-80 bg-base-100 text-base-content relative margin_km_kro" style={{ overflow: 'visible',background:'linear-gradient(-45deg, #190b07, #110208, #08151a, #051814)' }}>
             <h5 style={{ fontWeight: '700' }}>Dashboard</h5>
-            <hr style={{borderColor:'white'}}></hr>
-            <div className="hidden-div">
+            <hr style={{ borderColor: 'white' }}></hr>
+            <div className="hidden-div" >
               <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/" >Home</Link></li>
               {/* <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/Gallery" >Gallery</Link></li> */}
               <li onClick={hideDrawer}><Link style={{ textDecoration: 'none' }} to="/clubsandevent" >Events</Link></li>
@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
             </div>
 
 
-            <li className="w-fit absolute right-2 z-50">
+            <li className="w-fit absolute right-3 z-50">
               <button onClick={hideDrawer}>
                 <FontAwesomeIcon icon={faTimes} />
               </button>
@@ -133,13 +133,13 @@ const Layout = ({ children }) => {
                 <Link style={{ textDecoration: 'none' }} to={"/user/profile"}>My Profile</Link>
               </li>
             )}
-            <li style={{ textDecoration: 'none', opacity:'0' }}  className="text-decoration-none no-underline"></li>
-            <li style={{ textDecoration: 'none',opacity:'0'}}  className="text-decoration-none no-underline"></li>
+            <li style={{ textDecoration: 'none', opacity: '0' }} className="text-decoration-none no-underline"></li>
+            <li style={{ textDecoration: 'none', opacity: '0' }} className="text-decoration-none no-underline"></li>
 
 
 
 
-            <li className="absolute bottom-2 w-[90%] flex flex-wrap justify-center bottom-0" style={{marginTop:'20px'}}>
+            <li className="absolute bottom-2 w-[90%] flex flex-wrap justify-center bottom-0" style={{ marginTop: '20px' }}>
               {!isLoggedIn ? (
                 <>
                   <button className="btn btn-green" onClick={hideDrawer}>
@@ -148,7 +148,7 @@ const Layout = ({ children }) => {
                 </>
               ) : (
                 <>
-                  <button className="btn btn-red"  onClick={handleLogout}>
+                  <button className="btn btn-red" onClick={handleLogout}>
                     <Link style={{ textDecoration: 'none' }}>Logout</Link>
                   </button>
                 </>

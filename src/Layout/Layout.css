@@ -12,9 +12,9 @@
 }
 
 .drawer {
-    /* Change the positioning to start from the right side */
     right: 0;
-    /* Adjust as needed */
+    /* background-color: antiquewhite; */
+    /* background: linear-gradient(-45deg, #190b07, #110208, #08151a, #051814); */
 }
 
 .drawer-side {
@@ -25,4 +25,8 @@
 .margin_km_kro{
     margin-bottom: 0;
     border: 1px solid white;
+}
+.drawer-content{
+
+    background: linear-gradient(-45deg, #190b07, #110208, #08151a, #051814);
 }

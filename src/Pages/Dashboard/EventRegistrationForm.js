@@ -118,8 +118,8 @@ function EventRegistrationForm() {
                         <div className="card-body">
                             {/* <h1 className="card-title text-center" id="titleForEvent">{location.state.eventTitle}</h1> */}
                             <h3 className="text-center" style={{color:'Black',font:'Times New Roman'}} id="">Registration is going to start Very Soon.....</h3>
-                            <div className="container">
-                                {/* <div className="row">
+                            {/* <div className="container">
+                                <div className="row">
                                     <div className="col-md-6 col-lg-4 mb-3">
                                         <label htmlFor="teamName" className="form-label">Team Name</label>
                                         <input type="text" className={`form-control ${formErrors.teamName ? 'is-invalid' : ''}`} id="teamName" name="teamName" value={formData.teamName} onChange={handleChange} required />
@@ -131,12 +131,12 @@ function EventRegistrationForm() {
                                         {formErrors.college && <div className="invalid-feedback">{formErrors.college}</div>}
                                     </div>
 
-                                </div> */}
-                            </div>
+                                </div>
+                            </div> */}
                         </div>
 
-{/* 
-                        {console.log(location.state)}
+
+                        {/* {console.log(location.state)}
                         {popup && <QRPopup setPopup={setPopup} amount={location.state.amount * ((location.state.perTeam) ? 1 : formData.participants.length)} />}
                         <div className="card-body">
                                 {formData.participants.map((member, index) => (
@@ -187,7 +187,7 @@ function EventRegistrationForm() {
                                         <button className="btn btn-primary w-100" type="button" onClick={registerToEvent}>Submit</button>
                                     </div>
                                 </div>
-                        </div> */}
+                        </div>  */}
 
                     </div>
                 </div>

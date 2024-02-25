@@ -5,6 +5,7 @@ import { MdGppGood, MdPeople, MdOutlineDetails, MdGppBad } from "react-icons/md"
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteEvent, getAllEvent } from "../../Redux/eventSlice";
+import toast from "react-hot-toast";
 
 
 
@@ -42,7 +43,7 @@ const UserDashboard = () => {
   return (
 
     <div className="min-h-[90vh] pt-5 flex flex-col flex-wrap gap-10 text-white" style={{ minHeight: '90vh' }}>
-      {myEvents.length > 0&& <h1 className="text-center text-3xl font-semibold text-yellow-500" style={{ marginTop: '50px' }}>
+      {myEvents.length > 0 && <h1 className="text-center text-3xl font-semibold text-yellow-500" style={{ marginTop: '50px' }}>
         Event Dashboard
       </h1>}
       {myEvents.length < 1 && <h1 className="text-center text-3xl font-semibold text" style={{ marginTop: '50px' }}>
@@ -63,82 +64,83 @@ const UserDashboard = () => {
 
         </div>
 
-        {myEvents.length > 0 && <table className="table overflow-x-scroll" >
-          <thead>
-            <tr >
-              <th>S No.</th>
-              <th>Event Title</th>
-              <th>Club</th>
-              <th>Total Participants</th>
-              <th>Details</th>
-              <th>Contact Person</th>
-              <th>Status</th>
-              <th>Receipt</th>
+        <div  className='table_wrapper'>
+          {myEvents.length > 0 && <table className="table overflow-x-scroll" >
+            <thead>
+              <tr >
+                <th>S No.</th>
+                <th>Event Title</th>
+                <th>Club</th>
+                <th>Total Participants</th>
+                <th>Details</th>
+                <th>Contact Person</th>
+                <th>Status</th>
+                <th>Receipt</th>
 
-            </tr>
-          </thead>
+              </tr>
+            </thead>
 
-          <tbody>
-            {myEvents?.map((element, index) => {
-              // console.log("dashboard data");console.log(element);
-              return (
+            <tbody>
+              {myEvents?.map((element, index) => {
+                // console.log("dashboard data");console.log(element);
+                return (
 
-                <tr key={element?._id}>
-                  <td>{index + 1}</td>
-                  <td>
-                    <textarea
-                      readOnly
-                      className="w-40 h-auto bg-transparent resize-none"
-                      value={element?.title}
-                    ></textarea>
-                  </td>
-                  <td>{element?.club}</td>
-                  {/* <td>{element?.createdBy}</td> */}
-                  <td>{element?.numberOfParticipants}</td>
+                  <tr key={element?._id}>
+                    <td>{index + 1}</td>
+                    <td>
+                      <textarea
+                        readOnly
+                        className="w-40 h-auto bg-transparent resize-none"
+                        value={element?.title}
+                      ></textarea>
+                    </td>
+                    <td>{element?.club}</td>
+                    {/* <td>{element?.createdBy}</td> */}
+                    <td>{element?.numberOfParticipants}</td>
 
 
-                  <td >
-                    {/* to edit the course */}
+                    <td >
+                      {/* to edit the course */}
 
-                    <MdOutlineDetails onClick={() =>
-                      navigate("/event/details", {
-                        state: {
-                          initialEventData: {
-                            newEvent: false,
-                            ...element,
+                      <MdOutlineDetails onClick={() =>
+                        navigate("/event/details", {
+                          state: {
+                            initialEventData: {
+                              newEvent: false,
+                              ...element,
+                            },
                           },
-                        },
-                      })
-                    } />
+                        })
+                      } />
 
-                  </td>
-
+                    </td>
 
 
 
-                  <td>
 
-                    <MdPeople onClick={() =>
-                      navigate("/user/displaycontactperson", {
-                        state: { ...element },
-                      })
-                    } />
+                    <td>
 
+                      <MdPeople onClick={() =>
+                        navigate("/user/displaycontactperson", {
+                          state: { ...element },
+                        })
+                      } />
 
 
 
 
 
 
-                  </td>
+
+                    </td>
 
 
-                  <td>
-                    {element.participant.some(obj => (obj.enrolledby === userData._id) && (obj.isverified === true)) ? 'Verified' : 'Unverified'}
+                    <td>
+                      {element.participant.some(obj => (obj.enrolledby === userData._id) && (obj.isverified === true)) ? 'Verified' : 'Unverified'}
 
 
-                    {/* to CRUD the lectures */}
-                    {/* <button
+                      {/* to CRUD the lectures */}
+                      {/* <button
                       onClick={() =>
                         navigate("/event/displayparticipants", {
                           state: { ...element },
@@ -148,11 +150,11 @@ const UserDashboard = () => {
                     ><MdGppGood />
 
                     </button> */}
-                  </td>
+                    </td>
 
 
-                  <td>
-                    {/* 
+                    <td>
+                      {/* 
                     <button
                       onClick={() =>
                         navigate("/event/displayUnverifiedparticipants", {
@@ -161,20 +163,23 @@ const UserDashboard = () => {
                       }
                       className="bg-none hover:bg-green-600 transition-all ease-in-out duration-30 text-xl py-2 px-4 rounded-md font-bold color-black"
                     > */}
-                    <MdOutlineDownload onClick={() =>
-                      navigate("/event/displayUnverifiedparticipants", {
-                        state: { ...element },
-                      })
-                    } />
-                    {/* </button> */}
-                  </td>
-                </tr>
+                      <MdOutlineDownload onClick={
+                        () =>{
+                          return toast.error("Receipt can be downloaded after verification..");
+
+                        }
+                      
+                      } />
+                      {/* </button> */}
+                    </td>
+                  </tr>
 
 
-              );
-            })}
-          </tbody>
-        </table>}
+                );
+              })}
+            </tbody>
+          </table>}
+        </div>
       </div>
     </div>
 
