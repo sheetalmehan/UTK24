@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import QRPopup from '../QRCode';
-import { useLocation } from 'react-router-dom';
+import { useLocation,useNavigate} from 'react-router-dom';
 import { useDispatch } from "react-redux";
-// import axiosInstance from '../../Helper/axiosInstance';
 import { addEventParticipants } from "../../Redux/participantsSlice";
+// Require useHistory  from 'react-router-dom';
+
 
 function EventRegistrationForm() {
     const location = useLocation();
+    const navigate = useNavigate();
     const dispatch = useDispatch();
-    // const { eventdetails } = location.state || {};
+
     const eventId = location.state.eventId;
-    console.log("--eventId", eventId);
     const [formData, setFormData] = useState({
         id: eventId,
         teamName: '',
@@ -84,11 +85,8 @@ function EventRegistrationForm() {
         });
         if (Object.keys(errors).length === 0) {
             try {
-                console.log("formData", formData);
                 const response = await dispatch(addEventParticipants(formData));
-                console.log("response", response);
                 if (response.payload.success) {
-                    // toast.success('Form submitted successfully');
                     setFormData({
                         teamName: '',
                         college: '',
@@ -96,7 +94,7 @@ function EventRegistrationForm() {
                         participants: [{ participantName: '', participantEmail: '', participantPhone: '' }],
                     });
                     setFormErrors({});
-
+                    navigate('/clubsandevent')
                 } else {
                     toast.error(response.data.message);
                 }
@@ -114,11 +112,10 @@ function EventRegistrationForm() {
             <div className="row" style={{ paddingTop: '50px' }}>
                 <div className="col-sm-8 col-md-9 col-lg-12 mx-auto">
                     <div className="card card-signin my-5" id="user_container">
-
                         <div className="card-body">
-                            {/* <h1 className="card-title text-center" id="titleForEvent">{location.state.eventTitle}</h1> */}
+                            <h1 className="card-title text-center" id="titleForEvent">{location.state.eventTitle}</h1>
                             <h3 className="text-center" style={{color:'Black',font:'Times New Roman'}} id="">Registration is going to start Very Soon.....</h3>
-                            {/* <div className="container">
+                            <div className="container">
                                 <div className="row">
                                     <div className="col-md-6 col-lg-4 mb-3">
                                         <label htmlFor="teamName" className="form-label">Team Name</label>
@@ -130,65 +127,53 @@ function EventRegistrationForm() {
                                         <input type="text" className={`form-control ${formErrors.college ? 'is-invalid' : ''}`} id="college" name="college" value={formData.college} onChange={handleChange} required />
                                         {formErrors.college && <div className="invalid-feedback">{formErrors.college}</div>}
                                     </div>
-
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
-
-
-                        {/* {console.log(location.state)}
                         {popup && <QRPopup setPopup={setPopup} amount={location.state.amount * ((location.state.perTeam) ? 1 : formData.participants.length)} />}
                         <div className="card-body">
-                                {formData.participants.map((member, index) => (
-                                    <div key={index} className="mb-4">
-                                        <h2 style={{ color: 'grey', textAlign: 'center', marginBottom: '1rem' }}>Details of Member {index + 1}</h2>
-                                        <div className="row">
-                                            <div className="col-md-4 mb-3">
-                                                <label htmlFor={`participantName${index}`} className="form-label">Full Name</label>
-                                                <input type="text" className={`form-control ${formErrors[`participantName${index}`] ? 'is-invalid' : ''}`} id={`participantName${index}`} name={`participantName`} value={member.participantName} onChange={(e) => handleChange(e, index)} required />
-                                                {formErrors[`participantName${index}`] && <div className="invalid-feedback">{formErrors[`participantName${index}`]}</div>}
-                                            </div>
-                                            <div className="col-md-4 mb-3">
-                                                <label htmlFor={`participantEmail${index}`} className="form-label">Email</label>
-                                                <input type="email" className={`form-control ${formErrors[`participantEmail${index}`] ? 'is-invalid' : ''}`} id={`participantEmail${index}`} name={`participantEmail`} value={member.participantEmail} onChange={(e) => handleChange(e, index)} required />
-                                                {formErrors[`participantEmail${index}`] && <div className="invalid-feedback">{formErrors[`participantEmail${index}`]}</div>}
-                                            </div>
-                                            <div className="col-md-4 mb-3">
-                                                <label htmlFor={`participantPhone${index}`} className="form-label">Mobile Number</label>
-                                                <input type="text" className={`form-control ${formErrors[`participantPhone${index}`] ? 'is-invalid' : ''}`} id={`participantPhone${index}`} name={`participantPhone`} value={member.participantPhone} onChange={(e) => handleChange(e, index)} required />
-                                                {formErrors[`participantPhone${index}`] && <div className="invalid-feedback">{formErrors[`participantPhone${index}`]}</div>}
-                                            </div>
+                            {formData.participants.map((member, index) => (
+                                <div key={index} className="mb-4">
+                                    <h2 style={{ color: 'grey', textAlign: 'center', marginBottom: '1rem' }}>Details of Member {index + 1}</h2>
+                                    <div className="row">
+                                        <div className="col-md-4 mb-3">
+                                            <label htmlFor={`participantName${index}`} className="form-label">Full Name</label>
+                                            <input type="text" className={`form-control ${formErrors[`participantName${index}`] ? 'is-invalid' : ''}`} id={`participantName${index}`} name={`participantName`} value={member.participantName} onChange={(e) => handleChange(e, index)} required />
+                                            {formErrors[`participantName${index}`] && <div className="invalid-feedback">{formErrors[`participantName${index}`]}</div>}
+                                        </div>
+                                        <div className="col-md-4 mb-3">
+                                            <label htmlFor={`participantEmail${index}`} className="form-label">Email</label>
+                                            <input type="email" className={`form-control ${formErrors[`participantEmail${index}`] ? 'is-invalid' : ''}`} id={`participantEmail${index}`} name={`participantEmail`} value={member.participantEmail} onChange={(e) => handleChange(e, index)} required />
+                                            {formErrors[`participantEmail${index}`] && <div className="invalid-feedback">{formErrors[`participantEmail${index}`]}</div>}
+                                        </div>
+                                        <div className="col-md-4 mb-3">
+                                            <label htmlFor={`participantPhone${index}`} className="form-label">Mobile Number</label>
+                                            <input type="text" className={`form-control ${formErrors[`participantPhone${index}`] ? 'is-invalid' : ''}`} id={`participantPhone${index}`} name={`participantPhone`} value={member.participantPhone} onChange={(e) => handleChange(e, index)} required />
+                                            {formErrors[`participantPhone${index}`] && <div className="invalid-feedback">{formErrors[`participantPhone${index}`]}</div>}
                                         </div>
                                     </div>
-                                ))}
-                                <div className="row justify-content-center">
-                                    <div className="col-md-4 mb-3">
-                                        <button className="btn btn- w-100 mb-2" type="button" onClick={addMember}>Add Member</button>
-                                    </div>
-                                    <div className="col-md-4 mb-3">
-                                        <button className="btn btn-danger w-100 mb-2" type="button" onClick={deleteLastMember} disabled={formData.participants.length <= 1}>Delete Last Member</button>
-                                    </div>
-
-                                    <div className="col-md-4 mb-3">
-                                        <button className="btn btn-success w-100 mb-2" type="button" onClick={() => setPopup(true)} style={{ zIndex: '0' }}>Open QR</button>
-
-                                        
-                                    </div>
-
-                                    <label htmlFor="paymentReferenceNumber" className="form-label">Enter Payment Ref. No./UTR No</label>
-                                     
-                                    <div className="input-group" style={{width:'95%',margin:'10px',borderRadius:'10px'}}>
-                                        <input style={{borderRadius:'10px'}} type="text" className={`form-control ${formErrors.paymentReferenceNumber ? 'is-invalid' : ''}`} id="paymentReferenceNumber" name="paymentReferenceNumber" value={formData.paymentReferenceNumber} onChange={handleChange} required />
-                                    </div>
-                                    {formErrors.paymentReferenceNumber && <div className="invalid-feedback">{formErrors.paymentReferenceNumber}</div>}
-
-
-                                    <div className="col-md-4 mb-3">
-                                        <button className="btn btn-primary w-100" type="button" onClick={registerToEvent}>Submit</button>
-                                    </div>
                                 </div>
-                        </div>  */}
-
+                            ))}
+                            <div className="row justify-content-center">
+                                <div className="col-md-4 mb-3">
+                                    <button className="btn btn- w-100 mb-2" type="button" onClick={addMember}>Add Member</button>
+                                </div>
+                                <div className="col-md-4 mb-3">
+                                    <button className="btn btn-danger w-100 mb-2" type="button" onClick={deleteLastMember} disabled={formData.participants.length <= 1}>Delete Last Member</button>
+                                </div>
+                                <div className="col-md-4 mb-3">
+                                    <button className="btn btn-success w-100 mb-2" type="button" onClick={() => setPopup(true)} style={{ zIndex: '0' }}>Open QR</button>
+                                </div>
+                                <label htmlFor="paymentReferenceNumber" className="form-label">Enter Payment Ref. No./UTR No</label>
+                                <div className="input-group" style={{width:'95%',margin:'10px',borderRadius:'10px'}}>
+                                    <input style={{borderRadius:'10px'}} type="text" className={`form-control ${formErrors.paymentReferenceNumber ? 'is-invalid' : ''}`} id="paymentReferenceNumber" name="paymentReferenceNumber" value={formData.paymentReferenceNumber} onChange={handleChange} required />
+                                </div>
+                                {formErrors.paymentReferenceNumber && <div className="invalid-feedback">{formErrors.paymentReferenceNumber}</div>}
+                                <div className="col-md-4 mb-3">
+                                    <button className="btn btn-primary w-100" type="button" onClick={registerToEvent}>Submit</button>
+                                </div>
+                            </div>
+                        </div> 
                     </div>
                 </div>
             </div>

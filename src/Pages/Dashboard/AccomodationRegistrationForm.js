@@ -112,7 +112,7 @@ function AccomodationRegistrationForm() {
         <div className="container" style={{ paddingTop: '100px', minHeight: '90vh' }}>
             <h3 className="text-center" style={{ color: 'White', font: 'Times New Roman' }} id="">Booking is going to start Very Soon.....</h3>
 
-            {/* <div className="row">
+            <div className="row">
                 <div className="col-sm-8 col-md-9 col-lg-12 mx-auto">
                     <div className="card card-signin my-5" id="user_container">
                         <div className="card-body">
@@ -191,7 +191,7 @@ function AccomodationRegistrationForm() {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     );
 }
