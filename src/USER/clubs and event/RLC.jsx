@@ -116,12 +116,7 @@ export default function RLC() {
                                                         {/* Single Schedule Info */}
                                                         <div className="single-schedule-info">
                                                             <h3> IKTARA </h3>
-                                                            <p>This event is basically an open mic event in which each of the
-                                                                participants will have to recite their self-written content. The
-                                                                content must be in Hindi. It will lay down the benefits for new
-                                                                emerging college student poet. Its an open mic competition where
-                                                                students get chance to present whatever they vouch for in Hindi
-                                                                language.
+                                                            <p><b>"Iktaara" </b>is a vibrant folk song competition that celebrates the rich tapestry of traditional music. Teams from various regions will gather to showcase their talent in the art of folk singing, bringing alive the diverse cultural melodies that define our heritage. Join us for a captivating journey through the soulful rhythms and melodies of folk music at "Iktaara".
                                                             </p><br />
                                                             <h6 style={{ color: 'white' }}>Rules:</h6>
                                                             <p>

@@ -112,7 +112,7 @@ const FacultyCoordinators = () => {
                     </div>
                     <div className="card4545 card1">
                         <h3>Purushottam </h3>
-                        <h4>Purchase Head</h4>
+                        <h4>Marketing Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708804101/IMG_20240223_235529_z9kbom.jpg" alt="" />
                         </span>
@@ -128,9 +128,10 @@ const FacultyCoordinators = () => {
                             </div>
                         </div>
                     </div>
+                    
                     <div className="card4545 card1">
                         <h3>Mandeep Singh</h3>
-                        <h4>Marketing Head</h4>
+                        <h4>Financed Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708954200/20240120_113755_zlo74a.jpg" alt="" />
                         </span>
