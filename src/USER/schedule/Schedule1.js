@@ -76,16 +76,16 @@ export default function VerticalTabs() {
                 <Tab sx={{ margin: '5px', color: 'white' }} label="Fine arts" {...a11yProps(7)} />
                 <Tab sx={{ margin: '5px', color: 'white' }} label="Movies" {...a11yProps(8)} />
                 <Tab sx={{ margin: '5px', color: 'white' }} label=" Photography" {...a11yProps(9)} />
-                <Tab sx={{ margin: '5px', color: 'white' }} label=" RLC" {...a11yProps(10)} />
-                {/* <Tab sx={{ margin: '5px', color: 'white' }} label="Fashion" {...a11yProps(11)} /> */}
+                {/* <Tab sx={{ margin: '5px', color: 'white' }} label=" RLC" {...a11yProps(10)} /> */}
+                <Tab sx={{ margin: '5px', color: 'white' }} label="Fashion" {...a11yProps(11)} />
                 {/* <Tab sx={{ margin: '5px', color: 'white' }} label="Sanskriti" {...a11yProps(12)} />` */}
             </Tabs>
             <TabPanel  sx={{ blur:'10%' }}value={value} index={0}background="https://images.unsplash.com/photo-1508197149814-0cc02e8b7f74?q=80&w=1995&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
                 <div className='each'>
 
                     <div> 
-                      <h1 className='heads'> Duet Dance</h1>
-                        <p className='para'>Venue:Lecture Theater</p>
+                      <h1 className='heads'> Shutup N Dance</h1>
+                        <p className='para'>Venue:Central Seminar Hall</p>
                         <p className='para'>Time:02:00 PM</p>
                     </div>
                    
@@ -95,14 +95,14 @@ export default function VerticalTabs() {
                 <div className='each'>
 
                     <div> 
-                    <h1 className='heads'> Rangmanch</h1>
-                        <p className='para'>Venue:Central Seminar Hall</p>
+                    <h1 className='heads'> Halla Bol</h1>
+                        <p className='para'>Venue:Central Lawn</p>
                         <p className='para'>Time:10:00 AM</p>
                     </div>
                     <div> 
-                    <h1 className='heads'>MIME</h1>
-                        <p className='para'>Venue:Community Center</p>
-                        <p className='para'>Time:04:00 PM</p>
+                    <h1 className='heads'>IMPROV</h1>
+                        <p className='para'>Venue:Central Lawn</p>
+                        <p className='para'>Time:03:00 PM</p>
                     </div>
                    
                 </div>
@@ -124,7 +124,7 @@ export default function VerticalTabs() {
 
                     <div> 
                     <h1 className='heads'> Debate League</h1>
-                        <p className='para'>Venue:Science Block(2-3)</p>
+                        <p className='para'>Venue:LT(2-3)</p>
                         <p className='para'>Time:10:00 AM</p>
                     </div>
                   
@@ -147,8 +147,13 @@ export default function VerticalTabs() {
                 <div className='each'>
 
                     <div> 
-                    <h1 className='heads'> Patrokar Babu</h1>
+                    <h1 className='heads'> Filmy Sangram</h1>
                         <p className='para'>Venue:Science Block</p>
+                        <p className='para'>Time:02:00 PM</p>
+                    </div>
+                    <div> 
+                    <h1 className='heads'> Jashn-E-Utkansh</h1>
+                        <p className='para'>Venue:Online(SB)</p>
                         <p className='para'>Time:10:30 AM</p>
                     </div>
                   
@@ -228,6 +233,17 @@ export default function VerticalTabs() {
                     <h1 className='heads'>Mushaira</h1>
                         <p className='para'>Venue:Open Air Theater</p>
                         <p className='para'>Time:04:00 PM</p>
+                    </div>
+                
+                </div>
+            </TabPanel>
+            <TabPanel  sx={{ blur:'10%' }}value={value} index={11}background="https://images.unsplash.com/photo-1508197149814-0cc02e8b7f74?q=80&w=1995&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div className='each'>
+
+                    <div> 
+                    <h1 className='heads'>Panache</h1>
+                        {/* <p className='para'>Venue:Open Air Theater</p> */}
+                        {/* <p className='para'>Time:04:00 PM</p> */}
                     </div>
                 
                 </div>
