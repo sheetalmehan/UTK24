@@ -107,7 +107,7 @@ export default function VerticalTabs() {
                    
                 </div>
             </TabPanel>
-            <TabPanel  sx={{ blur:'10%' }}value={value} index={2}background="https://images.unsplash.com/photo-1508197149814-0cc02e8b7f74?q=80&w=1995&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <TabPanel  sx={{ blur:'10%' }}value={value} index={2}background="https://res.cloudinary.com/dijzvijky/image/upload/v1709057311/Untitled_design_5_x0nabz.png">
                 <div className='each'>
 
                     <div> 
