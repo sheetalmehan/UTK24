@@ -62,7 +62,7 @@ const PopupRejectionMail = ({ email, setPopup, subject }) => {
             <div className="popup-content">
 
                 <form onSubmit={handleFormSubmit} className="popup-form">
-                    <h1 className="popup-title">Write the reason</h1>
+                    <h3 className="popup-title">Write the reason</h3>
 
 
                     <div className="popup-input-group">

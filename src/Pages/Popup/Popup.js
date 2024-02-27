@@ -66,7 +66,7 @@ const Popup = ({ usersdata, setPopup }) => {
       <div className="popup-content">
 
         <form onSubmit={handleFormSubmit} className="popup-form">
-          <h1 className="popup-title">Rejection Form</h1>
+          <h3 className="popup-title">Rejection Form</h3>
 
           <div className="popup-input-group">
             <label htmlFor="subject" className="popup-label">

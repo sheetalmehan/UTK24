@@ -60,7 +60,7 @@ const FacultyCoordinators = () => {
                         <h3>Manav Jindal</h3>
                         <h4>Convenor</h4>
                         <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708797993/SAVE_20230327_224540_cymphj.jpg" alt="" />
+                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708953193/manav5_njgbm6.jpg" alt="" />
                         </span>
                         <div className="content">
                             <h2>03</h2>
@@ -75,17 +75,17 @@ const FacultyCoordinators = () => {
                         </div>
                     </div>
                     <div className="card4545 card1">
-                        <h3>Sameep  </h3>
+                        <h3>Sameep Tegwal </h3>
                         <h4>Cultural Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708803901/sameepsir_f26kqg.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>03</h2>
+                            <h2>04</h2>
                             <div>
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.instagram.com/tegwal10?igsh=MTRhZmRqajl4YWNvdQ==" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
-                                <a href="https://www.linkedin.com/home" target="_blank">
+                                <a href="https://www.linkedin.com/in/sameep-tegwal-117015223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
                                     <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ color: 'black' }} />
                                 </a>
                              
@@ -99,7 +99,7 @@ const FacultyCoordinators = () => {
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708803559/isha.._j4iagf.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>03</h2>
+                            <h2>05</h2>
                             <div>
                                 <a href="https://www.instagram.com/ishabatra786?igsh=MXFqOHltd2xzeDF1bw==" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -112,12 +112,12 @@ const FacultyCoordinators = () => {
                     </div>
                     <div className="card4545 card1">
                         <h3>Purushottam </h3>
-                        <h4>Finance Head</h4>
+                        <h4>Purchase Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708804101/IMG_20240223_235529_z9kbom.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>03</h2>
+                            <h2>06</h2>
                             <div>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -129,13 +129,13 @@ const FacultyCoordinators = () => {
                         </div>
                     </div>
                     <div className="card4545 card1">
-                        <h3>Mandeep </h3>
+                        <h3>Mandeep Singh</h3>
                         <h4>Marketing Head</h4>
                         <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708804086/20240120_113755_zlo74a.jpg" alt="" />
+                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708954200/20240120_113755_zlo74a.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>03</h2>
+                            <h2>07</h2>
                             <div>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -149,13 +149,13 @@ const FacultyCoordinators = () => {
                         </div>
                     </div>
                     <div className="card4545 card1">
-                        <h3>Surendra</h3>
+                        <h3>Surendra Palriya</h3>
                         <h4>Public Relation Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1676977602/core_members/lovish_garg_e2rvqt.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>03</h2>
+                            <h2>08</h2>
                             <div>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -169,13 +169,13 @@ const FacultyCoordinators = () => {
                         </div>
                     </div>
                     <div className="card4545 card1">
-                        <h3>Tannu</h3>
-                        <h4>Social  Media & Publicity Head</h4>
+                        <h3>Tanushree Gupta</h3>
+                        <h4> Finance Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708798005/IMG_20240222_145612_hstzjy.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>03</h2>
+                            <h2>09</h2>
                             <div>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -189,13 +189,13 @@ const FacultyCoordinators = () => {
                         </div>
                     </div>
                     <div className="card4545 card1">
-                        <h3>Harman</h3>
+                        <h3>Harmanpreet Kaur</h3>
                         <h4>Deccoration Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708797993/IMG_4794_ts3sx2.heic" alt="" />
                         </span>
                         <div className="content">
-                            <h2>03</h2>
+                            <h2>10</h2>
                             <div>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -209,13 +209,13 @@ const FacultyCoordinators = () => {
                         </div>
                     </div>
                     <div className="card4545 card1">
-                        <h3>Jasan </h3>
-                        <h4>Refreshment Head</h4>
+                        <h3>Jashandeep Dhaliwal </h3>
+                        <h4>Hospitality Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708797996/IMG_9932_abiwgh.heic" alt="" />
                         </span>
                         <div className="content">
-                            <h2>03</h2>
+                            <h2>11</h2>
                             <div>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -230,12 +230,12 @@ const FacultyCoordinators = () => {
                     </div>
                     <div className="card4545 card1">
                         <h3>Tanya </h3>
-                        <h4>Website Development Head</h4>
+                        <h4>Web Dev Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708798005/B612_20231006_194738_445_gsqxbd.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>01</h2>
+                            <h2>12</h2>
                             <div>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -249,13 +249,13 @@ const FacultyCoordinators = () => {
                         </div>
                     </div>
                     <div className="card4545 card1">
-                        <h3>Hardik</h3>
-                        <h4>Event Management Head</h4>
+                        <h3>Hardik Singla</h3>
+                        <h4>Management Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708797996/IMG_20230416_000133_zk07mn.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>01</h2>
+                            <h2>13</h2>
                             <div>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -272,10 +272,10 @@ const FacultyCoordinators = () => {
                         <h3>Ankit Agrawal</h3>
                         <h4>Registration Head</h4>
                         <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708798006/20231114_173618_jggxhh.jpg" alt="" />
+                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708953193/Abhishek_Agrawal_Sir_jbftqf.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>01</h2>
+                            <h2>14</h2>
                             <div>
                                 <a href="https://www.instagram.com/ankii_g?igsh=MXBydHl1eXlrdHVvZA==" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -287,13 +287,13 @@ const FacultyCoordinators = () => {
                         </div>
                     </div>
                     <div className="card4545 card1">
-                        <h3>Sushant</h3>
-                        <h4>Purchase Head</h4>
+                        <h3>Sushant Pandav</h3>
+                        <h4>Refreshment Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708798010/IMG_20211209_231540_eobagn.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>01</h2>
+                            <h2>15</h2>
                             <div>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -308,12 +308,12 @@ const FacultyCoordinators = () => {
                     </div>
                     <div className="card4545 card1">
                         <h3>Gurkirat Singh</h3>
-                        <h4>Hospitality Head</h4>
+                        <h4>Discipline Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708797996/224557_hnarj4.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>01</h2>
+                            <h2>16</h2>
                             <div>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -330,10 +330,10 @@ const FacultyCoordinators = () => {
                         <h3>Kohil Godara</h3>
                         <h4>Discipline Head</h4>
                         <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708798003/IMG_4349_nktqid.heic" alt="" />
+                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708953194/Kohilsir_de4vvy.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>01</h2>
+                            <h2>17</h2>
                             <div>
                                 <a href="https://www.instagram.com/kohil_godara?igsh=MWtiNXliNzRvMDlpag==" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -343,15 +343,15 @@ const FacultyCoordinators = () => {
                                
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     <div className="card4545 card1">
                         <h3>Abhishek Agrawal</h3>
-                        <h4>Digital Content Head</h4>
+                        <h4>Social Media Head</h4>
                         <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1676977602/core_members/lovish_garg_e2rvqt.jpg" alt="" />
+                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708953193/Abhishek_Agrawal_Sir_jbftqf.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>01</h2>
+                            <h2>18</h2>
                             <div>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
@@ -366,12 +366,12 @@ const FacultyCoordinators = () => {
                     </div>
                     <div className="card4545 card1">
                         <h3>Prajawal Wankhade</h3>
-                        <h4>Digital Content Head</h4>
+                        <h4>Digital Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708798002/DSC_0248_copy_1_hcenvs.jpg" alt="" />
                         </span>
                         <div className="content">
-                            <h2>01</h2>
+                            <h2>19</h2>
                             <div>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'black' }} /></a>
