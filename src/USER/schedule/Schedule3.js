@@ -78,7 +78,7 @@ export default function VerticalTabs3() {
                 <Tab sx={{ margin: '5px', color: 'white' }} label=" Photography" {...a11yProps(9)} />
                 {/* <Tab sx={{ margin: '5px', color: 'white' }} label=" RLC" {...a11yProps(10)} /> */}
            </Tabs>
-            <TabPanel value={value} index={0} background="https://unsplash.it/1920/500?image=11">
+            <TabPanel value={value} index={0} background="https://res.cloudinary.com/dpgxz1q1x/image/upload/v1709099447/Untitled%20design%20%281%29/4_lqplct.png">
                 <div className='each'>
 
                     
@@ -92,7 +92,7 @@ export default function VerticalTabs3() {
                     
                 </div>
             </TabPanel>
-            <TabPanel value={value} index={1} background="https://res.cloudinary.com/dpgxz1q1x/image/upload/v1709099447/Untitled%20design%20%281%29/4_lqplct.png">
+            <TabPanel value={value} index={1} background="https://res.cloudinary.com/dpgxz1q1x/image/upload/v1709099423/Untitled%20design%20%281%29/10_d6tmxc.png">
                 <div className='each'>
                 <div> 
                     <h1 className='heads'>Rangmanch</h1>
