@@ -25,8 +25,8 @@ const AccomodationPage = () => {
   return (
     <div className='accomodation' style={{minHeight:'90vh'}}>
       <div style={{minHeight:'100px'}}></div>
-      <h2 className="titl" style={{ textAlign: 'center',  fontSize: '3.6rem', zIndex: 100 }}>
-        Accomodation
+      <h2 className="titl" style={{ textAlign: 'center',  fontSize: '2.4rem', zIndex: 100 }}>
+        Accommodation
       </h2>
       <div className="containeraco">
         {/* <h2 className="titl" style={{ textAlign: 'center', fontSize: '3.6rem', zIndex: 100 }}>

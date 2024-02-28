@@ -112,7 +112,7 @@ const FacultyCoordinators = () => {
                     </div>
                     <div className="card4545 card1">
                         <h3>Purushottam </h3>
-                        <h4>Purchase Head</h4>
+                        <h4>Marketing Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708804101/IMG_20240223_235529_z9kbom.jpg" alt="" />
                         </span>
@@ -128,9 +128,10 @@ const FacultyCoordinators = () => {
                             </div>
                         </div>
                     </div>
+                    
                     <div className="card4545 card1">
                         <h3>Mandeep Singh</h3>
-                        <h4>Marketing Head</h4>
+                        <h4>Financed Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708954200/20240120_113755_zlo74a.jpg" alt="" />
                         </span>
@@ -152,7 +153,7 @@ const FacultyCoordinators = () => {
                         <h3>Surendra Palriya</h3>
                         <h4>Public Relation Head</h4>
                         <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1676977602/core_members/lovish_garg_e2rvqt.jpg" alt="" />
+                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1709059873/Screenshot_2024-02-28_002045_btd63y.png" alt="" />
                         </span>
                         <div className="content">
                             <h2>08</h2>
@@ -189,10 +190,10 @@ const FacultyCoordinators = () => {
                         </div>
                     </div>
                     <div className="card4545 card1">
-                        <h3>Harmanpreet Kaur</h3>
+                        <h3>Harmanp</h3>
                         <h4>Deccoration Head</h4>
                         <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708797993/IMG_4794_ts3sx2.heic" alt="" />
+                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1709058583/IMG_5012_rfskgc.jpg" alt="" />
                         </span>
                         <div className="content">
                             <h2>10</h2>
@@ -212,7 +213,7 @@ const FacultyCoordinators = () => {
                         <h3>Jashandeep Dhaliwal </h3>
                         <h4>Hospitality Head</h4>
                         <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708797996/IMG_9932_abiwgh.heic" alt="" />
+                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1709059834/Screenshot_2024-02-28_001953_dy3onn.png" alt="" />
                         </span>
                         <div className="content">
                             <h2>11</h2>
@@ -272,7 +273,7 @@ const FacultyCoordinators = () => {
                         <h3>Ankit Agrawal</h3>
                         <h4>Registration Head</h4>
                         <span>
-                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708953193/Abhishek_Agrawal_Sir_jbftqf.jpg" alt="" />
+                            <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708798006/20231114_173618_jggxhh.jpg" alt="" />
                         </span>
                         <div className="content">
                             <h2>14</h2>
@@ -345,7 +346,7 @@ const FacultyCoordinators = () => {
                         </div>
                     </div> 
                     <div className="card4545 card1">
-                        <h3>Abhishek Agrawal</h3>
+                        <h3>Abhishek Aggarwal</h3>
                         <h4>Social Media Head</h4>
                         <span>
                             <img src="https://res.cloudinary.com/dijzvijky/image/upload/v1708953193/Abhishek_Agrawal_Sir_jbftqf.jpg" alt="" />

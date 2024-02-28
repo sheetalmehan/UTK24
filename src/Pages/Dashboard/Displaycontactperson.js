@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
-import Layout from "../../Layout/Layout";
 import {
-
   getclubcordinator,
   deleteclubCordinator
 } from "../../Redux/clubcordinatorSliceReducer";

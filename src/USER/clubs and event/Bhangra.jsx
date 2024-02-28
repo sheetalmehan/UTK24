@@ -132,24 +132,7 @@ const BhangraClub = () => {
                 {/* Contact information */}
             </div>
 
-            {/* **** All JS Files ***** */}
-            <script src="../js/jquery.min.js"></script>
-            <script src="../js/bootstrap.min.js"></script>
-            <script src="../js/confer.bundle.js"></script>
-            <script src="../js/active.js"></script>
-            <script src="../js/jquery-2.1.1.js"></script>
-            <script src="../js/velocity.min.js"></script>
-            <script src="../js/main.js"></script>
-
-            {/* Resource jQuery */}
-            {/* <script type='text/javascript' src='../js/jquery.js'></script>
-            <script type='text/javascript' src='../js/masonry.pkgd.min.js'></script>
-            <script type='text/javascript' src='../js/jquery.collapsible.min.js'></script>
-            <script type='text/javascript' src='../js/swiper.min.js'></script>
-            <script type='text/javascript' src='../js/jquery.countdown.min.js'></script>
-            <script type='text/javascript' src='../js/circle-progress.min.js'></script>
-            <script type='text/javascript' src='../js/jquery.countTo.min.js'></script>
-            <script type='text/javascript' src='../js/custom.js'></script> */}
+          
         </div>
     );
 };
