@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Import Link
 import './nav.css';
-import logoImage from './Group 59.svg'; // Import SVG image
+import logoImage from './Group 59.png'; // Import SVG image
 import Layout from '../../Layout/Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
@@ -37,7 +37,7 @@ const Navbar = () => {
 
             <div className="max-widthnav">
 
-                <div className="logo">
+                <div className="logo" style={{cursor:'pointer'}}>
                     <img className="mainlogo" onClick={handleLogoClick} src={logoImage} alt="Logo" />
                 </div>
                 <ul className={'menu lafda'} style={{ marginRight: '45px' }}>

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BsCollectionPlayFill, BsTrash } from "react-icons/bs";
+import { BsCollectionPlayFill } from "react-icons/bs";
 import { MdOutlineModeEdit } from "react-icons/md";
 import { MdGppGood, MdGppBad } from "react-icons/md";
 import { useNavigate } from "react-router-dom";

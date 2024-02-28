@@ -7,8 +7,13 @@
     font-family: bodyFont;
     src: url('../../Fonts/nu_creactivo_2008/N_FC_Creactivo_2008.ttf');
 }
+
+@font-face {
+    font-family: ALGER;
+    src: url('../../Fonts/ALGER.TTF');
+}
 .titlp, .titl, .titla, h2, .Merchandise, h1, .nav-item .nav-link{
-    font-family: bodyFont !important;
+    font-family: ALGER !important;
 }
 
 * {
