@@ -92,7 +92,7 @@ export default function VerticalTabs3() {
                     
                 </div>
             </TabPanel>
-            <TabPanel value={value} index={1} background="https://unsplash.it/1920/500?image=11">
+            <TabPanel value={value} index={1} background="https://res.cloudinary.com/dpgxz1q1x/image/upload/v1709099447/Untitled%20design%20%281%29/4_lqplct.png">
                 <div className='each'>
                 <div> 
                     <h1 className='heads'>Rangmanch</h1>
@@ -103,7 +103,7 @@ export default function VerticalTabs3() {
                     
                 </div>
             </TabPanel>
-            <TabPanel value={value} index={2} background="https://unsplash.it/1920/500?image=11">
+            <TabPanel value={value} index={2} background="https://res.cloudinary.com/dpgxz1q1x/image/upload/v1709099454/Untitled%20design%20%281%29/1_kpoel6.png">
                 <div className='each'>
                 <div> 
                     <h1 className='heads'>Megasonic</h1>
@@ -114,7 +114,7 @@ export default function VerticalTabs3() {
                     
                 </div>
             </TabPanel>
-            <TabPanel value={value} index={3} background="https://unsplash.it/1920/500?image=11">
+            <TabPanel value={value} index={3} background="https://res.cloudinary.com/dpgxz1q1x/image/upload/v1709099397/Untitled%20design%20%281%29/15_z5hied.png">
                 <div className='each'>
                 <div> 
                     <h1 className='heads'>Haiku</h1>
@@ -131,7 +131,7 @@ export default function VerticalTabs3() {
                     
                 </div>
             </TabPanel>
-            <TabPanel value={value} index={4} background="https://unsplash.it/1920/500?image=11">
+            <TabPanel value={value} index={4} background="https://res.cloudinary.com/dpgxz1q1x/image/upload/v1709099387/Untitled%20design%20%281%29/16_gkd5jv.png">
                 <div className='each'>
                 <div> 
                     <h1 className='heads'>Money GPT</h1>
@@ -142,7 +142,7 @@ export default function VerticalTabs3() {
                     
                 </div>
             </TabPanel>
-            <TabPanel value={value} index={5} background="https://unsplash.it/1920/500?image=11">
+            <TabPanel value={value} index={5} background="https://res.cloudinary.com/dpgxz1q1x/image/upload/v1709099450/Untitled%20design%20%281%29/7_bi3tow.png">
                 <div className='each'>
                 <div> 
                     <h1 className='heads'>Mehfil</h1>
@@ -158,7 +158,7 @@ export default function VerticalTabs3() {
                     </div>
                 </div>
             </TabPanel>
-            <TabPanel value={value} index={6} background="https://unsplash.it/1920/500?image=11">
+            <TabPanel value={value} index={6} background="https://res.cloudinary.com/dpgxz1q1x/image/upload/v1709099450/Untitled%20design%20%281%29/19_vdibph.png">
                 <div className='each'>
                 <div> 
                     <h1 className='heads'>Coscon</h1>
@@ -174,7 +174,7 @@ export default function VerticalTabs3() {
                     </div>
                 </div>
             </TabPanel>
-            <TabPanel value={value} index={7} background="https://unsplash.it/1920/500?image=11">
+            <TabPanel value={value} index={7} background="https://res.cloudinary.com/dpgxz1q1x/image/upload/v1709099435/Untitled%20design%20%281%29/26_fhqmnl.png">
                 <div className='each'>
                 <div> 
                     <h1 className='heads'>Hand Painting</h1>
@@ -202,7 +202,7 @@ export default function VerticalTabs3() {
                     </div>
                 </div>
             </TabPanel>
-            <TabPanel value={value} index={8} background="https://unsplash.it/1920/500?image=11">
+            <TabPanel value={value} index={8} background="https://res.cloudinary.com/dpgxz1q1x/image/upload/v1709099427/Untitled%20design%20%281%29/39_shnbzr.png">
                 <div className='each'>
                 <div> 
                     <h1 className='heads'>Film Making</h1>
@@ -213,7 +213,7 @@ export default function VerticalTabs3() {
                    
                 </div>
             </TabPanel>
-            <TabPanel value={value} index={9} background="https://unsplash.it/1920/500?image=11">
+            <TabPanel value={value} index={9} background="https://res.cloudinary.com/dpgxz1q1x/image/upload/v1709099435/Untitled%20design%20%281%29/38_cciwzk.png">
                 <div className='each'>
                 <div> 
                     <h1 className='heads'>Snap Treasure</h1>
