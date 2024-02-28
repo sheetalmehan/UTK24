@@ -1,38 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Layout from "../../Layout/Layout";
-// import {
-//     Chart as ChartJS,
-//     ArcElement,
-//     Tooltip,
-//     Legend,
-//     CategoryScale,
-//     LinearScale,
-//     BarElement,
-//     Title,
-// } from "chart.js";
-// import { Pie, Bar } from "react-chartjs-2";
-// import { FaUsers } from "react-icons/fa";
-// import { GiMoneyStack } from "react-icons/gi";
-// import { FcSalesPerformance } from "react-icons/fc";
-// import { BsCollectionPlayFill, BsTrash } from "react-icons/bs";
-// import { MdOutlineModeEdit, MdGppGood, MdGppBad } from "react-icons/md";
-// import { useNavigate } from "react-router-dom";
-// import { useDispatch, useSelector } from "react-redux";
-// import { deleteCourse } from "../../Redux/courseSlice";
-// import { getAllMerchandise } from "../../Redux/merchandiseSlice.js";
-// import { getStatsData } from "../../Redux/statSlice";
-// import { getPaymentRecord } from "../../Redux/razorpaySlice";
 import axiosInstance from "../../Helper/axiosInstance";
-
-// ChartJS.register(
-//     ArcElement,
-//     Tooltip,
-//     Legend,
-//     CategoryScale,
-//     LinearScale,
-//     BarElement,
-//     Title
-// );
 
 const MyEvents = () => {
     
@@ -54,20 +21,20 @@ const MyEvents = () => {
             await getOrderData();
             setCloths([
                 {
-                    clothName: "t1",
+                    clothName: "Boys T-shirt",
                     type: "Round",
                     totalOrders: allOrders.filter(cloth => cloth.clothId === '1').length
                 },
                 {
-                    clothName: "t2",
-                    type: "Round2",
+                    clothName: "Boys T-shirt",
+                    type: "Round",
                     totalOrders: allOrders.filter(cloth => cloth.clothId === '2').length
                 },
-                {
-                    clothName: "t3",
-                    type: "Round3",
-                    totalOrders: allOrders.filter(cloth => cloth.clothId === '3').length
-                },
+                // {
+                //     clothName: "t3",
+                //     type: "Round3",
+                //     totalOrders: allOrders.filter(cloth => cloth.clothId === '3').length
+                // },
             ])
             console.log(cloths);
         })();
@@ -75,16 +42,13 @@ const MyEvents = () => {
 
     useEffect(() => {
         (async () => {
-            // await dispatch(getAllMerchandise());
-            // dispatch(getStatsData());
-            // await dispatch(getPaymentRecord());
             await getOrderData();
         })();
     }, []);
 
 
 
-    return (<Layout>
+    return (
 
         <div className="flex items-center h-[90vh] justify-between py-5 px-5 gap-5 rounded-md shadow-md">
             {/* CRUD courses section */}
@@ -162,7 +126,6 @@ const MyEvents = () => {
                 </table>
             </div>
         </div>
-    </Layout>
     );
 };
 
